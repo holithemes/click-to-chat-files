@@ -19,14 +19,14 @@ if ( ! defined( 'HT_CTC_FILES' ) ) {
 	define( 'HT_CTC_FILES', '2.6' );
 }
 
-// define HT_CTC_FILES_FILE
-if ( ! defined( 'HT_CTC_FILES_FILE' ) ) {
-	define( 'HT_CTC_FILES_FILE', __FILE__ );
+// define HT_CTC_FILES_PLUGIN_FILE
+if ( ! defined( 'HT_CTC_FILES_PLUGIN_FILE' ) ) {
+	define( 'HT_CTC_FILES_PLUGIN_FILE', __FILE__ );
 }
 
 // define HT_CTC_FILES_PLUGIN_DIR
 if ( ! defined( 'HT_CTC_FILES_PLUGIN_DIR' ) ) {
-	define( 'HT_CTC_FILES_PLUGIN_DIR', plugin_dir_path( HT_CTC_FILES_FILE ) );
+	define( 'HT_CTC_FILES_PLUGIN_DIR', plugin_dir_path( HT_CTC_FILES_PLUGIN_FILE ) );
 }
 
 include_once HT_CTC_FILES_PLUGIN_DIR .'inc/class-ht-ctc-files.php';
