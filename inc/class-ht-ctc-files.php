@@ -80,7 +80,7 @@ class HT_CTC_FILES {
      */
     private function hooks() {
 
-        include_once HT_CTC_FILES_PLUGIN_DIR .'inc/class-ht-ctc-pro-register.php';
+        include_once HT_CTC_FILES_PLUGIN_DIR .'inc/class-ht-ctc-files-register.php';
         register_activation_hook( HT_CTC_FILES_PLUGIN_FILE, array( 'HT_CTC_FILES_Register', 'activate' )  );
         register_deactivation_hook( HT_CTC_FILES_PLUGIN_FILE, array( 'HT_CTC_FILES_Register', 'deactivate' )  );
         register_uninstall_hook(HT_CTC_FILES_PLUGIN_FILE, array( 'HT_CTC_FILES_Register', 'uninstall' ) );
