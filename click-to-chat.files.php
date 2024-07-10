@@ -15,8 +15,8 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // ctc - Version - update version at readme 'Stable tag'
-if ( ! defined( 'HT_CTC_FILES' ) ) {
-	define( 'HT_CTC_FILES', '2.6' );
+if ( ! defined( 'HT_CTC_FILES_VERSION' ) ) {
+	define( 'HT_CTC_FILES_VERSION', '1.0' );
 }
 
 // define HT_CTC_FILES_PLUGIN_FILE
