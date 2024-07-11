@@ -156,6 +156,11 @@
             var filed_name = $(v).attr("name") ? $(v).attr("name") : 'no_field_name';
             console.log('filed_name: ' + filed_name);
 
+            var add_to_prefilled = $(v).hasClass('ctc_g_field_add_to_prefilled') ? 'y' : 'n';
+            console.log('add_to_prefilled: ' + add_to_prefilled);
+            // remove class.. ctc_g_field_add_to_prefilled
+            $(v).removeClass('ctc_g_field_add_to_prefilled');
+
 
             if (ht_ctc_variables.intl_initial_country && '' !== ht_ctc_variables.intl_initial_country) {
                 initial_country = ht_ctc_variables.intl_initial_country;
