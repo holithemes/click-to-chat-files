@@ -7,7 +7,7 @@
         var className = 'ctc_intl_number';
         var ht_ctc_storage = {};
 
-        var limit_check_intl_loaded = 16;
+        var limit_check_intl_loaded = 24;
         var is_check_intl_loaded_fn_called = 'n';
         var initial_country = '';
 
