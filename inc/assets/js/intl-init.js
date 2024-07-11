@@ -1,27 +1,46 @@
 (function ($) {
     // ready
     $(function () {
-
-        console.log('ctc-init-intel.js loaded');
-
+        
         var className = 'ctc_intl_number';
-        var ht_ctc_storage = {};
-
+        
         var limit_check_intl_loaded = 24;
         var is_check_intl_loaded_fn_called = 'n';
+
         var initial_country = '';
-
-
         var utils_js = '';
         var separate_dialcode = false;
-
         var ht_ctc_pro_number_field_lang = [];
 
+        var ht_ctc_storage = {};
 
-        // todo
-        var ctc_getItem = function (name, value) { return false };
-        var ctc_setItem = function (item) { return false };
+        function getStorageData() {
+            console.log('getStorageData');
+            if (localStorage.getItem('ht_ctc_storage')) {
+                ht_ctc_storage = localStorage.getItem('ht_ctc_storage');
+                ht_ctc_storage = JSON.parse(ht_ctc_storage);
+                console.log(ht_ctc_storage);
+            }
+        }
+        getStorageData();
 
+        // get items from ht_ctc_storage
+        function ctc_getItem(item) {
+            console.log('ctc_getItem');
+            return (ht_ctc_storage[item]) ? ht_ctc_storage[item] : false;
+        }
+
+        // set items to ht_ctc_storage storage
+        function ctc_setItem(name, value) {
+            console.log(ht_ctc_storage);
+            getStorageData();
+            console.log(ht_ctc_storage);
+            console.log('ctc_setItem: name: ' + name + ' value: ' + value);
+            ht_ctc_storage[name] = value;
+            console.log(ht_ctc_storage);
+            var newValues = JSON.stringify(ht_ctc_storage);
+            localStorage.setItem('ht_ctc_storage', newValues);
+        }
 
 
         if (ht_ctc_variables.intl_utils_js) {
@@ -34,6 +53,36 @@
             separate_dialcode = true;
             console.log('separate_dialcode is true');
         }
+
+
+        // language..
+        if (ht_ctc_variables.intl_language_path && '' !== ht_ctc_variables.intl_language_path) {
+            console.log('intl_language_path: ' + ht_ctc_variables.intl_language_path);
+            try {
+                import(ht_ctc_variables.intl_language_path)
+                    .then((module) => {
+                        console.log('module');
+
+                        console.log(module);
+                        console.log(module.default);
+
+                        ht_ctc_pro_number_field_lang[ht_ctc_variables.intl_language] = module.default;
+                        console.log(ht_ctc_pro_number_field_lang);
+                        // check_delay();
+                    })
+                    .catch((e) => {
+                        console.log(e);
+                        // check_delay();
+                    });
+            } catch (e) {
+                console.log(e);
+                // check_delay();
+            }
+        } else {
+            console.log('translations not added..');
+            // check_delay();
+        }
+
 
 
         check_intl_loaded();
@@ -93,10 +142,12 @@
             // remove placeholder attribute..
             $(v).removeAttr('placeholder');
 
-
             // // padding left, right unset
             // $(v).css('padding-left', 'unset');
             // $(v).css('padding-right', 'unset');
+
+            // $(v).removeAttr('name');
+
 
             var hidden_input = $(v).attr("data-name") ? $(v).attr("data-name") : 'ctc_form_number';
             console.log('hidden_input: ' + hidden_input);
@@ -105,27 +156,16 @@
             var filed_name = $(v).attr("name") ? $(v).attr("name") : 'no_field_name';
             console.log('filed_name: ' + filed_name);
 
-            // todo
-            // hidden_input = "some[phone]";
-
-            // $(v).removeAttr('name');
 
             if (ht_ctc_variables.intl_initial_country && '' !== ht_ctc_variables.intl_initial_country) {
                 initial_country = ht_ctc_variables.intl_initial_country;
                 console.log('initial_country: ' + initial_country);
             }
 
-
-            /**
-             * var country_code: get the current country code from local storage.. if not exists.. then fetch.. and assign to initial_country..
-             */
+            // get the current country code from local storage.. if not exists.. then fetch.. and assign to initial_country..
             if ('auto' == initial_country) {
                 console.log('initial_country is auto..');
 
-
-                // todo: issue always fetching.. not saving in local storage..
-
-                console.log(ctc_getItem);
                 console.log(ctc_getItem('country_code_date'));
                 console.log(ctc_getItem('country_code'));
 
@@ -135,6 +175,7 @@
 
                 if (country_code && '' !== country_code) {
                     initial_country = country_code;
+                    console.log('initial_country: ' + initial_country);
                     call_intl();
                 } else {
                     console.log('fetch country code..');
@@ -148,6 +189,7 @@
                         ctc_setItem('country_code', country_code);
                         ctc_setItem('country_code_date', country_code_date);
                         initial_country = country_code;
+                        console.log('initial_country: ' + initial_country);
                         call_intl();
                     });
                 }
@@ -167,8 +209,6 @@
 
                 console.log('initial_country: ' + initial_country);
 
-                // this works with CTC version: 4.6 (intltel version: 23.1.0)
-                // if intl version is changed, this code might need to change..
                 var values = {
                     // 'autoHideDialCode': false,
                     initialCountry: initial_country,
@@ -187,10 +227,12 @@
                     containerClass: 'intl_tel_input_container',
                 }
 
+                // add i18n
                 if (ht_ctc_pro_number_field_lang && ht_ctc_variables.intl_language && '' !== ht_ctc_variables.intl_language) {
                     values.i18n = ht_ctc_pro_number_field_lang[ht_ctc_variables.intl_language];
                 }
 
+                // add utilsScript
                 values.utilsScript = utils_js;
 
                 console.log(values);
