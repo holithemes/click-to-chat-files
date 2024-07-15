@@ -3,7 +3,7 @@
 Plugin Name: Click to Chat files
 Plugin URI:  http://holithemes.com/plugins/click-to-chat/
 Description: Files, third party tools - Addon for Click to Chat
-Version:     1.0
+Version:     0.1
 Author:      HoliThemes
 Author URI:  https://holithemes.com/plugins/click-to-chat/
 Text Domain: click-to-chat-files
@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 // ctc - Version - update version at readme 'Stable tag'
 if ( ! defined( 'HT_CTC_FILES_VERSION' ) ) {
-	define( 'HT_CTC_FILES_VERSION', '1.0' );
+	define( 'HT_CTC_FILES_VERSION', '0.1' );
 }
 
 // define HT_CTC_FILES_PLUGIN_FILE

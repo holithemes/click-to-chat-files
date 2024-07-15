@@ -3,7 +3,7 @@ Requires at least: 4.6
 Tested up to: 6.6
 Requires PHP: 5.6
 Contributors: holithemes
-Stable tag: 1.0
+Stable tag: 0.1
 Tags: whatsapp, whatsapp business, click to chat, whatsapp chat, WooCommerce WhatsApp
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,5 +36,5 @@ This all required a lot of files to be hosted. instead of adding all this files 
 
 == Changelog ==
 
-= 1.0 =
+= 0.1 =
 * Initial release
