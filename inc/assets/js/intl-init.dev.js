@@ -73,10 +73,6 @@
                     console.log('initial_country: ' + initial_country);
                 });
             }
-
-
-        } else {
-            console.log('initial_country is not auto..');
         }
 
         // language..
