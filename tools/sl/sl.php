@@ -34,16 +34,18 @@ class HT_CTC_FILES_SL {
      */
     private function define_constants() {
         
-        $this->define( 'HT_CTC_FILES_SL_STORE_URL', 'https://holithemes.com/shop/' );
-        
-        
-        // todo
-        // testing license key: 4235c1a3c9b57dc882ff52f4744f64a0
-        $this->define( 'HT_CTC_FILES_SL_ITEM_ID', 4282 );
-        $this->define( 'HT_CTC_FILES_SL_ITEM_NAME', 'Click to Chat Addon options' );
-
+        // $this->define( 'HT_CTC_FILES_SL_STORE_URL', 'https://holithemes.com/shop/' );
         // $this->define( 'HT_CTC_FILES_SL_ITEM_ID', 5501 );
         // $this->define( 'HT_CTC_FILES_SL_ITEM_NAME', 'Click to Chat Files' );
+        
+        // todo
+        // https://staging.techponder.com/
+        // testing license key: 4235c1a3c9b57dc882ff52f4744f64a0
+        $this->define( 'HT_CTC_FILES_SL_STORE_URL', 'https://staging.techponder.com/' );
+        $this->define( 'HT_CTC_FILES_SL_ITEM_ID', 65 );
+        $this->define( 'HT_CTC_FILES_SL_ITEM_NAME', 'Ctc Files' );
+
+        
 
 
         $this->define( 'HT_CTC_FILES_LICENSE_PAGE', 'click-to-chat' );
