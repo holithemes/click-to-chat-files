@@ -1,6 +1,6 @@
 <?php
 /**
- * PRO Plugin
+ * files Plugin
  *  
  */
 
@@ -87,6 +87,7 @@ class HT_CTC_FILES {
         
         // init
         add_action( 'init', array( $this, 'init' ), 0 );
+        add_action( 'ht_ctc_ah_init_before', array( $this, 'ctc_init' ), 0 );
 
         // when plugin updated - check version diff
         add_action('plugins_loaded', array( 'HT_CTC_FILES_Register', 'version_check' ) );
@@ -111,6 +112,21 @@ class HT_CTC_FILES {
         //     include_once HT_CTC_FILES_PLUGIN_DIR .'inc/tools/tgm/tgm.php';
         // } else {
         // }
+    }
+
+
+    /**
+     * CTC Init
+     * @uses this->hooks() - using ht_ctc_ah_init_before hook - priority 0
+     */
+    public function ctc_init() {
+        
+        if ( is_admin() ) {
+            include_once HT_CTC_FILES_PLUGIN_DIR .'admin/admin.php';
+        } else {
+        }
+
+
     }
 
 
