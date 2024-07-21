@@ -76,7 +76,7 @@ class HT_CTC_Files_Admin_SL {
                                 <input type="submit" name="<?= $btn_class ?>" id="ctc_files_license_button" class="<?= $btn_class ?> button-secondary" value="<?= $text ?>"/>
 
                                 <p class="ctc_files_get_license <?= $getlicense_class ?>">
-                                    <a href="https://holithemes.com/plugins/click-to-chat/pricing" target="_blank"><?php _e( 'Get License', 'click-to-chat-for-whatsapp' ); ?></a> | <a href="https://holithemes.com/shop/" target="_blank"><?php _e( 'My Account', 'click-to-chat-for-whatsapp' ); ?></a>
+                                    <a href="todo" target="_blank"><?php _e( 'Get License', 'click-to-chat-for-whatsapp' ); ?></a> | <a href="https://holithemes.com/shop/" target="_blank"><?php _e( 'My Account', 'click-to-chat-for-whatsapp' ); ?></a>
                                 </p>
                             </form>
                         </div>
