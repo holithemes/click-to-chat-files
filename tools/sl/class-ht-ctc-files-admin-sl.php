@@ -113,6 +113,8 @@ class HT_CTC_Files_Admin_SL {
             'url'        => $home_url
 		);
 
+        $message = '';
+
 		// Call the custom API.
 		$response = wp_remote_post( HT_CTC_FILES_SL_STORE_URL, array( 'timeout' => 45, 'sslverify' => false, 'body' => $api_params ) );
 
@@ -240,6 +242,7 @@ class HT_CTC_Files_Admin_SL {
         // Send the remote request
         $response = wp_remote_post( HT_CTC_FILES_SL_STORE_URL, array( 'body' => $api_params, 'timeout' => 45, 'sslverify' => false ) );
 
+        $message = '';
 
         // make sure the response came back okay
         if ( is_wp_error( $response ) || 200 !== wp_remote_retrieve_response_code( $response ) ) {
