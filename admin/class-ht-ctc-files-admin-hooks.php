@@ -32,9 +32,6 @@ class HT_CTC_Files_Admin_Hooks {
         
         // js
         $js = 'admin.js';
-        // todo
-        $js = 'admin.dev.js';
-
 
         if ( isset($os['debug_mode']) ) {
             $js = 'admin.dev.js';
