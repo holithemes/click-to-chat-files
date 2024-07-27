@@ -22,7 +22,7 @@ class HT_CTC_Files_Admin_SL {
     function hooks() {
 
 		// software licence box
-        add_action( 'ht_ctc_ah_admin_sidebar_contact', [$this, 'license_field'] );
+        add_action( 'ht_ctc_ah_admin_sidebar_contact', [$this, 'license_field'], 11 );
 
 		// ajax .. 
         add_action( 'wp_ajax_ctc_files_activate_license', [$this, 'activate_license'] );
@@ -62,7 +62,7 @@ class HT_CTC_Files_Admin_SL {
             <div class="row">
                 <ul class="collapsible popout">
                     <li class="<?= $li_class ?>">
-                        <div class="collapsible-header"><?php _e( 'Click to Chat Files - Software License', 'click-to-chat-for-whatsapp' ); ?></div>	
+                        <div class="collapsible-header"><?php _e( 'Click to Chat Files: License', 'click-to-chat-for-whatsapp' ); ?></div>	
                         <div class="collapsible-body">	
                             <form action="" method="post">
                                 <p class="description">Click to Chat Files plugin</p>
