@@ -260,7 +260,6 @@
                 // intlTelInput instance
                 console.log(intl);
 
-                // todo: add ctc_g_field_add_to_prefilled based on settings..
                 intl.hiddenInput.classList.add('ht_ctc_g_form_field');
 
                 if ('y' == add_to_prefilled) {
