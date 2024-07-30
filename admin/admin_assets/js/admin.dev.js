@@ -56,7 +56,9 @@
                     success: function (response) {
                         output(response);
                     },
-                    error: function () {
+                    error: function ( e ) {
+                        // log error
+                        console.log(e);
                         btn.val(btnval);
                         btn.css('pointer-events', 'auto');
                         messagebox.css('color', 'red');
