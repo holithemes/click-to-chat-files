@@ -73,6 +73,7 @@ class HT_CTC_Files_Admin_SL {
 
                                 <?php wp_nonce_field( 'ht_ctc_files_nonce', 'ht_ctc_files_nonce' ); ?>
 
+                                <!-- 1ac2dcd29bd904f13e929e1de8bd1850 -->
                                 <input type="submit" name="<?= $btn_class ?>" id="ctc_files_license_button" class="<?= $btn_class ?> button-secondary" value="<?= $text ?>"/>
 
                                 <p class="ctc_files_get_license <?= $getlicense_class ?>">
