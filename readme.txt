@@ -8,15 +8,22 @@ Tags: whatsapp, whatsapp business, click to chat, whatsapp chat, WooCommerce Wha
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-WhatsApp Chat🔥. Let's make your Web page visitors contact you through 'WhatsApp', 'WhatsApp Business'. Add matching Widget✅
+To host large files for click to chat pro plugin.
 
 == Description ==
 
 To host large files. 
 
-Some plugin features required to add large files. so we added a plugin to host large files.
-public repository at github. 
-useful to call directory. using jsdelivr for cdn or directly from github.
+Some plugin features required to add large files. (but that feature may uses by a very few users)
+Instead of adding all the files in the pro plugin. We created a plugin to host large files.
+
+Two ways pro plugin can call this files.
+
+1. [Click to Chat Files](https://holithemes.com/shop/downloads/click-to-chat-files/) plugin (or)
+2. public repository at [github](https://github.com/holithemes/click-to-chat-files). 
+
+If Click to Chat Files plugin is installed on same site, click to chat pro plugin call files from same site. i.e form this plugin. Else it calls from public repository hosted at github using jsdelivr CDN.
+
 
 == Number (Intltel input) field ==
 
