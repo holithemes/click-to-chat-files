@@ -295,7 +295,7 @@
             var style = document.createElement('style');
             style.innerHTML = '.iti { z-index: ' + z_index + ' }';
             style.innerHTML += '.ctc_number_padding { padding: 9px; }';
-            style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: unset; right: 0; }';
+            style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: 0; right: auto; }';
             document.head.appendChild(style);
 
         }
