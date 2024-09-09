@@ -277,6 +277,23 @@
         }
 
 
+        function styles_scripts() {
+
+            console.log('styles_scripts()');
+
+            var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
+            z_index = parseInt(z_index) + 5;
+            
+            // .iti add z-index 999999999
+            var style = document.createElement('style');
+            // style.type = 'text/css';
+            style.innerHTML = '.iti { z-index: ' + z_index + '; }';
+            document.getElementsByTagName('head')[0].appendChild(style);
+
+        }
+        styles_scripts();
+
+
 
     });
 })(jQuery);
