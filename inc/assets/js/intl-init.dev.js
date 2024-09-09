@@ -246,15 +246,15 @@
                 // initialise
                 intl = intlTelInput(v, values);
 
-                try {
-                    // adding z-index to country dropdown.. .iti--container class works when dropdown is opened..
-                    v.addEventListener('open:countrydropdown', function (e) {
-                        console.log('open:countrydropdown');
-                        var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
-                        z_index = parseInt(z_index) + 5;
-                        $('.iti--container')[0].style.zIndex = z_index;
-                    });
-                } catch (e) {}
+                // try {
+                //     // adding z-index to country dropdown.. .iti--container class works when dropdown is opened.. or add css.. directly..
+                //     v.addEventListener('open:countrydropdown', function (e) {
+                //         console.log('open:countrydropdown');
+                //         var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
+                //         z_index = parseInt(z_index) + 5;
+                //         $('.iti--container')[0].style.zIndex = z_index;
+                //     });
+                // } catch (e) {}
 
                 after_intltel_inialised();
 
@@ -282,6 +282,22 @@
                 // change name attribute..
                 intl.hiddenInput.setAttribute('name', filed_name);
             }
+
+
+            function scripts_styles() {
+
+                var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
+                z_index = parseInt(z_index) + 5;
+
+                // .iti add z-index
+                var style = document.createElement('style');
+                style.innerHTML = '.iti { z-index: ' + z_index + ' }';
+                style.innerHTML += '.ctc_number_padding { padding: 9px; }';
+                style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: unset; right: 0; }';
+                document.head.appendChild(style);
+
+            }
+            scripts_styles();
 
             return intl;
         }
