@@ -283,24 +283,23 @@
                 intl.hiddenInput.setAttribute('name', filed_name);
             }
 
-
-            function scripts_styles() {
-
-                var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
-                z_index = parseInt(z_index) + 5;
-
-                // .iti add z-index
-                var style = document.createElement('style');
-                style.innerHTML = '.iti { z-index: ' + z_index + ' }';
-                style.innerHTML += '.ctc_number_padding { padding: 9px; }';
-                style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: unset; right: 0; }';
-                document.head.appendChild(style);
-
-            }
-            scripts_styles();
-
             return intl;
         }
+
+        function scripts_styles() {
+
+            var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
+            z_index = parseInt(z_index) + 5;
+
+            // .iti add z-index
+            var style = document.createElement('style');
+            style.innerHTML = '.iti { z-index: ' + z_index + ' }';
+            style.innerHTML += '.ctc_number_padding { padding: 9px; }';
+            style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: unset; right: 0; }';
+            document.head.appendChild(style);
+
+        }
+        scripts_styles();
 
 
 
