@@ -1,5 +1,5 @@
 /*
- * International Telephone Input v23.7.3
+ * International Telephone Input v24.4.0
  * https://github.com/jackocnr/intl-tel-input.git
  * Licensed under the MIT license
  */
@@ -42,1064 +42,1308 @@ var factoryOutput = (() => {
   var rawCountryData = [
     [
       "af",
+      // Afghanistan
       "93"
     ],
     [
+      "ax",
+      // Åland Islands
+      "358",
+      1,
+      ["18"]
+    ],
+    [
       "al",
+      // Albania
       "355"
     ],
     [
       "dz",
+      // Algeria
       "213"
     ],
     [
       "as",
+      // American Samoa
       "1",
       5,
       ["684"]
     ],
     [
       "ad",
+      // Andorra
       "376"
     ],
     [
       "ao",
+      // Angola
       "244"
     ],
     [
       "ai",
+      // Anguilla
       "1",
       6,
       ["264"]
     ],
     [
       "ag",
+      // Antigua and Barbuda
       "1",
       7,
       ["268"]
     ],
     [
       "ar",
+      // Argentina
       "54"
     ],
     [
       "am",
+      // Armenia
       "374"
     ],
     [
       "aw",
+      // Aruba
       "297"
     ],
     [
       "ac",
+      // Ascension Island
       "247"
     ],
     [
       "au",
+      // Australia
       "61",
       0
     ],
     [
       "at",
+      // Austria
       "43"
     ],
     [
       "az",
+      // Azerbaijan
       "994"
     ],
     [
       "bs",
+      // Bahamas
       "1",
       8,
       ["242"]
     ],
     [
       "bh",
+      // Bahrain
       "973"
     ],
     [
       "bd",
+      // Bangladesh
       "880"
     ],
     [
       "bb",
+      // Barbados
       "1",
       9,
       ["246"]
     ],
     [
       "by",
+      // Belarus
       "375"
     ],
     [
       "be",
+      // Belgium
       "32"
     ],
     [
       "bz",
+      // Belize
       "501"
     ],
     [
       "bj",
+      // Benin
       "229"
     ],
     [
       "bm",
+      // Bermuda
       "1",
       10,
       ["441"]
     ],
     [
       "bt",
+      // Bhutan
       "975"
     ],
     [
       "bo",
+      // Bolivia
       "591"
     ],
     [
       "ba",
+      // Bosnia and Herzegovina
       "387"
     ],
     [
       "bw",
+      // Botswana
       "267"
     ],
     [
       "br",
+      // Brazil
       "55"
     ],
     [
       "io",
+      // British Indian Ocean Territory
       "246"
     ],
     [
       "vg",
+      // British Virgin Islands
       "1",
       11,
       ["284"]
     ],
     [
       "bn",
+      // Brunei
       "673"
     ],
     [
       "bg",
+      // Bulgaria
       "359"
     ],
     [
       "bf",
+      // Burkina Faso
       "226"
     ],
     [
       "bi",
+      // Burundi
       "257"
     ],
     [
       "kh",
+      // Cambodia
       "855"
     ],
     [
       "cm",
+      // Cameroon
       "237"
     ],
     [
       "ca",
+      // Canada
       "1",
       1,
       ["204", "226", "236", "249", "250", "263", "289", "306", "343", "354", "365", "367", "368", "382", "387", "403", "416", "418", "428", "431", "437", "438", "450", "584", "468", "474", "506", "514", "519", "548", "579", "581", "584", "587", "604", "613", "639", "647", "672", "683", "705", "709", "742", "753", "778", "780", "782", "807", "819", "825", "867", "873", "879", "902", "905"]
     ],
     [
       "cv",
+      // Cape Verde
       "238"
     ],
     [
       "bq",
+      // Caribbean Netherlands
       "599",
       1,
       ["3", "4", "7"]
     ],
     [
       "ky",
+      // Cayman Islands
       "1",
       12,
       ["345"]
     ],
     [
       "cf",
+      // Central African Republic
       "236"
     ],
     [
       "td",
+      // Chad
       "235"
     ],
     [
       "cl",
+      // Chile
       "56"
     ],
     [
       "cn",
+      // China
       "86"
     ],
     [
       "cx",
+      // Christmas Island
       "61",
       2,
       ["89164"]
     ],
     [
       "cc",
+      // Cocos (Keeling) Islands
       "61",
       1,
       ["89162"]
     ],
     [
       "co",
+      // Colombia
       "57"
     ],
     [
       "km",
+      // Comoros
       "269"
     ],
     [
       "cg",
+      // Congo (Brazzaville)
       "242"
     ],
     [
       "cd",
+      // Congo (Kinshasa)
       "243"
     ],
     [
       "ck",
+      // Cook Islands
       "682"
     ],
     [
       "cr",
+      // Costa Rica
       "506"
     ],
     [
       "ci",
+      // Côte d'Ivoire
       "225"
     ],
     [
       "hr",
+      // Croatia
       "385"
     ],
     [
       "cu",
+      // Cuba
       "53"
     ],
     [
       "cw",
+      // Curaçao
       "599",
       0
     ],
     [
       "cy",
+      // Cyprus
       "357"
     ],
     [
       "cz",
+      // Czech Republic
       "420"
     ],
     [
       "dk",
+      // Denmark
       "45"
     ],
     [
       "dj",
+      // Djibouti
       "253"
     ],
     [
       "dm",
+      // Dominica
       "1",
       13,
       ["767"]
     ],
     [
       "do",
+      // Dominican Republic
       "1",
       2,
       ["809", "829", "849"]
     ],
     [
       "ec",
+      // Ecuador
       "593"
     ],
     [
       "eg",
+      // Egypt
       "20"
     ],
     [
       "sv",
+      // El Salvador
       "503"
     ],
     [
       "gq",
+      // Equatorial Guinea
       "240"
     ],
     [
       "er",
+      // Eritrea
       "291"
     ],
     [
       "ee",
+      // Estonia
       "372"
     ],
     [
       "sz",
+      // Eswatini
       "268"
     ],
     [
       "et",
+      // Ethiopia
       "251"
     ],
     [
       "fk",
+      // Falkland Islands (Malvinas)
       "500"
     ],
     [
       "fo",
+      // Faroe Islands
       "298"
     ],
     [
       "fj",
+      // Fiji
       "679"
     ],
     [
       "fi",
+      // Finland
       "358",
       0
     ],
     [
       "fr",
+      // France
       "33"
     ],
     [
       "gf",
+      // French Guiana
       "594"
     ],
     [
       "pf",
+      // French Polynesia
       "689"
     ],
     [
       "ga",
+      // Gabon
       "241"
     ],
     [
       "gm",
+      // Gambia
       "220"
     ],
     [
       "ge",
+      // Georgia
       "995"
     ],
     [
       "de",
+      // Germany
       "49"
     ],
     [
       "gh",
+      // Ghana
       "233"
     ],
     [
       "gi",
+      // Gibraltar
       "350"
     ],
     [
       "gr",
+      // Greece
       "30"
     ],
     [
       "gl",
+      // Greenland
       "299"
     ],
     [
       "gd",
+      // Grenada
       "1",
       14,
       ["473"]
     ],
     [
       "gp",
+      // Guadeloupe
       "590",
       0
     ],
     [
       "gu",
+      // Guam
       "1",
       15,
       ["671"]
     ],
     [
       "gt",
+      // Guatemala
       "502"
     ],
     [
       "gg",
+      // Guernsey
       "44",
       1,
       ["1481", "7781", "7839", "7911"]
     ],
     [
       "gn",
+      // Guinea
       "224"
     ],
     [
       "gw",
+      // Guinea-Bissau
       "245"
     ],
     [
       "gy",
+      // Guyana
       "592"
     ],
     [
       "ht",
+      // Haiti
       "509"
     ],
     [
       "hn",
+      // Honduras
       "504"
     ],
     [
       "hk",
+      // Hong Kong SAR China
       "852"
     ],
     [
       "hu",
+      // Hungary
       "36"
     ],
     [
       "is",
+      // Iceland
       "354"
     ],
     [
       "in",
+      // India
       "91"
     ],
     [
       "id",
+      // Indonesia
       "62"
     ],
     [
       "ir",
+      // Iran
       "98"
     ],
     [
       "iq",
+      // Iraq
       "964"
     ],
     [
       "ie",
+      // Ireland
       "353"
     ],
     [
       "im",
+      // Isle of Man
       "44",
       2,
       ["1624", "74576", "7524", "7924", "7624"]
     ],
     [
       "il",
+      // Israel
       "972"
     ],
     [
       "it",
+      // Italy
       "39",
       0
     ],
     [
       "jm",
+      // Jamaica
       "1",
       4,
       ["876", "658"]
     ],
     [
       "jp",
+      // Japan
       "81"
     ],
     [
       "je",
+      // Jersey
       "44",
       3,
       ["1534", "7509", "7700", "7797", "7829", "7937"]
     ],
     [
       "jo",
+      // Jordan
       "962"
     ],
     [
       "kz",
+      // Kazakhstan
       "7",
       1,
       ["33", "7"]
     ],
     [
       "ke",
+      // Kenya
       "254"
     ],
     [
       "ki",
+      // Kiribati
       "686"
     ],
     [
       "xk",
+      // Kosovo
       "383"
     ],
     [
       "kw",
+      // Kuwait
       "965"
     ],
     [
       "kg",
+      // Kyrgyzstan
       "996"
     ],
     [
       "la",
+      // Laos
       "856"
     ],
     [
       "lv",
+      // Latvia
       "371"
     ],
     [
       "lb",
+      // Lebanon
       "961"
     ],
     [
       "ls",
+      // Lesotho
       "266"
     ],
     [
       "lr",
+      // Liberia
       "231"
     ],
     [
       "ly",
+      // Libya
       "218"
     ],
     [
       "li",
+      // Liechtenstein
       "423"
     ],
     [
       "lt",
+      // Lithuania
       "370"
     ],
     [
       "lu",
+      // Luxembourg
       "352"
     ],
     [
       "mo",
+      // Macao SAR China
       "853"
     ],
     [
       "mg",
+      // Madagascar
       "261"
     ],
     [
       "mw",
+      // Malawi
       "265"
     ],
     [
       "my",
+      // Malaysia
       "60"
     ],
     [
       "mv",
+      // Maldives
       "960"
     ],
     [
       "ml",
+      // Mali
       "223"
     ],
     [
       "mt",
+      // Malta
       "356"
     ],
     [
       "mh",
+      // Marshall Islands
       "692"
     ],
     [
       "mq",
+      // Martinique
       "596"
     ],
     [
       "mr",
+      // Mauritania
       "222"
     ],
     [
       "mu",
+      // Mauritius
       "230"
     ],
     [
       "yt",
+      // Mayotte
       "262",
       1,
       ["269", "639"]
     ],
     [
       "mx",
+      // Mexico
       "52"
     ],
     [
       "fm",
+      // Micronesia
       "691"
     ],
     [
       "md",
+      // Moldova
       "373"
     ],
     [
       "mc",
+      // Monaco
       "377"
     ],
     [
       "mn",
+      // Mongolia
       "976"
     ],
     [
       "me",
+      // Montenegro
       "382"
     ],
     [
       "ms",
+      // Montserrat
       "1",
       16,
       ["664"]
     ],
     [
       "ma",
+      // Morocco
       "212",
       0
     ],
     [
       "mz",
+      // Mozambique
       "258"
     ],
     [
       "mm",
+      // Myanmar (Burma)
       "95"
     ],
     [
       "na",
+      // Namibia
       "264"
     ],
     [
       "nr",
+      // Nauru
       "674"
     ],
     [
       "np",
+      // Nepal
       "977"
     ],
     [
       "nl",
+      // Netherlands
       "31"
     ],
     [
       "nc",
+      // New Caledonia
       "687"
     ],
     [
       "nz",
+      // New Zealand
       "64"
     ],
     [
       "ni",
+      // Nicaragua
       "505"
     ],
     [
       "ne",
+      // Niger
       "227"
     ],
     [
       "ng",
+      // Nigeria
       "234"
     ],
     [
       "nu",
+      // Niue
       "683"
     ],
     [
       "nf",
+      // Norfolk Island
       "672"
     ],
     [
       "kp",
+      // North Korea
       "850"
     ],
     [
       "mk",
+      // North Macedonia
       "389"
     ],
     [
       "mp",
+      // Northern Mariana Islands
       "1",
       17,
       ["670"]
     ],
     [
       "no",
+      // Norway
       "47",
       0
     ],
     [
       "om",
+      // Oman
       "968"
     ],
     [
       "pk",
+      // Pakistan
       "92"
     ],
     [
       "pw",
+      // Palau
       "680"
     ],
     [
       "ps",
+      // Palestinian Territories
       "970"
     ],
     [
       "pa",
+      // Panama
       "507"
     ],
     [
       "pg",
+      // Papua New Guinea
       "675"
     ],
     [
       "py",
+      // Paraguay
       "595"
     ],
     [
       "pe",
+      // Peru
       "51"
     ],
     [
       "ph",
+      // Philippines
       "63"
     ],
     [
       "pl",
+      // Poland
       "48"
     ],
     [
       "pt",
+      // Portugal
       "351"
     ],
     [
       "pr",
+      // Puerto Rico
       "1",
       3,
       ["787", "939"]
     ],
     [
       "qa",
+      // Qatar
       "974"
     ],
     [
       "re",
+      // Réunion
       "262",
       0
     ],
     [
       "ro",
+      // Romania
       "40"
     ],
     [
       "ru",
+      // Russia
       "7",
       0
     ],
     [
       "rw",
+      // Rwanda
       "250"
     ],
     [
       "ws",
+      // Samoa
       "685"
     ],
     [
       "sm",
+      // San Marino
       "378"
     ],
     [
       "st",
+      // São Tomé & Príncipe
       "239"
     ],
     [
       "sa",
+      // Saudi Arabia
       "966"
     ],
     [
       "sn",
+      // Senegal
       "221"
     ],
     [
       "rs",
+      // Serbia
       "381"
     ],
     [
       "sc",
+      // Seychelles
       "248"
     ],
     [
       "sl",
+      // Sierra Leone
       "232"
     ],
     [
       "sg",
+      // Singapore
       "65"
     ],
     [
       "sx",
+      // Sint Maarten
       "1",
       21,
       ["721"]
     ],
     [
       "sk",
+      // Slovakia
       "421"
     ],
     [
       "si",
+      // Slovenia
       "386"
     ],
     [
       "sb",
+      // Solomon Islands
       "677"
     ],
     [
       "so",
+      // Somalia
       "252"
     ],
     [
       "za",
+      // South Africa
       "27"
     ],
     [
       "kr",
+      // South Korea
       "82"
     ],
     [
       "ss",
+      // South Sudan
       "211"
     ],
     [
       "es",
+      // Spain
       "34"
     ],
     [
       "lk",
+      // Sri Lanka
       "94"
     ],
     [
       "bl",
+      // St. Barthélemy
       "590",
       1
     ],
     [
       "sh",
+      // St. Helena
       "290"
     ],
     [
       "kn",
+      // St. Kitts & Nevis
       "1",
       18,
       ["869"]
     ],
     [
       "lc",
+      // St. Lucia
       "1",
       19,
       ["758"]
     ],
     [
       "mf",
+      // St. Martin
       "590",
       2
     ],
     [
       "pm",
+      // St. Pierre & Miquelon
       "508"
     ],
     [
       "vc",
+      // St. Vincent & Grenadines
       "1",
       20,
       ["784"]
     ],
     [
       "sd",
+      // Sudan
       "249"
     ],
     [
       "sr",
+      // Suriname
       "597"
     ],
     [
       "sj",
+      // Svalbard & Jan Mayen
       "47",
       1,
       ["79"]
     ],
     [
       "se",
+      // Sweden
       "46"
     ],
     [
       "ch",
+      // Switzerland
       "41"
     ],
     [
       "sy",
+      // Syria
       "963"
     ],
     [
       "tw",
+      // Taiwan
       "886"
     ],
     [
       "tj",
+      // Tajikistan
       "992"
     ],
     [
       "tz",
+      // Tanzania
       "255"
     ],
     [
       "th",
+      // Thailand
       "66"
     ],
     [
       "tl",
+      // Timor-Leste
       "670"
     ],
     [
       "tg",
+      // Togo
       "228"
     ],
     [
       "tk",
+      // Tokelau
       "690"
     ],
     [
       "to",
+      // Tonga
       "676"
     ],
     [
       "tt",
+      // Trinidad & Tobago
       "1",
       22,
       ["868"]
     ],
     [
       "tn",
+      // Tunisia
       "216"
     ],
     [
       "tr",
+      // Turkey
       "90"
     ],
     [
       "tm",
+      // Turkmenistan
       "993"
     ],
     [
       "tc",
+      // Turks & Caicos Islands
       "1",
       23,
       ["649"]
     ],
     [
       "tv",
+      // Tuvalu
       "688"
     ],
     [
       "ug",
+      // Uganda
       "256"
     ],
     [
       "ua",
+      // Ukraine
       "380"
     ],
     [
       "ae",
+      // United Arab Emirates
       "971"
     ],
     [
       "gb",
+      // United Kingdom
       "44",
       0
     ],
     [
       "us",
+      // United States
       "1",
       0
     ],
     [
       "uy",
+      // Uruguay
       "598"
     ],
     [
       "vi",
+      // U.S. Virgin Islands
       "1",
       24,
       ["340"]
     ],
     [
       "uz",
+      // Uzbekistan
       "998"
     ],
     [
       "vu",
+      // Vanuatu
       "678"
     ],
     [
       "va",
+      // Vatican City
       "39",
       1,
       ["06698"]
     ],
     [
       "ve",
+      // Venezuela
       "58"
     ],
     [
       "vn",
+      // Vietnam
       "84"
     ],
     [
       "wf",
+      // Wallis & Futuna
       "681"
     ],
     [
       "eh",
+      // Western Sahara
       "212",
       1,
       ["5288", "5289"]
     ],
     [
       "ye",
+      // Yemen
       "967"
     ],
     [
       "zm",
+      // Zambia
       "260"
     ],
     [
       "zw",
+      // Zimbabwe
       "263"
-    ],
-    [
-      "ax",
-      "358",
-      1,
-      ["18"]
     ]
   ];
   var allCountries = [];
@@ -1117,8 +1361,8 @@ var factoryOutput = (() => {
   }
   var data_default = allCountries;
 
-  // src/js/i18n/en/countries.ts
-  var countries_default = {
+  // src/js/intl-tel-input/i18n/en/countries.ts
+  var countryTranslations = {
     ad: "Andorra",
     ae: "United Arab Emirates",
     af: "Afghanistan",
@@ -1127,7 +1371,6 @@ var factoryOutput = (() => {
     al: "Albania",
     am: "Armenia",
     ao: "Angola",
-    aq: "Antarctica",
     ar: "Argentina",
     as: "American Samoa",
     at: "Austria",
@@ -1152,7 +1395,6 @@ var factoryOutput = (() => {
     br: "Brazil",
     bs: "Bahamas",
     bt: "Bhutan",
-    bv: "Bouvet Island",
     bw: "Botswana",
     by: "Belarus",
     bz: "Belize",
@@ -1208,13 +1450,11 @@ var factoryOutput = (() => {
     gp: "Guadeloupe",
     gq: "Equatorial Guinea",
     gr: "Greece",
-    gs: "South Georgia & South Sandwich Islands",
     gt: "Guatemala",
     gu: "Guam",
     gw: "Guinea-Bissau",
     gy: "Guyana",
     hk: "Hong Kong SAR China",
-    hm: "Heard & McDonald Islands",
     hn: "Honduras",
     hr: "Croatia",
     ht: "Haiti",
@@ -1299,7 +1539,6 @@ var factoryOutput = (() => {
     pk: "Pakistan",
     pl: "Poland",
     pm: "St. Pierre & Miquelon",
-    pn: "Pitcairn Islands",
     pr: "Puerto Rico",
     ps: "Palestinian Territories",
     pt: "Portugal",
@@ -1334,7 +1573,6 @@ var factoryOutput = (() => {
     sz: "Eswatini",
     tc: "Turks & Caicos Islands",
     td: "Chad",
-    tf: "French Southern Territories",
     tg: "Togo",
     th: "Thailand",
     tj: "Tajikistan",
@@ -1350,7 +1588,6 @@ var factoryOutput = (() => {
     tz: "Tanzania",
     ua: "Ukraine",
     ug: "Uganda",
-    um: "U.S. Outlying Islands",
     us: "United States",
     uy: "Uruguay",
     uz: "Uzbekistan",
@@ -1369,9 +1606,10 @@ var factoryOutput = (() => {
     zm: "Zambia",
     zw: "Zimbabwe"
   };
+  var countries_default = countryTranslations;
 
-  // src/js/i18n/en/interface.ts
-  var interface_default = {
+  // src/js/intl-tel-input/i18n/en/interface.ts
+  var interfaceTranslations = {
     selectedCountryAriaLabel: "Selected country",
     noCountrySelected: "No country selected",
     countryListAriaLabel: "List of countries",
@@ -1383,9 +1621,11 @@ var factoryOutput = (() => {
     ac: "Ascension Island",
     xk: "Kosovo"
   };
+  var interface_default = interfaceTranslations;
 
-  // src/js/i18n/en/index.ts
-  var en_default = { ...countries_default, ...interface_default };
+  // src/js/intl-tel-input/i18n/en/index.ts
+  var allTranslations = { ...countries_default, ...interface_default };
+  var en_default = allTranslations;
 
   // src/js/intl-tel-input.ts
   for (let i = 0; i < data_default.length; i++) {
@@ -1522,12 +1762,13 @@ var factoryOutput = (() => {
       if (this.options.useFullscreenPopup) {
         this.options.fixDropdownWidth = false;
       }
-      if (this.options.separateDialCode) {
-        this.options.allowDropdown = true;
-        this.options.nationalMode = false;
-        this.options.countrySearch = true;
+      if (this.options.onlyCountries.length === 1) {
+        this.options.initialCountry = this.options.onlyCountries[0];
       }
-      if (!this.options.showFlags && !this.options.separateDialCode) {
+      if (this.options.separateDialCode) {
+        this.options.nationalMode = false;
+      }
+      if (this.options.allowDropdown && !this.options.showFlags && !this.options.separateDialCode) {
         this.options.nationalMode = false;
       }
       if (this.options.useFullscreenPopup && !this.options.dropdownContainer) {
@@ -1535,6 +1776,8 @@ var factoryOutput = (() => {
       }
       this.isAndroid = typeof navigator !== "undefined" ? /Android/i.test(navigator.userAgent) : false;
       this.isRTL = !!this.telInput.closest("[dir=rtl]");
+      const showOnDefaultSide = this.options.allowDropdown || this.options.separateDialCode;
+      this.showSelectedCountryOnLeft = this.isRTL ? !showOnDefaultSide : showOnDefaultSide;
       if (this.options.separateDialCode) {
         if (this.isRTL) {
           this.originalPaddingRight = this.telInput.style.paddingRight;
@@ -1698,12 +1941,17 @@ var factoryOutput = (() => {
       }
       const wrapper = createEl("div", { class: parentClass });
       this.telInput.parentNode?.insertBefore(wrapper, this.telInput);
-      if (allowDropdown || showFlags) {
+      if (allowDropdown || showFlags || separateDialCode) {
         this.countryContainer = createEl(
           "div",
           { class: "iti__country-container" },
           wrapper
         );
+        if (this.showSelectedCountryOnLeft) {
+          this.countryContainer.style.left = "0px";
+        } else {
+          this.countryContainer.style.right = "0px";
+        }
         if (allowDropdown) {
           this.selectedCountry = createEl(
             "button",
@@ -1729,7 +1977,7 @@ var factoryOutput = (() => {
           );
         }
         const selectedCountryPrimary = createEl("div", { class: "iti__selected-country-primary" }, this.selectedCountry);
-        this.selectedCountryInner = createEl("div", null, selectedCountryPrimary);
+        this.selectedCountryInner = createEl("div", { class: "iti__flag" }, selectedCountryPrimary);
         this.selectedCountryA11yText = createEl(
           "span",
           { class: "iti__a11y-text" },
@@ -1806,6 +2054,7 @@ var factoryOutput = (() => {
         }
       }
       wrapper.appendChild(this.telInput);
+      this._updateInputPadding();
       if (hiddenInput) {
         const telInputName = this.telInput.getAttribute("name") || "";
         const names = hiddenInput(telInputName);
@@ -1846,7 +2095,7 @@ var factoryOutput = (() => {
         c.nodeById[this.id] = listItem;
         let content = "";
         if (this.options.showFlags) {
-          content += `<div class='iti__flag-box'><div class='iti__flag iti__${c.iso2}'></div></div>`;
+          content += `<div class='iti__flag iti__${c.iso2}'></div>`;
         }
         content += `<span class='iti__country-name'>${c.name}</span>`;
         content += `<span class='iti__dial-code'>+${c.dialCode}</span>`;
@@ -1992,22 +2241,25 @@ var factoryOutput = (() => {
         }
       }
     }
+    _openDropdownWithPlus() {
+      this._openDropdown();
+      this.searchInput.value = "+";
+      this._filterCountries("", true);
+    }
     //* Initialize the tel input listeners.
     _initTelInputListeners() {
-      const { strictMode, formatAsYouType, separateDialCode, formatOnDisplay } = this.options;
+      const { strictMode, formatAsYouType, separateDialCode, formatOnDisplay, allowDropdown, countrySearch } = this.options;
       let userOverrideFormatting = false;
-      const openDropdownWithPlus = () => {
-        this._openDropdown();
-        this.searchInput.value = "+";
-        this._filterCountries("", true);
-      };
+      if (/\p{L}/u.test(this.telInput.value)) {
+        userOverrideFormatting = true;
+      }
       this._handleInputEvent = (e) => {
-        if (this.isAndroid && e?.data === "+" && separateDialCode) {
+        if (this.isAndroid && e?.data === "+" && separateDialCode && allowDropdown && countrySearch) {
           const currentCaretPos = this.telInput.selectionStart || 0;
           const valueBeforeCaret = this.telInput.value.substring(0, currentCaretPos - 1);
           const valueAfterCaret = this.telInput.value.substring(currentCaretPos);
           this.telInput.value = valueBeforeCaret + valueAfterCaret;
-          openDropdownWithPlus();
+          this._openDropdownWithPlus();
           return;
         }
         if (this._updateCountryFromNumber(this.telInput.value)) {
@@ -2036,21 +2288,23 @@ var factoryOutput = (() => {
       if (strictMode || separateDialCode) {
         this._handleKeydownEvent = (e) => {
           if (e.key && e.key.length === 1 && !e.altKey && !e.ctrlKey && !e.metaKey) {
-            if (separateDialCode && e.key === "+") {
+            if (separateDialCode && allowDropdown && countrySearch && e.key === "+") {
               e.preventDefault();
-              openDropdownWithPlus();
+              this._openDropdownWithPlus();
               return;
             }
             if (strictMode) {
               const isInitialPlus = this.telInput.selectionStart === 0 && e.key === "+";
               const isNumeric = /^[0-9]$/.test(e.key);
-              const isAllowedChar = isInitialPlus || isNumeric;
+              const isAllowedChar = separateDialCode ? isNumeric : isInitialPlus || isNumeric;
               const fullNumber = this._getFullNumber();
               const coreNumber = intlTelInput.utils.getCoreNumber(fullNumber, this.selectedCountryData.iso2);
               const hasReachedMaxLength = this.maxCoreNumberLength && coreNumber.length >= this.maxCoreNumberLength;
               const selectedText = this.telInput.value.substring(this.telInput.selectionStart, this.telInput.selectionEnd);
               const hasSelectedDigit = /\d/.test(selectedText);
-              if (!isAllowedChar || hasReachedMaxLength && !hasSelectedDigit) {
+              const currentCaretPos = this.telInput.selectionStart || 0;
+              const cursorAtEnd = currentCaretPos === this.telInput.value.length;
+              if (!isAllowedChar || hasReachedMaxLength && !hasSelectedDigit && cursorAtEnd) {
                 e.preventDefault();
               }
             }
@@ -2211,8 +2465,9 @@ var factoryOutput = (() => {
       for (let i = 0; i < this.countries.length; i++) {
         const c = this.countries[i];
         const normalisedCountryName = normaliseString(c.name);
+        const countryInitials = c.name.split(/[^a-zA-ZÀ-ÿа-яА-Я]/).map((word) => word[0]).join("").toLowerCase();
         const fullDialCode = `+${c.dialCode}`;
-        if (isReset || normalisedCountryName.includes(normalisedQuery) || fullDialCode.includes(normalisedQuery) || c.iso2.includes(normalisedQuery)) {
+        if (isReset || normalisedCountryName.includes(normalisedQuery) || fullDialCode.includes(normalisedQuery) || c.iso2.includes(normalisedQuery) || countryInitials.includes(normalisedQuery)) {
           const listItem = c.nodeById[this.id];
           if (listItem) {
             this.countryList.appendChild(listItem);
@@ -2378,17 +2633,23 @@ var factoryOutput = (() => {
       if (separateDialCode) {
         const dialCode = this.selectedCountryData.dialCode ? `+${this.selectedCountryData.dialCode}` : "";
         this.selectedDialCode.innerHTML = dialCode;
-        const selectedCountryWidth = this.selectedCountry.offsetWidth || this._getHiddenSelectedCountryWidth();
-        const inputPadding = selectedCountryWidth + 8;
-        if (this.isRTL) {
-          this.telInput.style.paddingRight = `${inputPadding}px`;
-        } else {
-          this.telInput.style.paddingLeft = `${inputPadding}px`;
-        }
+        this._updateInputPadding();
       }
       this._updatePlaceholder();
       this._updateMaxLength();
       return prevCountry.iso2 !== iso2;
+    }
+    //* Update the input padding to make space for the selected country/dial code.
+    _updateInputPadding() {
+      if (this.selectedCountry) {
+        const selectedCountryWidth = this.selectedCountry.offsetWidth || this._getHiddenSelectedCountryWidth();
+        const inputPadding = selectedCountryWidth + 6;
+        if (this.showSelectedCountryOnLeft) {
+          this.telInput.style.paddingLeft = `${inputPadding}px`;
+        } else {
+          this.telInput.style.paddingRight = `${inputPadding}px`;
+        }
+      }
     }
     //* Update the maximum valid number length for the currently selected country.
     _updateMaxLength() {
@@ -2735,18 +2996,38 @@ var factoryOutput = (() => {
     }
     //* Validate the input val
     isValidNumber() {
-      const val = this._getFullNumber();
-      if (/\p{L}/u.test(val)) {
+      if (!this.selectedCountryData.iso2) {
         return false;
       }
+      const val = this._getFullNumber();
+      const alphaCharPosition = val.search(/\p{L}/u);
+      if (alphaCharPosition > -1) {
+        const beforeAlphaChar = val.substring(0, alphaCharPosition);
+        const beforeAlphaIsValid = this._utilsIsPossibleNumber(beforeAlphaChar);
+        const isValid = this._utilsIsPossibleNumber(val);
+        return beforeAlphaIsValid && isValid;
+      }
+      return this._utilsIsPossibleNumber(val);
+    }
+    _utilsIsPossibleNumber(val) {
       return intlTelInput.utils ? intlTelInput.utils.isPossibleNumber(val, this.selectedCountryData.iso2, this.options.validationNumberType) : null;
     }
     //* Validate the input val (precise)
     isValidNumberPrecise() {
-      const val = this._getFullNumber();
-      if (/\p{L}/u.test(val)) {
+      if (!this.selectedCountryData.iso2) {
         return false;
       }
+      const val = this._getFullNumber();
+      const alphaCharPosition = val.search(/\p{L}/u);
+      if (alphaCharPosition > -1) {
+        const beforeAlphaChar = val.substring(0, alphaCharPosition);
+        const beforeAlphaIsValid = this._utilsIsValidNumber(beforeAlphaChar);
+        const isValid = this._utilsIsValidNumber(val);
+        return beforeAlphaIsValid && isValid;
+      }
+      return this._utilsIsValidNumber(val);
+    }
+    _utilsIsValidNumber(val) {
       return intlTelInput.utils ? intlTelInput.utils.isValidNumber(val, this.selectedCountryData.iso2) : null;
     }
     //* Update the selected country, and update the input val accordingly.
@@ -2774,6 +3055,14 @@ var factoryOutput = (() => {
       this.options.placeholderNumberType = type;
       this._updatePlaceholder();
     }
+    setDisabled(disabled) {
+      this.telInput.disabled = disabled;
+      if (disabled) {
+        this.selectedCountry.setAttribute("disabled", "true");
+      } else {
+        this.selectedCountry.removeAttribute("disabled");
+      }
+    }
   };
   var loadUtils = (path) => {
     if (!intlTelInput.utils && !intlTelInput.startedLoadingUtilsScript) {
@@ -2781,6 +3070,7 @@ var factoryOutput = (() => {
       return new Promise((resolve, reject) => {
         import_INTENTIONALLY_BROKEN(
           /* webpackIgnore: true */
+          /* @vite-ignore */
           path
         ).then(({ default: utils2 }) => {
           intlTelInput.utils = utils2;
@@ -2816,7 +3106,7 @@ var factoryOutput = (() => {
       //* A map from instance ID to instance object.
       instances: {},
       loadUtils,
-      version: "23.7.3"
+      version: "24.4.0"
     }
   );
   var intl_tel_input_default = intlTelInput;
@@ -3552,7 +3842,7 @@ var factoryOutput = (() => {
         ,
         [, , "[29]\\d{8}", , , , , , , [9]],
         [, , "2\\d(?:[0134][25-9]|[25-9]\\d)\\d{5}", , , , "222123456"],
-        [, , "9[1-579]\\d{7}", , , , "923123456"],
+        [, , "9[1-79]\\d{7}", , , , "923123456"],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
@@ -3884,7 +4174,7 @@ var factoryOutput = (() => {
       BD: [, [, , "[1-469]\\d{9}|8[0-79]\\d{7,8}|[2-79]\\d{8}|[2-9]\\d{7}|[3-9]\\d{6}|[57-9]\\d{5}", , , , , , , [6, 7, 8, 9, 10]], [
         ,
         ,
-        "(?:4(?:31\\d\\d|423)|5222)\\d{3}(?:\\d{2})?|8332[6-9]\\d\\d|(?:3(?:03[56]|224)|4(?:22[25]|653))\\d{3,4}|(?:3(?:42[47]|529|823)|4(?:027|525|65(?:28|8))|562|6257|7(?:1(?:5[3-5]|6[12]|7[156]|89)|22[589]56|32|42675|52(?:[25689](?:56|8)|[347]8)|71(?:6[1267]|75|89)|92374)|82(?:2[59]|32)56|9(?:03[23]56|23(?:256|373)|31|5(?:1|2[4589]56)))\\d{3}|(?:3(?:02[348]|22[35]|324|422)|4(?:22[67]|32[236-9]|6(?:2[46]|5[57])|953)|5526|6(?:024|6655)|81)\\d{4,5}|(?:2(?:7(?:1[0-267]|2[0-289]|3[0-29]|4[01]|5[1-3]|6[013]|7[0178]|91)|8(?:0[125]|1[1-6]|2[0157-9]|3[1-69]|41|6[1-35]|7[1-5]|8[1-8]|9[0-6])|9(?:0[0-2]|1[0-4]|2[568]|3[3-6]|5[5-7]|6[0136-9]|7[0-7]|8[014-9]))|3(?:0(?:2[025-79]|3[2-4])|181|22[12]|32[2356]|824)|4(?:02[09]|22[348]|32[045]|523|6(?:27|54))|666(?:22|53)|7(?:22[57-9]|42[56]|82[35])8|8(?:0[124-9]|2(?:181|2[02-4679]8)|4[12]|[5-7]2)|9(?:[04]2|2(?:2|328)|81))\\d{4}|(?:2(?:2\\d|[45])\\d\\d|3(?:1(?:2[5-7]|[5-7])|425|822)|4(?:033|1\\d|[257]1|332|4(?:2[246]|5[25])|6(?:2[35]|56|62)|8(?:23|54)|92[2-5])|5(?:02[03489]|22[457]|32[35-79]|42[46]|6(?:[18]|53)|724|826)|6(?:023|2(?:2[2-5]|5[3-5]|8)|32[3478]|42[34]|52[47]|6(?:[18]|6(?:2[34]|5[24]))|[78]2[2-5]|92[2-6])|7(?:02|21\\d|[3-589]1|6[12]|72[24])|8(?:217|3[12]|[5-7]1)|9[24]1)\\d{5}|(?:(?:3[2-8]|5[2-57-9]|6[03-589])1|4[4689][18])\\d{5}|[59]1\\d{5}",
+        "(?:4(?:31\\d\\d|423)|5222)\\d{3}(?:\\d{2})?|8332[6-9]\\d\\d|(?:3(?:03[56]|224)|4(?:22[25]|653))\\d{3,4}|(?:3(?:42[47]|529|823)|4(?:027|525|65(?:28|8))|562|6257|7(?:1(?:5[3-5]|6[12]|7[156]|89)|22[589]56|32|42675|52(?:[25689](?:56|8)|[347]8)|71(?:6[1267]|75|89)|92374)|82(?:2[59]|32)56|9(?:03[23]56|23(?:256|373)|31|5(?:1|2[4589]56)))\\d{3}|(?:3(?:02[348]|22[35]|324|422)|4(?:22[67]|32[236-9]|6(?:2[46]|5[57])|953)|5526|6(?:024|6655)|81)\\d{4,5}|(?:2(?:7(?:1[0-267]|2[0-289]|3[0-29]|4[01]|5[1-3]|6[013]|7[0178]|91)|8(?:0[125]|1[1-6]|2[0157-9]|3[1-69]|41|6[1-35]|7[1-5]|8[1-8]|9[0-6])|9(?:0[0-2]|1[0-4]|2[568]|3[3-6]|5[5-7]|6[0136-9]|7[0-7]|8[014-9]))|3(?:0(?:2[025-79]|3[2-4])|181|22[12]|32[2356]|824)|4(?:02[09]|22[348]|32[045]|523|6(?:27|54))|666(?:22|53)|7(?:22[57-9]|42[56]|82[35])8|8(?:0[124-9]|2(?:181|2[02-4679]8)|4[12]|[5-7]2)|9(?:[04]2|2(?:2|328)|81))\\d{4}|(?:2(?:[23]\\d|[45])\\d\\d|3(?:1(?:2[5-7]|[5-7])|425|822)|4(?:033|1\\d|[257]1|332|4(?:2[246]|5[25])|6(?:2[35]|56|62)|8(?:23|54)|92[2-5])|5(?:02[03489]|22[457]|32[35-79]|42[46]|6(?:[18]|53)|724|826)|6(?:023|2(?:2[2-5]|5[3-5]|8)|32[3478]|42[34]|52[47]|6(?:[18]|6(?:2[34]|5[24]))|[78]2[2-5]|92[2-6])|7(?:02|21\\d|[3-589]1|6[12]|72[24])|8(?:217|3[12]|[5-7]1)|9[24]1)\\d{5}|(?:(?:3[2-8]|5[2-57-9]|6[03-589])1|4[4689][18])\\d{5}|[59]1\\d{5}",
         ,
         ,
         ,
@@ -3895,7 +4185,7 @@ var factoryOutput = (() => {
         "$1-$2",
         ["3(?:[67]|8[013-9])|4(?:6[168]|7|[89][18])|5(?:6[128]|9)|6(?:[15]|28|4[14])|7[2-589]|8(?:0[014-9]|[12])|9[358]|(?:3[2-5]|4[235]|5[2-578]|6[0389]|76|8[3-7]|9[24])1|(?:44|66)[01346-9]"],
         "0$1"
-      ], [, "(\\d{4})(\\d{3,6})", "$1-$2", ["[13-9]|22"], "0$1"], [, "(\\d)(\\d{7,8})", "$1-$2", ["2"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      ], [, "(\\d{4})(\\d{3,6})", "$1-$2", ["[13-9]|2[23]"], "0$1"], [, "(\\d)(\\d{7,8})", "$1-$2", ["2"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       BE: [, [, , "4\\d{8}|[1-9]\\d{7}", , , , , , , [8, 9]], [, , "80[2-8]\\d{5}|(?:1[0-69]|[23][2-8]|4[23]|5\\d|6[013-57-9]|71|8[1-79]|9[2-4])\\d{6}", , , , "12345678", , , [8]], [, , "4[5-9]\\d{7}", , , , "470123456", , , [9]], [, , "800[1-9]\\d{4}", , , , "80012345", , , [8]], [, , "(?:70(?:2[0-57]|3[04-7]|44|6[4-69]|7[0579])|90\\d\\d)\\d{4}", , , , "90012345", , , [8]], [
         ,
         ,
@@ -3919,7 +4209,7 @@ var factoryOutput = (() => {
         ,
         ,
         [8]
-      ], [, , "2(?:0(?:49|5[23]|6[5-7]|9[016-9])|4(?:4[569]|5[4-6]|6[5-7]|7[0179])|5(?:[34]\\d|50|6[5-7]))\\d{4}", , , , "20491234"], [, , "(?:0[1-35-7]|5[0-8]|[67]\\d)\\d{6}", , , , "70123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "BF", 226, "00", , , , , , , , [[, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[025-7]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      ], [, , "2(?:0(?:49|5[23]|6[5-7]|9[016-9])|4(?:4[569]|5[4-6]|6[5-7]|7[0179])|5(?:[34]\\d|50|6[5-7]))\\d{4}", , , , "20491234"], [, , "(?:0[1-7]|5[0-8]|[67]\\d)\\d{6}", , , , "70123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "BF", 226, "00", , , , , , , , [[, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[025-7]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       BG: [
         ,
         [, , "00800\\d{7}|[2-7]\\d{6,7}|[89]\\d{6,8}|2\\d{5}", , , , , , , [6, 7, 8, 9, 12], [4, 5]],
@@ -3984,8 +4274,8 @@ var factoryOutput = (() => {
       BJ: [
         ,
         [, , "[24-689]\\d{7}", , , , , , , [8]],
-        [, , "2(?:02|1[037]|2[45]|3[68]|4\\d)\\d{5}", , , , "20211234"],
-        [, , "(?:4[0-7]|[56]\\d|9[013-9])\\d{6}", , , , "90011234"],
+        [, , "2090\\d{4}|2(?:02|1[037]|2[45]|3[68]|4\\d)\\d{5}", , , , "20211234"],
+        [, , "(?:4[0-8]|[56]\\d|9[013-9])\\d{6}", , , , "90011234"],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
@@ -4225,73 +4515,60 @@ var factoryOutput = (() => {
       CD: [, [
         ,
         ,
-        "[189]\\d{8}|[1-68]\\d{6}",
+        "(?:(?:[189]|5\\d)\\d|2)\\d{7}|[1-68]\\d{6}",
         ,
         ,
         ,
         ,
         ,
         ,
-        [7, 9]
-      ], [, , "12\\d{7}|[1-6]\\d{6}", , , , "1234567"], [, , "88\\d{5}|(?:8[0-69]|9[017-9])\\d{7}", , , , "991234567"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CD", 243, "00", "0", , , "0", , , , [[, "(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["88"], "0$1"], [, "(\\d{2})(\\d{5})", "$1 $2", ["[1-6]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[89]"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CF: [, [
+        [7, 8, 9, 10]
+      ], [, , "(?:(?:12|573)\\d\\d|276)\\d{5}|[1-6]\\d{6}", , , , "1234567"], [, , "88\\d{5}|(?:8[0-69]|9[017-9])\\d{7}", , , , "991234567", , , [7, 9]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CD", 243, "00", "0", , , "0", , , , [[, "(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["88"], "0$1"], [, "(\\d{2})(\\d{5})", "$1 $2", ["[1-6]"], "0$1"], [, "(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"], [
+        ,
+        "(\\d{3})(\\d{3})(\\d{3})",
+        "$1 $2 $3",
+        ["[89]"],
+        "0$1"
+      ], [, "(\\d{2})(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["5"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CF: [, [, , "(?:[27]\\d{3}|8776)\\d{4}", , , , , , , [8]], [, , "2[12]\\d{6}", , , , "21612345"], [, , "7[024-7]\\d{6}", , , , "70012345"], [, , , , , , , , , [-1]], [, , "8776\\d{4}", , , , "87761234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CF", 236, "00", , , , , , , , [[, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[278]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CG: [, [, , "222\\d{6}|(?:0\\d|80)\\d{7}", , , , , , , [9]], [, , "222[1-589]\\d{5}", , , , "222123456"], [, , "026(?:1[0-5]|6[6-9])\\d{4}|0(?:[14-6]\\d\\d|2(?:40|5[5-8]|6[07-9]))\\d{5}", , , , "061234567"], [, , , , , , , , , [-1]], [, , "80[0-2]\\d{6}", , , , "800123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CG", 242, "00", , , , , , , , [[, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["8"]], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[02]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CH: [, [
         ,
         ,
-        "(?:[27]\\d{3}|8776)\\d{4}",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [8]
-      ], [, , "2[12]\\d{6}", , , , "21612345"], [, , "7[024-7]\\d{6}", , , , "70012345"], [, , , , , , , , , [-1]], [, , "8776\\d{4}", , , , "87761234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CF", 236, "00", , , , , , , , [[, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[278]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CG: [, [, , "222\\d{6}|(?:0\\d|80)\\d{7}", , , , , , , [9]], [, , "222[1-589]\\d{5}", , , , "222123456"], [
-        ,
-        ,
-        "026(?:1[0-5]|6[6-9])\\d{4}|0(?:[14-6]\\d\\d|2(?:40|5[5-8]|6[07-9]))\\d{5}",
-        ,
-        ,
-        ,
-        "061234567"
-      ], [, , , , , , , , , [-1]], [, , "80[0-2]\\d{6}", , , , "800123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CG", 242, "00", , , , , , , , [[, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["8"]], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[02]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CH: [, [, , "8\\d{11}|[2-9]\\d{8}", , , , , , , [9, 12]], [, , "(?:2[12467]|3[1-4]|4[134]|5[256]|6[12]|[7-9]1)\\d{7}", , , , "212345678", , , [9]], [, , "(?:6[89]|7[235-9])\\d{7}", , , , "781234567", , , [9]], [
-        ,
-        ,
-        "800\\d{6}",
-        ,
-        ,
-        ,
-        "800123456",
-        ,
-        ,
-        [9]
-      ], [, , "90[016]\\d{6}", , , , "900123456", , , [9]], [, , "84[0248]\\d{6}", , , , "840123456", , , [9]], [, , "878\\d{6}", , , , "878123456", , , [9]], [, , , , , , , , , [-1]], "CH", 41, "00", "0", , , "0", , , , [[, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8[047]|90"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]|81"], "0$1"], [, "(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["8"], "0$1"]], , [, , "74[0248]\\d{6}", , , , "740123456", , , [9]], , , [, , , , , , , , , [-1]], [, , "5[18]\\d{7}", , , , "581234567", , , [9]], , , [
-        ,
-        ,
-        "860\\d{9}",
-        ,
-        ,
-        ,
-        "860123456789",
-        ,
-        ,
-        [12]
-      ]],
-      CI: [, [, , "[02]\\d{9}", , , , , , , [10]], [, , "2(?:[15]\\d{3}|7(?:2(?:0[23]|1[2357]|2[245]|3[45]|4[3-5])|3(?:06|1[69]|[2-6]7)))\\d{5}", , , , "2123456789"], [, , "0[157]\\d{8}", , , , "0123456789"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CI", 225, "00", , , , , , , , [[, "(\\d{2})(\\d{2})(\\d)(\\d{5})", "$1 $2 $3 $4", ["2"]], [, "(\\d{2})(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3 $4", ["0"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CK: [, [
-        ,
-        ,
-        "[2-578]\\d{4}",
+        "8\\d{11}|[2-9]\\d{8}",
         ,
         ,
         ,
         ,
         ,
         ,
-        [5]
-      ], [, , "(?:2\\d|3[13-7]|4[1-5])\\d{3}", , , , "21234"], [, , "[578]\\d{4}", , , , "71234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CK", 682, "00", , , , , , , , [[, "(\\d{2})(\\d{3})", "$1 $2", ["[2-578]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CL: [, [, , "12300\\d{6}|6\\d{9,10}|[2-9]\\d{8}", , , , , , , [9, 10, 11]], [
+        [9, 12]
+      ], [, , "(?:2[12467]|3[1-4]|4[134]|5[256]|6[12]|[7-9]1)\\d{7}", , , , "212345678", , , [9]], [, , "(?:6[89]|7[235-9])\\d{7}", , , , "781234567", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "90[016]\\d{6}", , , , "900123456", , , [9]], [, , "84[0248]\\d{6}", , , , "840123456", , , [9]], [, , "878\\d{6}", , , , "878123456", , , [9]], [, , , , , , , , , [-1]], "CH", 41, "00", "0", , , "0", , , , [[, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8[047]|90"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]|81"], "0$1"], [
+        ,
+        "(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})",
+        "$1 $2 $3 $4 $5",
+        ["8"],
+        "0$1"
+      ]], , [, , "74[0248]\\d{6}", , , , "740123456", , , [9]], , , [, , , , , , , , , [-1]], [, , "5[18]\\d{7}", , , , "581234567", , , [9]], , , [, , "860\\d{9}", , , , "860123456789", , , [12]]],
+      CI: [, [, , "[02]\\d{9}", , , , , , , [10]], [, , "2(?:[15]\\d{3}|7(?:2(?:0[23]|1[2357]|2[245]|3[45]|4[3-5])|3(?:06|1[69]|[2-6]7)))\\d{5}", , , , "2123456789"], [, , "0[157]\\d{8}", , , , "0123456789"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CI", 225, "00", , , , , , , , [[
+        ,
+        "(\\d{2})(\\d{2})(\\d)(\\d{5})",
+        "$1 $2 $3 $4",
+        ["2"]
+      ], [, "(\\d{2})(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3 $4", ["0"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CK: [, [, , "[2-578]\\d{4}", , , , , , , [5]], [, , "(?:2\\d|3[13-7]|4[1-5])\\d{3}", , , , "21234"], [, , "[578]\\d{4}", , , , "71234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CK", 682, "00", , , , , , , , [[, "(\\d{2})(\\d{3})", "$1 $2", ["[2-578]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CL: [, [
+        ,
+        ,
+        "12300\\d{6}|6\\d{9,10}|[2-9]\\d{8}",
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        [9, 10, 11]
+      ], [, , "2(?:1982[0-6]|3314[05-9])\\d{3}|(?:2(?:1(?:160|962)|3(?:2\\d\\d|3(?:[03467]\\d|1[0-35-9]|2[1-9]|5[0-24-9]|8[0-3])|600)|646[59])|80[1-9]\\d\\d|9(?:3(?:[0-57-9]\\d\\d|6(?:0[02-9]|[1-9]\\d))|6(?:[0-8]\\d\\d|9(?:[02-79]\\d|1[05-9]))|7[1-9]\\d\\d|9(?:[03-9]\\d\\d|1(?:[0235-9]\\d|4[0-24-9])|2(?:[0-79]\\d|8[0-46-9]))))\\d{4}|(?:22|3[2-5]|[47][1-35]|5[1-3578]|6[13-57]|8[1-9]|9[2458])\\d{7}", , , , "221234567", , , [9]], [
         ,
         ,
         "2(?:1982[0-6]|3314[05-9])\\d{3}|(?:2(?:1(?:160|962)|3(?:2\\d\\d|3(?:[03467]\\d|1[0-35-9]|2[1-9]|5[0-24-9]|8[0-3])|600)|646[59])|80[1-9]\\d\\d|9(?:3(?:[0-57-9]\\d\\d|6(?:0[02-9]|[1-9]\\d))|6(?:[0-8]\\d\\d|9(?:[02-79]\\d|1[05-9]))|7[1-9]\\d\\d|9(?:[03-9]\\d\\d|1(?:[0235-9]\\d|4[0-24-9])|2(?:[0-79]\\d|8[0-46-9]))))\\d{4}|(?:22|3[2-5]|[47][1-35]|5[1-3578]|6[13-57]|8[1-9]|9[2458])\\d{7}",
@@ -4302,39 +4579,58 @@ var factoryOutput = (() => {
         ,
         ,
         [9]
-      ], [, , "2(?:1982[0-6]|3314[05-9])\\d{3}|(?:2(?:1(?:160|962)|3(?:2\\d\\d|3(?:[03467]\\d|1[0-35-9]|2[1-9]|5[0-24-9]|8[0-3])|600)|646[59])|80[1-9]\\d\\d|9(?:3(?:[0-57-9]\\d\\d|6(?:0[02-9]|[1-9]\\d))|6(?:[0-8]\\d\\d|9(?:[02-79]\\d|1[05-9]))|7[1-9]\\d\\d|9(?:[03-9]\\d\\d|1(?:[0235-9]\\d|4[0-24-9])|2(?:[0-79]\\d|8[0-46-9]))))\\d{4}|(?:22|3[2-5]|[47][1-35]|5[1-3578]|6[13-57]|8[1-9]|9[2458])\\d{7}", , , , "221234567", , , [9]], [, , "(?:123|8)00\\d{6}", , , , "800123456", , , [9, 11]], [, , , , , , , , , [-1]], [
-        ,
-        ,
-        "600\\d{7,8}",
-        ,
-        ,
-        ,
-        "6001234567",
-        ,
-        ,
-        [10, 11]
-      ], [, , , , , , , , , [-1]], [, , "44\\d{7}", , , , "441234567", , , [9]], "CL", 56, "(?:0|1(?:1[0-69]|2[02-5]|5[13-58]|69|7[0167]|8[018]))0", , , , , , , 1, [[, "(\\d{4})", "$1", ["1(?:[03-589]|21)|[29]0|78"]], [, "(\\d{5})(\\d{4})", "$1 $2", ["219", "2196"], "($1)"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[1-36]"], "($1)"], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["9[2-9]"]], [
+      ], [, , "(?:123|8)00\\d{6}", , , , "800123456", , , [9, 11]], [, , , , , , , , , [-1]], [, , "600\\d{7,8}", , , , "6001234567", , , [10, 11]], [, , , , , , , , , [-1]], [, , "44\\d{7}", , , , "441234567", , , [9]], "CL", 56, "(?:0|1(?:1[0-69]|2[02-5]|5[13-58]|69|7[0167]|8[018]))0", , , , , , , 1, [
+        [, "(\\d{4})", "$1", ["1(?:[03-589]|21)|[29]0|78"]],
+        [, "(\\d{5})(\\d{4})", "$1 $2", ["219", "2196"], "($1)"],
+        [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]],
+        [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[1-36]"], "($1)"],
+        [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["9[2-9]"]],
+        [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["3[2-5]|[47]|5[1-3578]|6[13-57]|8(?:0[1-9]|[1-9])"], "($1)"],
+        [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["60|8"]],
+        [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]],
+        [, "(\\d{3})(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["60"]]
+      ], [[, "(\\d{5})(\\d{4})", "$1 $2", ["219", "2196"], "($1)"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[1-36]"], "($1)"], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["9[2-9]"]], [
         ,
         "(\\d{2})(\\d{3})(\\d{4})",
         "$1 $2 $3",
         ["3[2-5]|[47]|5[1-3578]|6[13-57]|8(?:0[1-9]|[1-9])"],
         "($1)"
-      ], [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["60|8"]], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], [, "(\\d{3})(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["60"]]], [[, "(\\d{5})(\\d{4})", "$1 $2", ["219", "2196"], "($1)"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[1-36]"], "($1)"], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["9[2-9]"]], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["3[2-5]|[47]|5[1-3578]|6[13-57]|8(?:0[1-9]|[1-9])"], "($1)"], [
+      ], [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["60|8"]], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], [, "(\\d{3})(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["60"]]], [, , , , , , , , , [-1]], , , [, , "600\\d{7,8}", , , , , , , [10, 11]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CM: [
         ,
-        "(\\d{3})(\\d{3})(\\d{3,4})",
-        "$1 $2 $3",
-        ["60|8"]
-      ], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], [, "(\\d{3})(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["60"]]], [, , , , , , , , , [-1]], , , [, , "600\\d{7,8}", , , , , , , [10, 11]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CM: [, [, , "[26]\\d{8}|88\\d{6,7}", , , , , , , [8, 9]], [, , "2(?:22|33)\\d{6}", , , , "222123456", , , [9]], [, , "(?:24[23]|6[25-9]\\d)\\d{6}", , , , "671234567", , , [9]], [, , "88\\d{6,7}", , , , "88012345"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CM", 237, "00", , , , , , , , [[
+        [, , "[26]\\d{8}|88\\d{6,7}", , , , , , , [8, 9]],
+        [, , "2(?:22|33)\\d{6}", , , , "222123456", , , [9]],
+        [, , "(?:24[23]|6(?:[25-9]\\d|40))\\d{6}", , , , "671234567", , , [9]],
+        [, , "88\\d{6,7}", , , , "88012345"],
+        [, , , , , , , , , [-1]],
+        [, , , , , , , , , [-1]],
+        [, , , , , , , , , [-1]],
+        [, , , , , , , , , [-1]],
+        "CM",
+        237,
+        "00",
         ,
-        "(\\d{2})(\\d{2})(\\d{2})(\\d{2})",
-        "$1 $2 $3 $4",
-        ["88"]
-      ], [, "(\\d)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[26]|88"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CN: [, [, , "1[127]\\d{8,9}|2\\d{9}(?:\\d{2})?|[12]\\d{6,7}|86\\d{6}|(?:1[03-689]\\d|6)\\d{7,9}|(?:[3-579]\\d|8[0-57-9])\\d{6,9}", , , , , , , [7, 8, 9, 10, 11, 12], [5, 6]], [
         ,
         ,
-        "(?:10(?:[02-79]\\d\\d|[18](?:0[1-9]|[1-9]\\d))|21(?:[18](?:0[1-9]|[1-9]\\d)|[2-79]\\d\\d))\\d{5}|(?:43[35]|754)\\d{7,8}|8(?:078\\d{7}|51\\d{7,8})|(?:10|(?:2|85)1|43[35]|754)(?:100\\d\\d|95\\d{3,4})|(?:2[02-57-9]|3(?:11|7[179])|4(?:[15]1|3[12])|5(?:1\\d|2[37]|3[12]|51|7[13-79]|9[15])|7(?:[39]1|5[57]|6[09])|8(?:71|98))(?:[02-8]\\d{7}|1(?:0(?:0\\d\\d(?:\\d{3})?|[1-9]\\d{5})|[1-9]\\d{6})|9(?:[0-46-9]\\d{6}|5\\d{3}(?:\\d(?:\\d{2})?)?))|(?:3(?:1[02-9]|35|49|5\\d|7[02-68]|9[1-68])|4(?:1[02-9]|2[179]|3[46-9]|5[2-9]|6[47-9]|7\\d|8[23])|5(?:3[03-9]|4[36]|5[02-9]|6[1-46]|7[028]|80|9[2-46-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[17]\\d|2[248]|3[04-9]|4[3-6]|5[0-3689]|6[2368]|9[02-9])|8(?:1[236-8]|2[5-7]|3\\d|5[2-9]|7[02-9]|8[36-8]|9[1-7])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))(?:[02-8]\\d{6}|1(?:0(?:0\\d\\d(?:\\d{2})?|[1-9]\\d{4})|[1-9]\\d{5})|9(?:[0-46-9]\\d{5}|5\\d{3,5}))",
+        ,
+        ,
+        ,
+        ,
+        [[, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["88"]], [, "(\\d)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[26]|88"]]],
+        ,
+        [, , , , , , , , , [-1]],
+        ,
+        ,
+        [, , , , , , , , , [-1]],
+        [, , , , , , , , , [-1]],
+        ,
+        ,
+        [, , , , , , , , , [-1]]
+      ],
+      CN: [, [, , "(?:(?:1[03-689]|2\\d)\\d\\d|6)\\d{8}|1\\d{10}|[126]\\d{6}(?:\\d(?:\\d{2})?)?|86\\d{5,6}|(?:[3-579]\\d|8[0-57-9])\\d{5,9}", , , , , , , [7, 8, 9, 10, 11, 12], [5, 6]], [
+        ,
+        ,
+        "(?:10(?:[02-79]\\d\\d|[18](?:0[1-9]|[1-9]\\d))|2(?:[02-57-9]\\d{3}|1(?:[18](?:0[1-9]|[1-9]\\d)|[2-79]\\d\\d))|(?:41[03]|8078|9(?:78|94))\\d\\d)\\d{5}|(?:10|2[0-57-9])(?:1(?:00|23)\\d\\d|95\\d{3,4})|(?:41[03]|9(?:78|94))(?:100\\d\\d|95\\d{3,4})|8078123|(?:43[35]|754|851)\\d{7,8}|(?:43[35]|754|851)(?:1(?:00\\d|23)\\d|95\\d{3,4})|(?:3(?:11|7[179])|4(?:[15]1|3[12])|5(?:1\\d|2[37]|3[12]|51|7[13-79]|9[15])|7(?:[39]1|5[57]|6[09])|8(?:71|98))(?:[02-8]\\d{7}|1(?:0(?:0\\d\\d(?:\\d{3})?|[1-9]\\d{5})|[13-9]\\d{6}|2(?:[0-24-9]\\d{5}|3\\d(?:\\d{4})?))|9(?:[0-46-9]\\d{6}|5\\d{3}(?:\\d(?:\\d{2})?)?))|(?:3(?:1[02-9]|35|49|5\\d|7[02-68]|9[1-68])|4(?:1[24-9]|2[179]|3[46-9]|5[2-9]|6[47-9]|7\\d|8[23])|5(?:3[03-9]|4[36]|5[02-9]|6[1-46]|7[028]|80|9[2-46-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[17]\\d|2[248]|3[04-9]|4[3-6]|5[0-3689]|6[2368]|9[02-9])|8(?:1[236-8]|2[5-7]|3\\d|5[2-9]|7[02-9]|8[36-8]|9[1-7])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))(?:[02-8]\\d{6}|1(?:0(?:0\\d\\d(?:\\d{2})?|[1-9]\\d{4})|[13-9]\\d{5}|2(?:[0-24-9]\\d{4}|3\\d(?:\\d{3})?))|9(?:[0-46-9]\\d{5}|5\\d{3,5}))",
         ,
         ,
         ,
@@ -4357,12 +4653,27 @@ var factoryOutput = (() => {
         [5, 6]
       ], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CN", 86, "00|1(?:[12]\\d|79)\\d\\d00", "0", , , "(1(?:[12]\\d|79)\\d\\d)|0", , "00", , [
         [, "(\\d{5,6})", "$1", ["1(?:00|2[13])|9[56]", "1(?:00|2(?:1|39))|9[56]", "1(?:00|2(?:1|395))|9[56]"]],
-        [, "(\\d{5,6})", "$1", ["10"]],
-        [, "(\\d{2})(\\d{5,6})", "$1 $2", ["(?:10|2[0-57-9])[19]", "(?:10|2[0-57-9])(?:10|9[56])", "10(?:10|9[56])|2[0-57-9](?:100|9[56])"], "0$1", "$CC $1"],
+        [, "(\\d{5,6})", "$1", ["1(?:0|23)|781|[1-9]12", "1(?:0|23)|7812|[1-9]123", "1(?:0|23(?:[0-8]|9[0-46-9]))|78123|[1-9]123"]],
+        [
+          ,
+          "(\\d{2})(\\d{5,6})",
+          "$1 $2",
+          [
+            "(?:10|2[0-57-9])[19]|3(?:[157]|35|49|9[1-68])|4(?:1[124-9]|2[179]|6[47-9]|7|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:07|1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3|4[13]|5[1-5]|7[0-79]|9[0-35-9])|(?:4[35]|59|85)[1-9]",
+            "(?:10|2[0-57-9])(?:1[02]|9[56])|8078|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))1",
+            "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|80781|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))12",
+            "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|807812|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123",
+            "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:078|1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123"
+          ],
+          "0$1",
+          "$CC $1"
+        ],
         [, "(\\d{3})(\\d{4})", "$1 $2", [
           "[1-9]",
           "1[1-9]|26|[3-9]|(?:10|2[0-57-9])(?:[0-8]|9[0-47-9])",
-          "1(?:0(?:[0-8]|9[0-47-9])|[1-9])|2(?:[0-57-9](?:[02-8]|1(?:0[1-9]|[1-9])|9[0-47-9])|6)|[3-9]"
+          "1(?:0(?:[02-8]|1(?:[013-9]|2[0-24-9])|9[0-47-9])|[1-9])|2(?:[0-57-9](?:[02-8]|1(?:0[1-9]|[13-9]|2[0-24-9])|9[0-47-9])|6)|[3-9]",
+          "1(?:0(?:[02-8]|1(?:[013-9]|2[0-24-9])|9[0-47-9])|[1-9])|2(?:[0-57-9](?:[02-8]|1(?:0[1-9]|[13-9]|2[0-24-9])|9[0-47-9])|6)|3(?:[0268]|3[0-46-9]|4[0-8]|9[079])|4(?:[049]|1[03]|2[02-68]|[35]0|6[0-356]|8[014-9])|5(?:0|2[0-24-689]|4[0-2457-9]|6[057-9]|8[1-9]|90)|6(?:[0-24578]|3[06-9]|6[14-79]|9[03-9])|7(?:0[02-9]|2[0135-79]|3[23]|4[0-27-9]|6[1457]|8)|8(?:[046]|1[01459]|2[0-489]|50|8[0-2459]|9[09])|9(?:0[0457]|1[08]|[268]|4[024-9]|5[06-9]|78|94)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))(?:[02-9]|1(?:[013-9]|2[0-24-9]))",
+          "1(?:0(?:[02-8]|1(?:[013-9]|2[0-24-9])|9[0-47-9])|[1-9])|2(?:[0-57-9](?:[02-8]|1(?:0[1-9]|[13-9]|2[0-24-9])|9[0-47-9])|6)|3(?:[0268]|3[0-46-9]|4[0-8]|9[079])|4(?:[049]|1[03]|2[02-68]|[35]0|6[0-356]|8[014-9])|5(?:0|2[0-24-689]|4[0-2457-9]|6[057-9]|8[1-9]|90)|6(?:[0-24578]|3[06-9]|6[14-79]|9[03-9])|7(?:0[02-9]|2[0135-79]|3[23]|4[0-27-9]|6[1457]|8)|8(?:0(?:[0-689]|7[0-79])|1[01459]|2[0-489]|[46]|50|8[0-2459]|9[09])|9(?:0[0457]|1[08]|[268]|4[024-9]|5[06-9]|78|94)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:078|1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))(?:[02-9]|1(?:[013-9]|2[0-24-9]))"
         ]],
         [, "(\\d{4})(\\d{4})", "$1 $2", ["16[08]"]],
         [
@@ -4397,155 +4708,176 @@ var factoryOutput = (() => {
         [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[3-578]"], "0$1", "$CC $1", 1],
         [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["1[3-9]"], , "$CC $1"],
         [, "(\\d{2})(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["[12]"], "0$1", , 1]
+      ], [[
+        ,
+        "(\\d{2})(\\d{5,6})",
+        "$1 $2",
+        [
+          "(?:10|2[0-57-9])[19]|3(?:[157]|35|49|9[1-68])|4(?:1[124-9]|2[179]|6[47-9]|7|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:07|1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3|4[13]|5[1-5]|7[0-79]|9[0-35-9])|(?:4[35]|59|85)[1-9]",
+          "(?:10|2[0-57-9])(?:1[02]|9[56])|8078|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))1",
+          "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|80781|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))12",
+          "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|807812|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123",
+          "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:078|1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123"
+        ],
+        "0$1",
+        "$CC $1"
       ], [
-        [, "(\\d{2})(\\d{5,6})", "$1 $2", ["(?:10|2[0-57-9])[19]", "(?:10|2[0-57-9])(?:10|9[56])", "10(?:10|9[56])|2[0-57-9](?:100|9[56])"], "0$1", "$CC $1"],
-        [, "(\\d{3})(\\d{5,6})", "$1 $2", [
+        ,
+        "(\\d{3})(\\d{5,6})",
+        "$1 $2",
+        [
           "3(?:[157]|35|49|9[1-68])|4(?:[17]|2[179]|6[47-9]|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]|4[13]|5[1-5])|(?:4[35]|59|85)[1-9]",
           "(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))[19]",
           "85[23](?:10|95)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))(?:10|9[56])",
           "85[23](?:100|95)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))(?:100|9[56])"
-        ], "0$1", "$CC $1"],
-        [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["(?:4|80)0"]],
-        [
-          ,
-          "(\\d{2})(\\d{4})(\\d{4})",
-          "$1 $2 $3",
-          ["10|2(?:[02-57-9]|1[1-9])", "10|2(?:[02-57-9]|1[1-9])", "10[0-79]|2(?:[02-57-9]|1[1-79])|(?:10|21)8(?:0[1-9]|[1-9])"],
-          "0$1",
-          "$CC $1",
-          1
         ],
-        [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["3(?:[3-59]|7[02-68])|4(?:[26-8]|3[3-9]|5[2-9])|5(?:3[03-9]|[468]|7[028]|9[2-46-9])|6|7(?:[0-247]|3[04-9]|5[0-4689]|6[2368])|8(?:[1-358]|9[1-7])|9(?:[013479]|5[1-5])|(?:[34]1|55|79|87)[02-9]"], "0$1", "$CC $1", 1],
-        [, "(\\d{3})(\\d{7,8})", "$1 $2", ["9"]],
-        [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["80"], "0$1", "$CC $1", 1],
-        [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[3-578]"], "0$1", "$CC $1", 1],
-        [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["1[3-9]"], , "$CC $1"],
-        [, "(\\d{2})(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["[12]"], "0$1", , 1]
-      ], [, , , , , , , , , [-1]], , , [, , "(?:(?:10|21)8|[48])00\\d{7}|950\\d{7,8}", , , , , , , [10, 11, 12]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CO: [, [, , "(?:60\\d\\d|9101)\\d{6}|(?:1\\d|3)\\d{9}", , , , , , , [10, 11], [7]], [, , "601055(?:[0-4]\\d|50)\\d\\d|6010(?:[0-4]\\d|5[0-4])\\d{4}|60(?:[124-7][2-9]|8[1-9])\\d{6}", , , , "6012345678", , , [10], [7]], [
+        "0$1",
+        "$CC $1"
+      ], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["(?:4|80)0"]], [, "(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["10|2(?:[02-57-9]|1[1-9])", "10|2(?:[02-57-9]|1[1-9])", "10[0-79]|2(?:[02-57-9]|1[1-79])|(?:10|21)8(?:0[1-9]|[1-9])"], "0$1", "$CC $1", 1], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["3(?:[3-59]|7[02-68])|4(?:[26-8]|3[3-9]|5[2-9])|5(?:3[03-9]|[468]|7[028]|9[2-46-9])|6|7(?:[0-247]|3[04-9]|5[0-4689]|6[2368])|8(?:[1-358]|9[1-7])|9(?:[013479]|5[1-5])|(?:[34]1|55|79|87)[02-9]"], "0$1", "$CC $1", 1], [
+        ,
+        "(\\d{3})(\\d{7,8})",
+        "$1 $2",
+        ["9"]
+      ], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["80"], "0$1", "$CC $1", 1], [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[3-578]"], "0$1", "$CC $1", 1], [, "(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["1[3-9]"], , "$CC $1"], [, "(\\d{2})(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["[12]"], "0$1", , 1]], [, , , , , , , , , [-1]], , , [, , "(?:(?:10|21)8|[48])00\\d{7}|950\\d{7,8}", , , , , , , [10, 11, 12]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CO: [, [, , "(?:60\\d\\d|9101)\\d{6}|(?:1\\d|3)\\d{9}", , , , , , , [10, 11], [7]], [
         ,
         ,
-        "333301[0-5]\\d{3}|3333(?:00|2[5-9]|[3-9]\\d)\\d{4}|(?:3(?:24[1-9]|3(?:00|3[0-24-9]))|9101)\\d{6}|3(?:0[0-5]|1\\d|2[0-3]|5[01]|70)\\d{7}",
+        "601055(?:[0-4]\\d|50)\\d\\d|6010(?:[0-4]\\d|5[0-4])\\d{4}|60(?:[124-7][2-9]|8[1-9])\\d{6}",
         ,
         ,
         ,
-        "3211234567",
+        "6012345678",
         ,
         ,
-        [10]
-      ], [, , "1800\\d{7}", , , , "18001234567", , , [11]], [, , "19(?:0[01]|4[78])\\d{7}", , , , "19001234567", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CO", 57, "00(?:4(?:[14]4|56)|[579])", "0", , , "0([3579]|4(?:[14]4|56))?", , , , [[, "(\\d{3})(\\d{7})", "$1 $2", ["6"], "($1)", "0$CC $1"], [, "(\\d{3})(\\d{7})", "$1 $2", ["3[0-357]|91"], , "0$CC $1"], [, "(\\d)(\\d{3})(\\d{7})", "$1-$2-$3", ["1"], "0$1"]], [[, "(\\d{3})(\\d{7})", "$1 $2", ["6"], "($1)", "0$CC $1"], [
+        [10],
+        [7]
+      ], [, , "333301[0-5]\\d{3}|3333(?:00|2[5-9]|[3-9]\\d)\\d{4}|(?:3(?:24[1-9]|3(?:00|3[0-24-9]))|9101)\\d{6}|3(?:0[0-5]|1\\d|2[0-3]|5[01]|70)\\d{7}", , , , "3211234567", , , [10]], [, , "1800\\d{7}", , , , "18001234567", , , [11]], [, , "19(?:0[01]|4[78])\\d{7}", , , , "19001234567", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CO", 57, "00(?:4(?:[14]4|56)|[579])", "0", , , "0([3579]|4(?:[14]4|56))?", , , , [[, "(\\d{3})(\\d{7})", "$1 $2", ["6"], "($1)", "0$CC $1"], [
         ,
         "(\\d{3})(\\d{7})",
         "$1 $2",
         ["3[0-357]|91"],
         ,
         "0$CC $1"
-      ], [, "(\\d)(\\d{3})(\\d{7})", "$1 $2 $3", ["1"]]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CR: [, [, , "(?:8\\d|90)\\d{8}|(?:[24-8]\\d{3}|3005)\\d{4}", , , , , , , [8, 10]], [, , "210[7-9]\\d{4}|2(?:[024-7]\\d|1[1-9])\\d{5}", , , , "22123456", , , [8]], [, , "(?:3005\\d|6500[01])\\d{3}|(?:5[07]|6[0-4]|7[0-3]|8[3-9])\\d{6}", , , , "83123456", , , [8]], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , "90[059]\\d{7}", , , , "9001234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [
+      ], [, "(\\d)(\\d{3})(\\d{7})", "$1-$2-$3", ["1"], "0$1"]], [[, "(\\d{3})(\\d{7})", "$1 $2", ["6"], "($1)", "0$CC $1"], [, "(\\d{3})(\\d{7})", "$1 $2", ["3[0-357]|91"], , "0$CC $1"], [, "(\\d)(\\d{3})(\\d{7})", "$1 $2 $3", ["1"]]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CR: [, [, , "(?:8\\d|90)\\d{8}|(?:[24-8]\\d{3}|3005)\\d{4}", , , , , , , [8, 10]], [, , "210[7-9]\\d{4}|2(?:[024-7]\\d|1[1-9])\\d{5}", , , , "22123456", , , [8]], [
         ,
         ,
-        "(?:210[0-6]|4\\d{3}|5100)\\d{4}",
-        ,
-        ,
-        ,
-        "40001234",
-        ,
-        ,
-        [8]
-      ], "CR", 506, "00", , , , "(19(?:0[0-2468]|1[09]|20|66|77|99))", , , , [[, "(\\d{4})(\\d{4})", "$1 $2", ["[2-7]|8[3-9]"], , "$CC $1"], [, "(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["[89]"], , "$CC $1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CU: [, [, , "(?:[2-7]|8\\d\\d)\\d{7}|[2-47]\\d{6}|[34]\\d{5}", , , , , , , [6, 7, 8, 10], [4, 5]], [, , "(?:3[23]|4[89])\\d{4,6}|(?:31|4[36]|8(?:0[25]|78)\\d)\\d{6}|(?:2[1-4]|4[1257]|7\\d)\\d{5,6}", , , , "71234567", , , , [4, 5]], [
-        ,
-        ,
-        "(?:5\\d|6[2-4])\\d{6}",
+        "(?:3005\\d|6500[01])\\d{3}|(?:5[07]|6[0-4]|7[0-3]|8[3-9])\\d{6}",
         ,
         ,
         ,
-        "51234567",
+        "83123456",
         ,
         ,
         [8]
-      ], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , , , , , , , , [-1]], [, , "807\\d{7}", , , , "8071234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CU", 53, "119", "0", , , "0", , , , [[, "(\\d{2})(\\d{4,6})", "$1 $2", ["2[1-4]|[34]"], "(0$1)"], [, "(\\d)(\\d{6,7})", "$1 $2", ["7"], "(0$1)"], [, "(\\d)(\\d{7})", "$1 $2", ["[56]"], "0$1"], [, "(\\d{3})(\\d{7})", "$1 $2", ["8"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CV: [, [, , "(?:[2-59]\\d\\d|800)\\d{4}", , , , , , , [7]], [
+      ], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , "90[059]\\d{7}", , , , "9001234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:210[0-6]|4\\d{3}|5100)\\d{4}", , , , "40001234", , , [8]], "CR", 506, "00", , , , "(19(?:0[0-2468]|1[09]|20|66|77|99))", , , , [[, "(\\d{4})(\\d{4})", "$1 $2", ["[2-7]|8[3-9]"], , "$CC $1"], [, "(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["[89]"], , "$CC $1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CU: [, [
         ,
         ,
-        "2(?:2[1-7]|3[0-8]|4[12]|5[1256]|6\\d|7[1-3]|8[1-5])\\d{4}",
-        ,
-        ,
-        ,
-        "2211234"
-      ], [, , "(?:36|5[1-389]|9\\d)\\d{5}", , , , "9911234"], [, , "800\\d{4}", , , , "8001234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:3[3-5]|4[356])\\d{5}", , , , "3401234"], "CV", 238, "0", , , , , , , , [[, "(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[2-589]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CW: [, [, , "(?:[34]1|60|(?:7|9\\d)\\d)\\d{5}", , , , , , , [7, 8]], [
-        ,
-        ,
-        "9(?:4(?:3[0-5]|4[14]|6\\d)|50\\d|7(?:2[014]|3[02-9]|4[4-9]|6[357]|77|8[7-9])|8(?:3[39]|[46]\\d|7[01]|8[57-9]))\\d{4}",
+        "(?:[2-7]|8\\d\\d)\\d{7}|[2-47]\\d{6}|[34]\\d{5}",
         ,
         ,
         ,
-        "94351234"
-      ], [, , "953[01]\\d{4}|9(?:5[12467]|6[5-9])\\d{5}", , , , "95181234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "60[0-2]\\d{4}", , , , "6001234", , , [7]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CW", 599, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1 $2", ["[3467]"]], [, "(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["9[4-8]"]]], , [, , "955\\d{5}", , , , "95581234", , , [8]], 1, "[69]", [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      CX: [
         ,
-        [, , "1(?:[0-79]\\d{8}(?:\\d{2})?|8[0-24-9]\\d{7})|[148]\\d{8}|1\\d{5,7}", , , , , , , [6, 7, 8, 9, 10, 12]],
+        ,
+        ,
+        [6, 7, 8, 10],
+        [4, 5]
+      ], [, , "(?:3[23]|4[89])\\d{4,6}|(?:31|4[36]|8(?:0[25]|78)\\d)\\d{6}|(?:2[1-4]|4[1257]|7\\d)\\d{5,6}", , , , "71234567", , , , [4, 5]], [, , "(?:5\\d|6[2-4])\\d{6}", , , , "51234567", , , [8]], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , , , , , , , , [-1]], [, , "807\\d{7}", , , , "8071234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CU", 53, "119", "0", , , "0", , , , [[, "(\\d{2})(\\d{4,6})", "$1 $2", ["2[1-4]|[34]"], "(0$1)"], [, "(\\d)(\\d{6,7})", "$1 $2", ["7"], "(0$1)"], [, "(\\d)(\\d{7})", "$1 $2", ["[56]"], "0$1"], [
+        ,
+        "(\\d{3})(\\d{7})",
+        "$1 $2",
+        ["8"],
+        "0$1"
+      ]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CV: [, [, , "(?:[2-59]\\d\\d|800)\\d{4}", , , , , , , [7]], [, , "2(?:2[1-7]|3[0-8]|4[12]|5[1256]|6\\d|7[1-3]|8[1-5])\\d{4}", , , , "2211234"], [, , "(?:36|5[1-389]|9\\d)\\d{5}", , , , "9911234"], [, , "800\\d{4}", , , , "8001234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:3[3-5]|4[356])\\d{5}", , , , "3401234"], "CV", 238, "0", , , , , , , , [[, "(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[2-589]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        [-1]
+      ]],
+      CW: [, [, , "(?:[34]1|60|(?:7|9\\d)\\d)\\d{5}", , , , , , , [7, 8]], [, , "9(?:4(?:3[0-5]|4[14]|6\\d)|50\\d|7(?:2[014]|3[02-9]|4[4-9]|6[357]|77|8[7-9])|8(?:3[39]|[46]\\d|7[01]|8[57-9]))\\d{4}", , , , "94351234"], [, , "953[01]\\d{4}|9(?:5[12467]|6[5-9])\\d{5}", , , , "95181234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "60[0-2]\\d{4}", , , , "6001234", , , [7]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "CW", 599, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1 $2", ["[3467]"]], [, "(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["9[4-8]"]]], , [
+        ,
+        ,
+        "955\\d{5}",
+        ,
+        ,
+        ,
+        "95581234",
+        ,
+        ,
+        [8]
+      ], 1, "[69]", [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CX: [, [, , "1(?:[0-79]\\d{8}(?:\\d{2})?|8[0-24-9]\\d{7})|[148]\\d{8}|1\\d{5,7}", , , , , , , [6, 7, 8, 9, 10, 12]], [, , "8(?:51(?:0(?:01|30|59|88)|1(?:17|46|75)|2(?:22|35))|91(?:00[6-9]|1(?:[28]1|49|78)|2(?:09|63)|3(?:12|26|75)|4(?:56|97)|64\\d|7(?:0[01]|1[0-2])|958))\\d{3}", , , , "891641234", , , [9], [8]], [, , "4(?:79[01]|83[0-389]|94[0-4])\\d{5}|4(?:[0-36]\\d|4[047-9]|5[0-25-9]|7[02-8]|8[0-24-9]|9[0-37-9])\\d{6}", , , , "412345678", , , [9]], [
+        ,
+        ,
+        "180(?:0\\d{3}|2)\\d{3}",
+        ,
+        ,
+        ,
+        "1800123456",
+        ,
+        ,
+        [7, 10]
+      ], [, , "190[0-26]\\d{6}", , , , "1900123456", , , [10]], [, , "13(?:00\\d{6}(?:\\d{2})?|45[0-4]\\d{3})|13\\d{4}", , , , "1300123456", , , [6, 8, 10, 12]], [, , , , , , , , , [-1]], [, , "14(?:5(?:1[0458]|[23][458])|71\\d)\\d{4}", , , , "147101234", , , [9]], "CX", 61, "001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011", "0", , , "([59]\\d{7})$|0", "8$1", "0011", , , , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      CY: [, [, , "(?:[279]\\d|[58]0)\\d{6}", , , , , , , [8]], [, , "2[2-6]\\d{6}", , , , "22345678"], [
+        ,
+        ,
+        "9(?:10|[4-79]\\d)\\d{5}",
+        ,
+        ,
+        ,
+        "96123456"
+      ], [, , "800\\d{5}", , , , "80001234"], [, , "90[09]\\d{5}", , , , "90012345"], [, , "80[1-9]\\d{5}", , , , "80112345"], [, , "700\\d{5}", , , , "70012345"], [, , , , , , , , , [-1]], "CY", 357, "00", , , , , , , , [[, "(\\d{2})(\\d{6})", "$1 $2", ["[257-9]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "(?:50|77)\\d{6}", , , , "77123456"], , , [, , , , , , , , , [-1]]],
+      CZ: [
+        ,
+        [, , "(?:[2-578]\\d|60)\\d{7}|9\\d{8,11}", , , , , , , [9, 10, 11, 12]],
+        [, , "(?:2\\d|3[1257-9]|4[16-9]|5[13-9])\\d{7}", , , , "212345678", , , [9]],
         [
           ,
           ,
-          "8(?:51(?:0(?:01|30|59|88)|1(?:17|46|75)|2(?:22|35))|91(?:00[6-9]|1(?:[28]1|49|78)|2(?:09|63)|3(?:12|26|75)|4(?:56|97)|64\\d|7(?:0[01]|1[0-2])|958))\\d{3}",
+          "(?:60[1-8]\\d|7(?:0(?:[2-5]\\d|60)|190|[2379]\\d\\d))\\d{5}",
           ,
           ,
           ,
-          "891641234",
+          "601123456",
           ,
           ,
-          [9],
-          [8]
+          [9]
         ],
-        [, , "4(?:79[01]|83[0-389]|94[0-4])\\d{5}|4(?:[0-36]\\d|4[047-9]|5[0-25-9]|7[02-8]|8[0-24-9]|9[0-37-9])\\d{6}", , , , "412345678", , , [9]],
-        [, , "180(?:0\\d{3}|2)\\d{3}", , , , "1800123456", , , [7, 10]],
-        [, , "190[0-26]\\d{6}", , , , "1900123456", , , [10]],
-        [, , "13(?:00\\d{6}(?:\\d{2})?|45[0-4]\\d{3})|13\\d{4}", , , , "1300123456", , , [6, 8, 10, 12]],
-        [, , , , , , , , , [-1]],
-        [, , "14(?:5(?:1[0458]|[23][458])|71\\d)\\d{4}", , , , "147101234", , , [9]],
-        "CX",
-        61,
-        "001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011",
-        "0",
-        ,
-        ,
-        "([59]\\d{7})$|0",
-        "8$1",
-        "0011",
+        [, , "800\\d{6}", , , , "800123456", , , [9]],
+        [, , "9(?:0[05689]|76)\\d{6}", , , , "900123456", , , [9]],
+        [, , "8[134]\\d{7}", , , , "811234567", , , [9]],
+        [, , "70[01]\\d{6}", , , , "700123456", , , [9]],
+        [, , "9[17]0\\d{6}", , , , "910123456", , , [9]],
+        "CZ",
+        420,
+        "00",
         ,
         ,
         ,
-        [, , , , , , , , , [-1]],
         ,
+        ,
+        ,
+        ,
+        [[, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8]|9[015-7]"]], [, "(\\d{2})(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["96"]], [, "(\\d{2})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]], [, "(\\d{3})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]]],
         ,
         [, , , , , , , , , [-1]],
+        ,
+        ,
         [, , , , , , , , , [-1]],
+        [, , "9(?:5\\d|7[2-4])\\d{6}", , , , "972123456", , , [9]],
         ,
         ,
-        [, , , , , , , , , [-1]]
+        [, , "9(?:3\\d{9}|6\\d{7,10})", , , , "93123456789"]
       ],
-      CY: [, [, , "(?:[279]\\d|[58]0)\\d{6}", , , , , , , [8]], [, , "2[2-6]\\d{6}", , , , "22345678"], [, , "9(?:10|[4-79]\\d)\\d{5}", , , , "96123456"], [, , "800\\d{5}", , , , "80001234"], [, , "90[09]\\d{5}", , , , "90012345"], [, , "80[1-9]\\d{5}", , , , "80112345"], [, , "700\\d{5}", , , , "70012345"], [, , , , , , , , , [-1]], "CY", 357, "00", , , , , , , , [[, "(\\d{2})(\\d{6})", "$1 $2", ["[257-9]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "(?:50|77)\\d{6}", , , , "77123456"], , , [, , , , , , , , , [-1]]],
-      CZ: [, [, , "(?:[2-578]\\d|60)\\d{7}|9\\d{8,11}", , , , , , , [9, 10, 11, 12]], [, , "(?:2\\d|3[1257-9]|4[16-9]|5[13-9])\\d{7}", , , , "212345678", , , [9]], [, , "(?:60[1-8]\\d|7(?:0(?:[2-5]\\d|60)|190|[2379]\\d\\d))\\d{5}", , , , "601123456", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "9(?:0[05689]|76)\\d{6}", , , , "900123456", , , [9]], [, , "8[134]\\d{7}", , , , "811234567", , , [9]], [, , "70[01]\\d{6}", , , , "700123456", , , [9]], [, , "9[17]0\\d{6}", , , , "910123456", , , [9]], "CZ", 420, "00", , , , , , , , [
-        [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8]|9[015-7]"]],
-        [, "(\\d{2})(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["96"]],
-        [, "(\\d{2})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]],
-        [, "(\\d{3})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]]
-      ], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "9(?:5\\d|7[2-4])\\d{6}", , , , "972123456", , , [9]], , , [, , "9(?:3\\d{9}|6\\d{7,10})", , , , "93123456789"]],
-      DE: [, [
-        ,
-        ,
-        "[2579]\\d{5,14}|49(?:[34]0|69|8\\d)\\d\\d?|49(?:37|49|60|7[089]|9\\d)\\d{1,3}|49(?:2[024-9]|3[2-689]|7[1-7])\\d{1,8}|(?:1|[368]\\d|4[0-8])\\d{3,13}|49(?:[015]\\d|2[13]|31|[46][1-8])\\d{1,9}",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        [2, 3]
-      ], [
+      DE: [, [, , "[2579]\\d{5,14}|49(?:[34]0|69|8\\d)\\d\\d?|49(?:37|49|60|7[089]|9\\d)\\d{1,3}|49(?:2[024-9]|3[2-689]|7[1-7])\\d{1,8}|(?:1|[368]\\d|4[0-8])\\d{3,13}|49(?:[015]\\d|2[13]|31|[46][1-8])\\d{1,9}", , , , , , , [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], [2, 3]], [
         ,
         ,
         "32\\d{9,11}|49[1-6]\\d{10}|322\\d{6}|49[0-7]\\d{3,9}|(?:[34]0|[68]9)\\d{3,13}|(?:2(?:0[1-689]|[1-3569]\\d|4[0-8]|7[1-7]|8[0-7])|3(?:[3569]\\d|4[0-79]|7[1-7]|8[1-8])|4(?:1[02-9]|[2-48]\\d|5[0-6]|6[0-8]|7[0-79])|5(?:0[2-8]|[124-6]\\d|[38][0-8]|[79][0-7])|6(?:0[02-9]|[1-358]\\d|[47][0-8]|6[1-9])|7(?:0[2-8]|1[1-9]|[27][0-7]|3\\d|[4-6][0-8]|8[0-5]|9[013-7])|8(?:0[2-9]|1[0-79]|2\\d|3[0-46-9]|4[0-6]|5[013-9]|6[1-8]|7[0-8]|8[0-24-6])|9(?:0[6-9]|[1-4]\\d|[589][0-7]|6[0-8]|7[0-467]))\\d{3,12}",
@@ -4557,15 +4889,15 @@ var factoryOutput = (() => {
         ,
         [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
         [2, 3, 4]
-      ], [, , "15(?:[0-25-9]\\d\\d|310)\\d{6}|1(?:6[023]|7\\d)\\d{7,8}", , , , "15123456789", , , [10, 11]], [, , "800\\d{7,12}", , , , "8001234567890", , , [10, 11, 12, 13, 14, 15]], [, , "(?:137[7-9]|900(?:[135]|9\\d))\\d{6}", , , , "9001234567", , , [10, 11]], [, , "180\\d{5,11}|13(?:7[1-6]\\d\\d|8)\\d{4}", , , , "18012345", , , [7, 8, 9, 10, 11, 12, 13, 14]], [, , "700\\d{8}", , , , "70012345678", , , [11]], [, , , , , , , , , [-1]], "DE", 49, "00", "0", , , "0", , , , [
-        [, "(\\d{2})(\\d{3,13})", "$1 $2", ["3[02]|40|[68]9"], "0$1"],
+      ], [, , "15310\\d{6}|1(?:6[023]|7[0-57-9])\\d{7,8}|1(?:5[0-25-9]|76)\\d{8}", , , , "15123456789", , , [10, 11]], [, , "800\\d{7,12}", , , , "8001234567890", , , [10, 11, 12, 13, 14, 15]], [, , "(?:137[7-9]|900(?:[135]|9\\d))\\d{6}", , , , "9001234567", , , [10, 11]], [, , "180\\d{5,11}|13(?:7[1-6]\\d\\d|8)\\d{4}", , , , "18012345", , , [7, 8, 9, 10, 11, 12, 13, 14]], [, , "700\\d{8}", , , , "70012345678", , , [11]], [, , , , , , , , , [-1]], "DE", 49, "00", "0", , , "0", , , , [
         [
           ,
-          "(\\d{3})(\\d{3,12})",
+          "(\\d{2})(\\d{3,13})",
           "$1 $2",
-          ["2(?:0[1-389]|1[124]|2[18]|3[14])|3(?:[35-9][15]|4[015])|906|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1", "2(?:0[1-389]|12[0-8])|3(?:[35-9][15]|4[015])|906|2(?:[13][14]|2[18])|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1"],
+          ["3[02]|40|[68]9"],
           "0$1"
         ],
+        [, "(\\d{3})(\\d{3,12})", "$1 $2", ["2(?:0[1-389]|1[124]|2[18]|3[14])|3(?:[35-9][15]|4[015])|906|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1", "2(?:0[1-389]|12[0-8])|3(?:[35-9][15]|4[015])|906|2(?:[13][14]|2[18])|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1"], "0$1"],
         [
           ,
           "(\\d{4})(\\d{2,11})",
@@ -4677,7 +5009,7 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      DZ: [, [, , "(?:[1-4]|[5-79]\\d|80)\\d{7}", , , , , , , [8, 9]], [, , "9619\\d{5}|(?:1\\d|2[013-79]|3[0-8]|4[013-689])\\d{6}", , , , "12345678"], [, , "(?:5(?:4[0-29]|5\\d|6[0-2])|6(?:[569]\\d|7[0-6])|7[7-9]\\d)\\d{6}", , , , "551234567", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "80[3-689]1\\d{5}", , , , "808123456", , , [9]], [, , "80[12]1\\d{5}", , , , "801123456", , , [9]], [, , , , , , , , , [-1]], [, , "98[23]\\d{6}", , , , "983123456", , , [9]], "DZ", 213, "00", "0", , , "0", , , , [[
+      DZ: [, [, , "(?:[1-4]|[5-79]\\d|80)\\d{7}", , , , , , , [8, 9]], [, , "9619\\d{5}|(?:1\\d|2[013-79]|3[0-8]|4[013-689])\\d{6}", , , , "12345678"], [, , "(?:5(?:4[0-29]|5\\d|6[0-3])|6(?:[569]\\d|7[0-6])|7[7-9]\\d)\\d{6}", , , , "551234567", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "80[3-689]1\\d{5}", , , , "808123456", , , [9]], [, , "80[12]1\\d{5}", , , , "801123456", , , [9]], [, , , , , , , , , [-1]], [, , "98[23]\\d{6}", , , , "983123456", , , [9]], "DZ", 213, "00", "0", , , "0", , , , [[
         ,
         "(\\d{2})(\\d{2})(\\d{2})(\\d{2})",
         "$1 $2 $3 $4",
@@ -4746,7 +5078,7 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      EG: [, [, , "[189]\\d{8,9}|[24-6]\\d{8}|[135]\\d{7}", , , , , , , [8, 9, 10], [6, 7]], [, , "13[23]\\d{6}|(?:15|57)\\d{6,7}|(?:2[2-4]|3|4[05-8]|5[05]|6[24-689]|8[2468]|9[235-7])\\d{7}", , , , "234567890", , , [8, 9], [6, 7]], [, , "1[0-25]\\d{8}", , , , "1001234567", , , [10]], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , "900\\d{7}", , , , "9001234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "EG", 20, "00", "0", , , "0", , , , [[
+      EG: [, [, , "[189]\\d{8,9}|[24-6]\\d{8}|[135]\\d{7}", , , , , , , [8, 9, 10], [6, 7]], [, , "13[23]\\d{6}|(?:15|57)\\d{6,7}|(?:2\\d|3|4[05-8]|5[05]|6[24-689]|8[2468]|9[235-7])\\d{7}", , , , "234567890", , , [8, 9], [6, 7]], [, , "1[0-25]\\d{8}", , , , "1001234567", , , [10]], [, , "800\\d{7}", , , , "8001234567", , , [10]], [, , "900\\d{7}", , , , "9001234567", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "EG", 20, "00", "0", , , "0", , , , [[
         ,
         "(\\d)(\\d{7,8})",
         "$1 $2",
@@ -4910,7 +5242,7 @@ var factoryOutput = (() => {
         ,
         ,
         [9]
-      ], [, , "(?:26[013-9]|59[1-35-9])\\d{6}|(?:[13]\\d|2[0-57-9]|4[1-9]|5[0-8])\\d{7}", , , , "123456789"], [, , "(?:6(?:[0-24-8]\\d|3[0-8]|9[589])|7[3-9]\\d)\\d{6}", , , , "612345678"], [, , "80[0-5]\\d{6}", , , , "801234567"], [, , "836(?:0[0-36-9]|[1-9]\\d)\\d{4}|8(?:1[2-9]|2[2-47-9]|3[0-57-9]|[569]\\d|8[0-35-9])\\d{6}", , , , "891123456"], [, , "8(?:1[01]|2[0156]|4[02]|84)\\d{6}", , , , "884012345"], [, , , , , , , , , [-1]], [, , "9\\d{8}", , , , "912345678"], "FR", 33, "00", "0", , , "0", , , , [[, "(\\d{4})", "$1", ["10"]], [
+      ], [, , "(?:26[013-9]|59[1-35-9])\\d{6}|(?:[13]\\d|2[0-57-9]|4[1-9]|5[0-8])\\d{7}", , , , "123456789"], [, , "(?:6(?:[0-24-8]\\d|3[0-8]|9[589])|7[3-9]\\d)\\d{6}", , , , "612345678"], [, , "80[0-5]\\d{6}", , , , "801234567"], [, , "836(?:0[0-36-9]|[1-9]\\d)\\d{4}|8(?:1[2-9]|2[2-47-9]|3[0-57-9]|[569]\\d|8[0-35-9])\\d{6}", , , , "891123456"], [, , "8(?:1[01]|2[0156]|4[024]|84)\\d{6}", , , , "884012345"], [, , , , , , , , , [-1]], [, , "9\\d{8}", , , , "912345678"], "FR", 33, "00", "0", , , "0", , , , [[, "(\\d{4})", "$1", ["10"]], [
         ,
         "(\\d{3})(\\d{3})",
         "$1 $2",
@@ -5088,7 +5420,7 @@ var factoryOutput = (() => {
         ,
         [, , "[2-9]\\d{6}", , , , , , , [7]],
         [, , "(?:4(?:[23]\\d\\d|4(?:1[024679]|[6-9]\\d))|5(?:5(?:3\\d|4[0-7])|6[67]\\d|7(?:1[04]|2[035]|3[58]|48))|8\\d{3})\\d{3}", , , , "5661234"],
-        [, , "(?:[23679]\\d|5[0-489])\\d{5}", , , , "3012345"],
+        [, , "(?:[23679]\\d|4[015]|5[0-489])\\d{5}", , , , "3012345"],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
@@ -5227,7 +5559,7 @@ var factoryOutput = (() => {
         [
           ,
           ,
-          "(?:2(?:[13-9]\\d|2[013-9])\\d|3(?:(?:[1569][0-24-9]|4[0-246-9]|7[0-24-69])\\d|8(?:4[0-8]|[59]\\d|6[0-2]))|58(?:0[1-9]|1[2-9]))\\d{4}",
+          "(?:2(?:[13-9]\\d|2[013-9])\\d|3(?:(?:[1569][0-24-9]|4[0-246-9]|7[0-24-69])\\d|8(?:4[0-8]|[579]\\d|6[0-2]))|58(?:0[1-9]|1[2-9]))\\d{4}",
           ,
           ,
           ,
@@ -5236,7 +5568,7 @@ var factoryOutput = (() => {
           ,
           [8]
         ],
-        [, , "(?:4(?:44[0-25-9]|6(?:1[0-7]|4[0-57-9]|6[0-4]))|5(?:73[0-6]|95[0-8])|6(?:26[013-8]|66[0-3])|70(?:7[1-8]|8[0-4])|848[0-35-9]|9(?:29[013-9]|39[01]|59[0-4]|899))\\d{4}|(?:4(?:4[0-35-8]|6[02357-9]|70)|5(?:[1-59][0-46-9]|6[0-4689]|7[0-246-9])|6(?:0[1-9]|[13-59]\\d|[268][0-57-9]|7[0-79])|70[1-39]|84[0-29]|9(?:0[1-9]|1[02-9]|[2358][0-8]|[467]\\d))\\d{5}", , , , "51234567", , , [8]],
+        [, , "(?:4(?:44[0-25-9]|6(?:1[0-7]|4[0-57-9]|6[0-4]))|5(?:73[0-6]|95[0-8])|6(?:26[013-8]|66[0-3])|70(?:7[1-8]|8[0-4])|848[0-35-9]|9(?:29[013-9]|39[01]|59[0-4]|899))\\d{4}|(?:4(?:4[0-35-9]|6[02357-9]|70)|5(?:[1-59][0-46-9]|6[0-4689]|7[0-246-9])|6(?:0[1-9]|[13-59]\\d|[268][0-57-9]|7[0-79])|70[1-39]|84[0-39]|9(?:0[1-9]|1[02-9]|[2358][0-8]|[467]\\d))\\d{5}", , , , "51234567", , , [8]],
         [, , "800\\d{6}", , , , "800123456", , , [9]],
         [, , "900(?:[0-24-9]\\d{7}|3\\d{1,4})", , , , "90012345678", , , [5, 6, 7, 8, 11]],
         [, , , , , , , , , [-1]],
@@ -5404,7 +5736,7 @@ var factoryOutput = (() => {
       ], [, , "55(?:410|57[0-289])\\d{4}|5(?:(?:[02][02-9]|[149][2-9]|[36]\\d|8[3-7])\\d|5(?:01|2\\d|3[0-3]|4[34]|5[0-25689]|6[6-8]|7[0-267]|8[7-9]|9[1-9]))\\d{5}", , , , "502345678", , , [9]], [, , "1(?:255|80[019]\\d{3})\\d{3}", , , , "1800123456", , , [7, 10]], [, , "1212\\d{4}|1(?:200|9(?:0[0-2]|19))\\d{6}", , , , "1919123456", , , [8, 10]], [, , "1700\\d{6}", , , , "1700123456", , , [10]], [, , , , , , , , , [-1]], [
         ,
         ,
-        "7(?:38(?:0\\d|5[0-259]|88)|8(?:33|55|77|81)\\d)\\d{4}|7(?:18|2[23]|3[237]|47|6[258]|7\\d|82|9[2-9])\\d{6}",
+        "7(?:38(?:0\\d|5[0-2569]|88)|8(?:33|55|77|81)\\d)\\d{4}|7(?:18|2[23]|3[237]|47|6[258]|7\\d|82|9[2-9])\\d{6}",
         ,
         ,
         ,
@@ -6654,132 +6986,112 @@ var factoryOutput = (() => {
         [, , , , , , , , , [-1]]
       ],
       NF: [, [, , "[13]\\d{5}", , , , , , , [6], [5]], [, , "(?:1(?:06|17|28|39)|3[0-2]\\d)\\d{3}", , , , "106609", , , , [5]], [, , "(?:14|3[58])\\d{4}", , , , "381234", , , , [5]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NF", 672, "00", , , , "([0-258]\\d{4})$", "3$1", , , [[, "(\\d{2})(\\d{4})", "$1 $2", ["1[0-3]"]], [, "(\\d)(\\d{5})", "$1 $2", ["[13]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      NG: [
-        ,
-        [
-          ,
-          ,
-          "2[0-24-9]\\d{8}|[78]\\d{10,13}|[7-9]\\d{9}|[1-9]\\d{7}|[124-7]\\d{6}",
-          ,
-          ,
-          ,
-          ,
-          ,
-          ,
-          [7, 8, 10, 11, 12, 13, 14],
-          [5, 6]
-        ],
-        [, , "20(?:[1259]\\d|3[013-9]|4[1-8]|6[024-689]|7[1-79]|8[2-9])\\d{6}|(?:(?:[1-356]\\d|4[02-8]|8[2-9])\\d|9(?:0[3-9]|[1-9]\\d))\\d{5}|7(?:0(?:[013-689]\\d|2[0-24-9])\\d{3,4}|[1-79]\\d{6})|(?:[12]\\d|4[147]|5[14579]|6[1578]|7[1-3578])\\d{5}", , , , "18040123", , , [7, 8, 10], [5, 6]],
-        [, , "(?:702[0-24-9]|819[01])\\d{6}|(?:7(?:0[13-9]|[12]\\d)|8(?:0[1-9]|1[0-8])|9(?:0[1-9]|1[1-6]))\\d{7}", , , , "8021234567", , , [10]],
-        [, , "800\\d{7,11}", , , , "80017591759", , , [10, 11, 12, 13, 14]],
-        [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        "NG",
-        234,
-        "009",
-        "0",
+      NG: [, [
         ,
         ,
-        "0",
+        "38\\d{6}|[78]\\d{9,13}|(?:20|9\\d)\\d{8}",
         ,
         ,
         ,
-        [[, "(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["78"], "0$1"], [, "(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[12]|9(?:0[3-9]|[1-9])"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["[3-6]|7(?:0[0-689]|[1-79])|8[2-9]"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[7-9]"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["20[129]"], "0$1"], [, "(\\d{4})(\\d{2})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], [
-          ,
-          "(\\d{3})(\\d{4})(\\d{4,5})",
-          "$1 $2 $3",
-          ["[78]"],
-          "0$1"
-        ], [, "(\\d{3})(\\d{5})(\\d{5,6})", "$1 $2 $3", ["[78]"], "0$1"]],
-        ,
-        [, , , , , , , , , [-1]],
-        ,
-        ,
-        [, , , , , , , , , [-1]],
-        [, , "700\\d{7,11}", , , , "7001234567", , , [10, 11, 12, 13, 14]],
-        ,
-        ,
-        [, , , , , , , , , [-1]]
-      ],
-      NI: [, [, , "(?:1800|[25-8]\\d{3})\\d{4}", , , , , , , [8]], [, , "2\\d{7}", , , , "21234567"], [, , "(?:5(?:5[0-7]|[78]\\d)|6(?:20|3[035]|4[045]|5[05]|77|8[1-9]|9[059])|(?:7[5-8]|8\\d)\\d)\\d{5}", , , , "81234567"], [, , "1800\\d{4}", , , , "18001234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NI", 505, "00", , , , , , , , [[
-        ,
-        "(\\d{4})(\\d{4})",
-        "$1 $2",
-        ["[125-8]"]
-      ]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      NL: [, [, , "(?:[124-7]\\d\\d|3(?:[02-9]\\d|1[0-8]))\\d{6}|8\\d{6,9}|9\\d{6,10}|1\\d{4,5}", , , , , , , [5, 6, 7, 8, 9, 10, 11]], [, , "(?:1(?:[035]\\d|1[13-578]|6[124-8]|7[24]|8[0-467])|2(?:[0346]\\d|2[2-46-9]|5[125]|9[479])|3(?:[03568]\\d|1[3-8]|2[01]|4[1-8])|4(?:[0356]\\d|1[1-368]|7[58]|8[15-8]|9[23579])|5(?:[0358]\\d|[19][1-9]|2[1-57-9]|4[13-8]|6[126]|7[0-3578])|7\\d\\d)\\d{6}", , , , "101234567", , , [9]], [
-        ,
-        ,
-        "(?:6[1-58]|970\\d)\\d{7}",
         ,
         ,
         ,
-        "612345678",
+        [8, 10, 11, 12, 13, 14],
+        [6, 7]
+      ], [, , "(?:20(?:[1259]\\d|3[013-9]|4[1-8]|6[024-689]|7[1-79]|8[2-9])|38)\\d{6}", , , , "2033123456", , , [8, 10], [6, 7]], [, , "(?:702[0-24-9]|819[01])\\d{6}|(?:7(?:0[13-9]|[12]\\d)|8(?:0[1-9]|1[0-8])|9(?:0[1-9]|1[1-6]))\\d{7}", , , , "8021234567", , , [10]], [, , "800\\d{7,11}", , , , "80017591759", , , [10, 11, 12, 13, 14]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NG", 234, "009", "0", , , "0", , , , [[, "(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["3"], "0$1"], [
+        ,
+        "(\\d{3})(\\d{3})(\\d{3,4})",
+        "$1 $2 $3",
+        ["[7-9]"],
+        "0$1"
+      ], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["20[129]"], "0$1"], [, "(\\d{4})(\\d{2})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], [, "(\\d{3})(\\d{4})(\\d{4,5})", "$1 $2 $3", ["[78]"], "0$1"], [, "(\\d{3})(\\d{5})(\\d{5,6})", "$1 $2 $3", ["[78]"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "700\\d{7,11}", , , , "7001234567", , , [10, 11, 12, 13, 14]], , , [, , , , , , , , , [-1]]],
+      NI: [, [, , "(?:1800|[25-8]\\d{3})\\d{4}", , , , , , , [8]], [, , "2\\d{7}", , , , "21234567"], [
         ,
         ,
-        [9, 11]
-      ], [, , "800\\d{4,7}", , , , "8001234", , , [7, 8, 9, 10]], [, , "90[069]\\d{4,7}", , , , "9061234", , , [7, 8, 9, 10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:85|91)\\d{7}", , , , "851234567", , , [9]], "NL", 31, "00", "0", , , "0", , , , [[, "(\\d{4})", "$1", ["1[238]|[34]"]], [, "(\\d{2})(\\d{3,4})", "$1 $2", ["14"]], [, "(\\d{6})", "$1", ["1"]], [, "(\\d{3})(\\d{4,7})", "$1 $2", ["[89]0"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["66"], "0$1"], [, "(\\d)(\\d{8})", "$1 $2", ["6"], "0$1"], [
+        "(?:5(?:5[0-7]|[78]\\d)|6(?:20|3[035]|4[045]|5[05]|77|8[1-9]|9[059])|(?:7[5-8]|8\\d)\\d)\\d{5}",
+        ,
+        ,
+        ,
+        "81234567"
+      ], [, , "1800\\d{4}", , , , "18001234"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NI", 505, "00", , , , , , , , [[, "(\\d{4})(\\d{4})", "$1 $2", ["[125-8]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      NL: [, [, , "(?:[124-7]\\d\\d|3(?:[02-9]\\d|1[0-8]))\\d{6}|8\\d{6,9}|9\\d{6,10}|1\\d{4,5}", , , , , , , [5, 6, 7, 8, 9, 10, 11]], [
+        ,
+        ,
+        "(?:1(?:[035]\\d|1[13-578]|6[124-8]|7[24]|8[0-467])|2(?:[0346]\\d|2[2-46-9]|5[125]|9[479])|3(?:[03568]\\d|1[3-8]|2[01]|4[1-8])|4(?:[0356]\\d|1[1-368]|7[58]|8[15-8]|9[23579])|5(?:[0358]\\d|[19][1-9]|2[1-57-9]|4[13-8]|6[126]|7[0-3578])|7\\d\\d)\\d{6}",
+        ,
+        ,
+        ,
+        "101234567",
+        ,
+        ,
+        [9]
+      ], [, , "(?:6[1-58]|970\\d)\\d{7}", , , , "612345678", , , [9, 11]], [, , "800\\d{4,7}", , , , "8001234", , , [7, 8, 9, 10]], [, , "90[069]\\d{4,7}", , , , "9061234", , , [7, 8, 9, 10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:85|91)\\d{7}", , , , "851234567", , , [9]], "NL", 31, "00", "0", , , "0", , , , [[, "(\\d{4})", "$1", ["1[238]|[34]"]], [, "(\\d{2})(\\d{3,4})", "$1 $2", ["14"]], [, "(\\d{6})", "$1", ["1"]], [, "(\\d{3})(\\d{4,7})", "$1 $2", ["[89]0"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["66"], "0$1"], [, "(\\d)(\\d{8})", "$1 $2", ["6"], "0$1"], [
         ,
         "(\\d{3})(\\d{3})(\\d{3})",
         "$1 $2 $3",
         ["1[16-8]|2[259]|3[124]|4[17-9]|5[124679]"],
         "0$1"
-      ], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-578]|91"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{5})", "$1 $2 $3", ["9"], "0$1"]], [[, "(\\d{3})(\\d{4,7})", "$1 $2", ["[89]0"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["66"], "0$1"], [, "(\\d)(\\d{8})", "$1 $2", ["6"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[16-8]|2[259]|3[124]|4[17-9]|5[124679]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-578]|91"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{5})", "$1 $2 $3", ["9"], "0$1"]], [, , "66\\d{7}", , , , "662345678", , , [9]], , , [
+      ], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-578]|91"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{5})", "$1 $2 $3", ["9"], "0$1"]], [[, "(\\d{3})(\\d{4,7})", "$1 $2", ["[89]0"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["66"], "0$1"], [, "(\\d)(\\d{8})", "$1 $2", ["6"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[16-8]|2[259]|3[124]|4[17-9]|5[124679]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-578]|91"], "0$1"], [
+        ,
+        "(\\d{3})(\\d{3})(\\d{5})",
+        "$1 $2 $3",
+        ["9"],
+        "0$1"
+      ]], [, , "66\\d{7}", , , , "662345678", , , [9]], , , [, , "140(?:1[035]|2[0346]|3[03568]|4[0356]|5[0358]|8[458])|140(?:1[16-8]|2[259]|3[124]|4[17-9]|5[124679]|7)\\d", , , , , , , [5, 6]], [, , "140(?:1[035]|2[0346]|3[03568]|4[0356]|5[0358]|8[458])|(?:140(?:1[16-8]|2[259]|3[124]|4[17-9]|5[124679]|7)|8[478]\\d{6})\\d", , , , "14020", , , [5, 6, 9]], , , [, , , , , , , , , [-1]]],
+      NO: [, [, , "(?:0|[2-9]\\d{3})\\d{4}", , , , , , , [5, 8]], [, , "(?:2[1-4]|3[1-3578]|5[1-35-7]|6[1-4679]|7[0-8])\\d{6}", , , , "21234567", , , [8]], [
         ,
         ,
-        "140(?:1[035]|2[0346]|3[03568]|4[0356]|5[0358]|8[458])|140(?:1[16-8]|2[259]|3[124]|4[17-9]|5[124679]|7)\\d",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [5, 6]
-      ], [, , "140(?:1[035]|2[0346]|3[03568]|4[0356]|5[0358]|8[458])|(?:140(?:1[16-8]|2[259]|3[124]|4[17-9]|5[124679]|7)|8[478]\\d{6})\\d", , , , "14020", , , [5, 6, 9]], , , [, , , , , , , , , [-1]]],
-      NO: [, [, , "(?:0|[2-9]\\d{3})\\d{4}", , , , , , , [5, 8]], [, , "(?:2[1-4]|3[1-3578]|5[1-35-7]|6[1-4679]|7[0-8])\\d{6}", , , , "21234567", , , [8]], [, , "(?:4[015-8]|9\\d)\\d{6}", , , , "40612345", , , [8]], [
-        ,
-        ,
-        "80[01]\\d{5}",
+        "(?:4[015-8]|9\\d)\\d{6}",
         ,
         ,
         ,
-        "80012345",
+        "40612345",
         ,
         ,
         [8]
-      ], [, , "82[09]\\d{5}", , , , "82012345", , , [8]], [, , "810(?:0[0-6]|[2-8]\\d)\\d{3}", , , , "81021234", , , [8]], [, , "880\\d{5}", , , , "88012345", , , [8]], [, , "85[0-5]\\d{5}", , , , "85012345", , , [8]], "NO", 47, "00", , , , , , , , [[, "(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["8"]], [, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]"]]], , [, , , , , , , , , [-1]], 1, "[02-689]|7[0-8]", [, , , , , , , , , [-1]], [, , "(?:0[2-9]|81(?:0(?:0[7-9]|1\\d)|5\\d\\d))\\d{3}", , , , "02000"], , , [, , "81[23]\\d{5}", , , , "81212345", , , [8]]],
-      NP: [, [
+      ], [, , "80[01]\\d{5}", , , , "80012345", , , [8]], [, , "82[09]\\d{5}", , , , "82012345", , , [8]], [, , "810(?:0[0-6]|[2-8]\\d)\\d{3}", , , , "81021234", , , [8]], [, , "880\\d{5}", , , , "88012345", , , [8]], [, , "85[0-5]\\d{5}", , , , "85012345", , , [8]], "NO", 47, "00", , , , , , , , [[, "(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["8"]], [, "(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]"]]], , [, , , , , , , , , [-1]], 1, "[02-689]|7[0-8]", [, , , , , , , , , [-1]], [, , "(?:0[2-9]|81(?:0(?:0[7-9]|1\\d)|5\\d\\d))\\d{3}", , , , "02000"], , , [
         ,
         ,
-        "(?:1\\d|9)\\d{9}|[1-9]\\d{7}",
-        ,
-        ,
+        "81[23]\\d{5}",
         ,
         ,
         ,
+        "81212345",
         ,
-        [8, 10, 11],
-        [6, 7]
-      ], [, , "(?:1[0-6]\\d|99[02-6])\\d{5}|(?:2[13-79]|3[135-8]|4[146-9]|5[135-7]|6[13-9]|7[15-9]|8[1-46-9]|9[1-7])[2-6]\\d{5}", , , , "14567890", , , [8], [6, 7]], [, , "9(?:00|6[0-3]|7[024-6]|8[0-24-68])\\d{7}", , , , "9841234567", , , [10]], [, , "1(?:66001|800\\d\\d)\\d{5}", , , , "16600101234", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NP", 977, "00", "0", , , "0", , , , [
-        [, "(\\d)(\\d{7})", "$1-$2", ["1[2-6]"], "0$1"],
-        [, "(\\d{2})(\\d{6})", "$1-$2", ["1[01]|[2-8]|9(?:[1-59]|[67][2-6])"], "0$1"],
-        [, "(\\d{3})(\\d{7})", "$1-$2", ["9"]],
-        [, "(\\d{4})(\\d{2})(\\d{5})", "$1-$2-$3", ["1"]]
-      ], [[, "(\\d)(\\d{7})", "$1-$2", ["1[2-6]"], "0$1"], [, "(\\d{2})(\\d{6})", "$1-$2", ["1[01]|[2-8]|9(?:[1-59]|[67][2-6])"], "0$1"], [, "(\\d{3})(\\d{7})", "$1-$2", ["9"]]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      NR: [
         ,
-        [, , "(?:444|(?:55|8\\d)\\d|666)\\d{4}", , , , , , , [7]],
-        [, , "444\\d{4}", , , , "4441234"],
-        [, , "(?:55[3-9]|666|8\\d\\d)\\d{4}", , , , "5551234"],
+        [8]
+      ]],
+      NP: [, [, , "(?:1\\d|9)\\d{9}|[1-9]\\d{7}", , , , , , , [8, 10, 11], [6, 7]], [, , "(?:1[0-6]\\d|99[02-6])\\d{5}|(?:2[13-79]|3[135-8]|4[146-9]|5[135-7]|6[13-9]|7[15-9]|8[1-46-9]|9[1-7])[2-6]\\d{5}", , , , "14567890", , , [8], [6, 7]], [, , "9(?:00|6[0-3]|7[024-6]|8[0-24-68])\\d{7}", , , , "9841234567", , , [10]], [, , "1(?:66001|800\\d\\d)\\d{5}", , , , "16600101234", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NP", 977, "00", "0", , , "0", , , , [[, "(\\d)(\\d{7})", "$1-$2", ["1[2-6]"], "0$1"], [
+        ,
+        "(\\d{2})(\\d{6})",
+        "$1-$2",
+        ["1[01]|[2-8]|9(?:[1-59]|[67][2-6])"],
+        "0$1"
+      ], [, "(\\d{3})(\\d{7})", "$1-$2", ["9"]], [, "(\\d{4})(\\d{2})(\\d{5})", "$1-$2-$3", ["1"]]], [[, "(\\d)(\\d{7})", "$1-$2", ["1[2-6]"], "0$1"], [, "(\\d{2})(\\d{6})", "$1-$2", ["1[01]|[2-8]|9(?:[1-59]|[67][2-6])"], "0$1"], [, "(\\d{3})(\\d{7})", "$1-$2", ["9"]]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      NR: [, [, , "(?:444|(?:55|8\\d)\\d|666)\\d{4}", , , , , , , [7]], [, , "444\\d{4}", , , , "4441234"], [, , "(?:55[3-9]|666|8\\d\\d)\\d{4}", , , , "5551234"], [
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        [-1]
+      ], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NR", 674, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1 $2", ["[4-68]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      NU: [
+        ,
+        [, , "(?:[4-7]|888\\d)\\d{3}", , , , , , , [4, 7]],
+        [, , "[47]\\d{3}", , , , "7012", , , [4]],
+        [, , "(?:[56]|888[1-9])\\d{3}", , , , "8884012"],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
         [, , , , , , , , , [-1]],
-        "NR",
-        674,
+        "NU",
+        683,
         "00",
         ,
         ,
@@ -6788,7 +7100,7 @@ var factoryOutput = (() => {
         ,
         ,
         ,
-        [[, "(\\d{3})(\\d{4})", "$1 $2", ["[4-68]"]]],
+        [[, "(\\d{3})(\\d{4})", "$1 $2", ["8"]]],
         ,
         [, , , , , , , , , [-1]],
         ,
@@ -6799,103 +7111,85 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      NU: [, [, , "(?:[4-7]|888\\d)\\d{3}", , , , , , , [4, 7]], [, , "[47]\\d{3}", , , , "7012", , , [4]], [, , "(?:[56]|888[1-9])\\d{3}", , , , "8884012"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "NU", 683, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1 $2", ["8"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      NZ: [, [
+      NZ: [
         ,
-        ,
-        "[1289]\\d{9}|50\\d{5}(?:\\d{2,3})?|[27-9]\\d{7,8}|(?:[34]\\d|6[0-35-9])\\d{6}|8\\d{4,6}",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [5, 6, 7, 8, 9, 10]
-      ], [, , "24099\\d{3}|(?:3[2-79]|[49][2-9]|6[235-9]|7[2-57-9])\\d{6}", , , , "32345678", , , [8], [7]], [, , "2(?:[0-27-9]\\d|6)\\d{6,7}|2(?:1\\d|75)\\d{5}", , , , "211234567", , , [8, 9, 10]], [, , "508\\d{6,7}|80\\d{6,8}", , , , "800123456", , , [8, 9, 10]], [, , "(?:1[13-57-9]\\d{5}|50(?:0[08]|30|66|77|88))\\d{3}|90\\d{6,8}", , , , "900123456", , , [7, 8, 9, 10]], [, , , , , , , , , [-1]], [, , "70\\d{7}", , , , "701234567", , , [9]], [, , , , , , , , , [-1]], "NZ", 64, "0(?:0|161)", "0", , , "0", , "00", , [[, "(\\d{2})(\\d{3,8})", "$1 $2", ["8[1-79]"], "0$1"], [
-        ,
-        "(\\d{3})(\\d{2})(\\d{2,3})",
-        "$1 $2 $3",
-        ["50[036-8]|8|90", "50(?:[0367]|88)|8|90"],
-        "0$1"
-      ], [, "(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["24|[346]|7[2-57-9]|9[2-9]"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:10|74)|[589]"], "0$1"], [, "(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["1|2[028]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{3,5})", "$1 $2 $3", ["2(?:[169]|7[0-35-9])|7"], "0$1"]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "8(?:1[16-9]|22|3\\d|4[045]|5[459]|6[235-9]|7[0-3579]|90)\\d{2,7}", , , , "83012378"], , , [, , , , , , , , , [-1]]],
-      OM: [, [
-        ,
-        ,
-        "(?:1505|[279]\\d{3}|500)\\d{4}|800\\d{5,6}",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [7, 8, 9]
-      ], [, , "2[1-6]\\d{6}", , , , "23123456", , , [8]], [, , "(?:1505|90[1-9]\\d)\\d{4}|(?:7[126-9]|9[1-9])\\d{6}", , , , "92123456", , , [8]], [, , "8007\\d{4,5}|(?:500|800[05])\\d{4}", , , , "80071234"], [, , "900\\d{5}", , , , "90012345", , , [8]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "OM", 968, "00", , , , , , , , [[, "(\\d{3})(\\d{4,6})", "$1 $2", ["[58]"]], [, "(\\d{2})(\\d{6})", "$1 $2", ["2"]], [, "(\\d{4})(\\d{4})", "$1 $2", ["[179]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      PA: [, [
-        ,
-        ,
-        "(?:00800|8\\d{3})\\d{6}|[68]\\d{7}|[1-57-9]\\d{6}",
-        ,
-        ,
-        ,
-        ,
-        ,
-        ,
-        [7, 8, 10, 11]
-      ], [, , "(?:1(?:0\\d|1[479]|2[37]|3[0137]|4[17]|5[05]|6[058]|7[0167]|8[2358]|9[1389])|2(?:[0235-79]\\d|1[0-7]|4[013-9]|8[02-9])|3(?:[089]\\d|1[0-7]|2[0-5]|33|4[0-79]|5[0-35]|6[068]|7[0-8])|4(?:00|3[0-579]|4\\d|7[0-57-9])|5(?:[01]\\d|2[0-7]|[56]0|79)|7(?:0[09]|2[0-26-8]|3[03]|4[04]|5[05-9]|6[0156]|7[0-24-9]|8[5-9]|90)|8(?:09|2[89]|3\\d|4[0-24-689]|5[014]|8[02])|9(?:0[5-9]|1[0135-8]|2[036-9]|3[35-79]|40|5[0457-9]|6[05-9]|7[04-9]|8[35-8]|9\\d))\\d{4}", , , , "2001234", , , [7]], [
-        ,
-        ,
-        "(?:1[16]1|21[89]|6\\d{3}|8(?:1[01]|7[23]))\\d{4}",
-        ,
-        ,
-        ,
-        "61234567",
-        ,
-        ,
-        [7, 8]
-      ], [, , "800\\d{4,5}|(?:00800|800\\d)\\d{6}", , , , "8001234"], [, , "(?:8(?:22|55|60|7[78]|86)|9(?:00|81))\\d{4}", , , , "8601234", , , [7]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "PA", 507, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1-$2", ["[1-57-9]"]], [, "(\\d{4})(\\d{4})", "$1-$2", ["[68]"]], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      PE: [
-        ,
-        [, , "(?:[14-8]|9\\d)\\d{7}", , , , , , , [8, 9], [6, 7]],
+        [, , "[1289]\\d{9}|50\\d{5}(?:\\d{2,3})?|[27-9]\\d{7,8}|(?:[34]\\d|6[0-35-9])\\d{6}|8\\d{4,6}", , , , , , , [5, 6, 7, 8, 9, 10]],
+        [, , "24099\\d{3}|(?:3[2-79]|[49][2-9]|6[235-9]|7[2-57-9])\\d{6}", , , , "32345678", , , [8], [7]],
+        [, , "2(?:[0-27-9]\\d|6)\\d{6,7}|2(?:1\\d|75)\\d{5}", , , , "211234567", , , [8, 9, 10]],
+        [, , "508\\d{6,7}|80\\d{6,8}", , , , "800123456", , , [8, 9, 10]],
+        [, , "(?:1[13-57-9]\\d{5}|50(?:0[08]|30|66|77|88))\\d{3}|90\\d{6,8}", , , , "900123456", , , [7, 8, 9, 10]],
+        [, , , , , , , , , [-1]],
         [
           ,
           ,
-          "(?:(?:4[34]|5[14])[0-8]\\d|7(?:173|3[0-8]\\d)|8(?:10[05689]|6(?:0[06-9]|1[6-9]|29)|7(?:0[569]|[56]0)))\\d{4}|(?:1[0-8]|4[12]|5[236]|6[1-7]|7[246]|8[2-4])\\d{6}",
+          "70\\d{7}",
           ,
           ,
           ,
-          "11234567",
+          "701234567",
           ,
           ,
-          [8],
-          [6, 7]
+          [9]
         ],
-        [, , "9\\d{8}", , , , "912345678", , , [9]],
-        [, , "800\\d{5}", , , , "80012345", , , [8]],
-        [, , "805\\d{5}", , , , "80512345", , , [8]],
-        [, , "801\\d{5}", , , , "80112345", , , [8]],
-        [, , "80[24]\\d{5}", , , , "80212345", , , [8]],
         [, , , , , , , , , [-1]],
-        "PE",
-        51,
-        "00|19(?:1[124]|77|90)00",
+        "NZ",
+        64,
+        "0(?:0|161)",
         "0",
-        " Anexo ",
+        ,
         ,
         "0",
         ,
         "00",
         ,
-        [[, "(\\d{3})(\\d{5})", "$1 $2", ["80"], "(0$1)"], [, "(\\d)(\\d{7})", "$1 $2", ["1"], "(0$1)"], [, "(\\d{2})(\\d{6})", "$1 $2", ["[4-8]"], "(0$1)"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"]]],
+        [[, "(\\d{2})(\\d{3,8})", "$1 $2", ["8[1-79]"], "0$1"], [, "(\\d{3})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["50[036-8]|8|90", "50(?:[0367]|88)|8|90"], "0$1"], [, "(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["24|[346]|7[2-57-9]|9[2-9]"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:10|74)|[589]"], "0$1"], [, "(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["1|2[028]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{3,5})", "$1 $2 $3", ["2(?:[169]|7[0-35-9])|7"], "0$1"]],
         ,
         [, , , , , , , , , [-1]],
         ,
         ,
         [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
+        [, , "8(?:1[16-9]|22|3\\d|4[045]|5[459]|6[235-9]|7[0-3579]|90)\\d{2,7}", , , , "83012378"],
         ,
         ,
         [, , , , , , , , , [-1]]
       ],
+      OM: [, [, , "(?:1505|[279]\\d{3}|500)\\d{4}|800\\d{5,6}", , , , , , , [7, 8, 9]], [, , "2[1-6]\\d{6}", , , , "23123456", , , [8]], [, , "(?:1505|90[1-9]\\d)\\d{4}|(?:7[126-9]|9[1-9])\\d{6}", , , , "92123456", , , [8]], [, , "8007\\d{4,5}|(?:500|800[05])\\d{4}", , , , "80071234"], [, , "900\\d{5}", , , , "90012345", , , [8]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "OM", 968, "00", , , , , , , , [[
+        ,
+        "(\\d{3})(\\d{4,6})",
+        "$1 $2",
+        ["[58]"]
+      ], [, "(\\d{2})(\\d{6})", "$1 $2", ["2"]], [, "(\\d{4})(\\d{4})", "$1 $2", ["[179]"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      PA: [, [, , "(?:00800|8\\d{3})\\d{6}|[68]\\d{7}|[1-57-9]\\d{6}", , , , , , , [7, 8, 10, 11]], [
+        ,
+        ,
+        "(?:1(?:0\\d|1[479]|2[37]|3[0137]|4[17]|5[05]|6[058]|7[0167]|8[2358]|9[1389])|2(?:[0235-79]\\d|1[0-7]|4[013-9]|8[02-9])|3(?:[089]\\d|1[0-7]|2[0-5]|33|4[0-79]|5[0-35]|6[068]|7[0-8])|4(?:00|3[0-579]|4\\d|7[0-57-9])|5(?:[01]\\d|2[0-7]|[56]0|79)|7(?:0[09]|2[0-26-8]|3[03]|4[04]|5[05-9]|6[0156]|7[0-24-9]|8[5-9]|90)|8(?:09|2[89]|3\\d|4[0-24-689]|5[014]|8[02])|9(?:0[5-9]|1[0135-8]|2[036-9]|3[35-79]|40|5[0457-9]|6[05-9]|7[04-9]|8[35-8]|9\\d))\\d{4}",
+        ,
+        ,
+        ,
+        "2001234",
+        ,
+        ,
+        [7]
+      ], [, , "(?:1[16]1|21[89]|6\\d{3}|8(?:1[01]|7[23]))\\d{4}", , , , "61234567", , , [7, 8]], [, , "800\\d{4,5}|(?:00800|800\\d)\\d{6}", , , , "8001234"], [, , "(?:8(?:22|55|60|7[78]|86)|9(?:00|81))\\d{4}", , , , "8601234", , , [7]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "PA", 507, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1-$2", ["[1-57-9]"]], [, "(\\d{4})(\\d{4})", "$1-$2", ["[68]"]], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      PE: [, [
+        ,
+        ,
+        "(?:[14-8]|9\\d)\\d{7}",
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        [8, 9],
+        [6, 7]
+      ], [, , "(?:(?:4[34]|5[14])[0-8]\\d|7(?:173|3[0-8]\\d)|8(?:10[05689]|6(?:0[06-9]|1[6-9]|29)|7(?:0[569]|[56]0)))\\d{4}|(?:1[0-8]|4[12]|5[236]|6[1-7]|7[246]|8[2-4])\\d{6}", , , , "11234567", , , [8], [6, 7]], [, , "9\\d{8}", , , , "912345678", , , [9]], [, , "800\\d{5}", , , , "80012345", , , [8]], [, , "805\\d{5}", , , , "80512345", , , [8]], [, , "801\\d{5}", , , , "80112345", , , [8]], [, , "80[24]\\d{5}", , , , "80212345", , , [8]], [, , , , , , , , , [-1]], "PE", 51, "00|19(?:1[124]|77|90)00", "0", " Anexo ", , "0", , "00", , [[
+        ,
+        "(\\d{3})(\\d{5})",
+        "$1 $2",
+        ["80"],
+        "(0$1)"
+      ], [, "(\\d)(\\d{7})", "$1 $2", ["1"], "(0$1)"], [, "(\\d{2})(\\d{6})", "$1 $2", ["[4-8]"], "(0$1)"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       PF: [
         ,
         [, , "4\\d{5}(?:\\d{2})?|8\\d{7,8}", , , , , , , [6, 8, 9]],
@@ -6927,30 +7221,37 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      PG: [, [, , "(?:180|[78]\\d{3})\\d{4}|(?:[2-589]\\d|64)\\d{5}", , , , , , , [7, 8]], [, , "(?:(?:3[0-2]|4[257]|5[34]|9[78])\\d|64[1-9]|85[02-46-9])\\d{4}", , , , "3123456", , , [7]], [, , "(?:7\\d|8[1-38])\\d{6}", , , , "70123456", , , [8]], [, , "180\\d{4}", , , , "1801234", , , [7]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "2(?:0[0-57]|7[568])\\d{4}", , , , "2751234", , , [7]], "PG", 675, "00|140[1-3]", , , , , , "00", , [[
+      PG: [, [, , "(?:180|[78]\\d{3})\\d{4}|(?:[2-589]\\d|64)\\d{5}", , , , , , , [7, 8]], [, , "(?:(?:3[0-2]|4[257]|5[34]|9[78])\\d|64[1-9]|85[02-46-9])\\d{4}", , , , "3123456", , , [7]], [, , "(?:7\\d|8[1-38])\\d{6}", , , , "70123456", , , [8]], [
         ,
-        "(\\d{3})(\\d{4})",
+        ,
+        "180\\d{4}",
+        ,
+        ,
+        ,
+        "1801234",
+        ,
+        ,
+        [7]
+      ], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "2(?:0[0-57]|7[568])\\d{4}", , , , "2751234", , , [7]], "PG", 675, "00|140[1-3]", , , , , , "00", , [[, "(\\d{3})(\\d{4})", "$1 $2", ["18|[2-69]|85"]], [, "(\\d{4})(\\d{4})", "$1 $2", ["[78]"]]], , [, , "27[01]\\d{4}", , , , "2700123", , , [7]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      PH: [, [, , "(?:[2-7]|9\\d)\\d{8}|2\\d{5}|(?:1800|8)\\d{7,9}", , , , , , , [6, 8, 9, 10, 11, 12, 13], [4, 5, 7]], [
+        ,
+        ,
+        "(?:(?:2[3-8]|3[2-68]|4[2-9]|5[2-6]|6[2-58]|7[24578])\\d{3}|88(?:22\\d\\d|42))\\d{4}|(?:2|8[2-8]\\d\\d)\\d{5}",
+        ,
+        ,
+        ,
+        "232345678",
+        ,
+        ,
+        [6, 8, 9, 10],
+        [4, 5, 7]
+      ], [, , "(?:8(?:1[37]|9[5-8])|9(?:0[5-9]|1[0-24-9]|[235-7]\\d|4[2-9]|8[135-9]|9[1-9]))\\d{7}", , , , "9051234567", , , [10]], [, , "1800\\d{7,9}", , , , "180012345678", , , [11, 12, 13]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "PH", 63, "00", "0", , , "0", , , , [[, "(\\d)(\\d{5})", "$1 $2", ["2"], "(0$1)"], [
+        ,
+        "(\\d{4})(\\d{4,6})",
         "$1 $2",
-        ["18|[2-69]|85"]
-      ], [, "(\\d{4})(\\d{4})", "$1 $2", ["[78]"]]], , [, , "27[01]\\d{4}", , , , "2700123", , , [7]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      PH: [, [, , "(?:[2-7]|9\\d)\\d{8}|2\\d{5}|(?:1800|8)\\d{7,9}", , , , , , , [6, 8, 9, 10, 11, 12, 13], [4, 5, 7]], [, , "(?:(?:2[3-8]|3[2-68]|4[2-9]|5[2-6]|6[2-58]|7[24578])\\d{3}|88(?:22\\d\\d|42))\\d{4}|(?:2|8[2-8]\\d\\d)\\d{5}", , , , "232345678", , , [6, 8, 9, 10], [4, 5, 7]], [
-        ,
-        ,
-        "(?:8(?:1[37]|9[5-8])|9(?:0[5-9]|1[0-24-9]|[235-7]\\d|4[2-9]|8[135-9]|9[1-9]))\\d{7}",
-        ,
-        ,
-        ,
-        "9051234567",
-        ,
-        ,
-        [10]
-      ], [, , "1800\\d{7,9}", , , , "180012345678", , , [11, 12, 13]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "PH", 63, "00", "0", , , "0", , , , [[, "(\\d)(\\d{5})", "$1 $2", ["2"], "(0$1)"], [, "(\\d{4})(\\d{4,6})", "$1 $2", ["3(?:23|39|46)|4(?:2[3-6]|[35]9|4[26]|76)|544|88[245]|(?:52|64|86)2", "3(?:230|397|461)|4(?:2(?:35|[46]4|51)|396|4(?:22|63)|59[347]|76[15])|5(?:221|446)|642[23]|8(?:622|8(?:[24]2|5[13]))"], "(0$1)"], [
-        ,
-        "(\\d{5})(\\d{4})",
-        "$1 $2",
-        ["346|4(?:27|9[35])|883", "3469|4(?:279|9(?:30|56))|8834"],
+        ["3(?:23|39|46)|4(?:2[3-6]|[35]9|4[26]|76)|544|88[245]|(?:52|64|86)2", "3(?:230|397|461)|4(?:2(?:35|[46]4|51)|396|4(?:22|63)|59[347]|76[15])|5(?:221|446)|642[23]|8(?:622|8(?:[24]2|5[13]))"],
         "(0$1)"
-      ], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2"], "(0$1)"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[3-7]|8[2-8]"], "(0$1)"], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]"], "0$1"], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], [, "(\\d{4})(\\d{1,2})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["1"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      ], [, "(\\d{5})(\\d{4})", "$1 $2", ["346|4(?:27|9[35])|883", "3469|4(?:279|9(?:30|56))|8834"], "(0$1)"], [, "(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2"], "(0$1)"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[3-7]|8[2-8]"], "(0$1)"], [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]"], "0$1"], [, "(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], [, "(\\d{4})(\\d{1,2})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["1"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       PK: [, [
         ,
         ,
@@ -7180,7 +7481,7 @@ var factoryOutput = (() => {
         ,
         ,
         "211234567"
-      ], [, , "(?:630|702)0\\d{5}|(?:6(?:[04]0|2\\d)|7(?:0[013-9]|1[0-3]|[2-7]\\d|8[03-8]|9[0-39]))\\d{6}", , , , "712034567", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "90[0136]\\d{6}", , , , "900123456", , , [9]], [, , "801\\d{6}", , , , "801123456", , , [9]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "RO", 40, "00", "0", " int ", , "0", , , , [[, "(\\d{3})(\\d{3})", "$1 $2", ["2[3-6]", "2[3-6]\\d9"], "0$1"], [, "(\\d{2})(\\d{4})", "$1 $2", ["219|31"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[23]1"], "0$1"], [
+      ], [, , "(?:630|702)0\\d{5}|(?:6(?:00|2\\d)|7(?:0[013-9]|1[0-3]|[2-7]\\d|8[03-8]|9[0-39]))\\d{6}", , , , "712034567", , , [9]], [, , "800\\d{6}", , , , "800123456", , , [9]], [, , "90[0136]\\d{6}", , , , "900123456", , , [9]], [, , "801\\d{6}", , , , "801123456", , , [9]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "RO", 40, "00", "0", " int ", , "0", , , , [[, "(\\d{3})(\\d{3})", "$1 $2", ["2[3-6]", "2[3-6]\\d9"], "0$1"], [, "(\\d{2})(\\d{4})", "$1 $2", ["219|31"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[23]1"], "0$1"], [
         ,
         "(\\d{3})(\\d{3})(\\d{3})",
         "$1 $2 $3",
@@ -7335,7 +7636,7 @@ var factoryOutput = (() => {
         ,
         ,
         [8]
-      ], [, , "8(?:09[0-68]|95[0-2])\\d{4}|(?:8(?:0[1-8]|[1-8]\\d|9[0-4])|9[0-8]\\d)\\d{5}", , , , "81234567", , , [8]], [, , "(?:18|8)00\\d{7}", , , , "18001234567", , , [10, 11]], [, , "1900\\d{7}", , , , "19001234567", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:3[12]\\d|666)\\d{5}", , , , "31234567", , , [8]], "SG", 65, "0[0-3]\\d", , , , , , , , [
+      ], [, , "8(?:09[0-689]|95[0-2])\\d{4}|(?:8(?:0[1-8]|[1-8]\\d|9[0-4])|9[0-8]\\d)\\d{5}", , , , "81234567", , , [8]], [, , "(?:18|8)00\\d{7}", , , , "18001234567", , , [10, 11]], [, , "1900\\d{7}", , , , "19001234567", , , [11]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "(?:3[12]\\d|666)\\d{5}", , , , "31234567", , , [8]], "SG", 65, "0[0-3]\\d", , , , , , , , [
         [, "(\\d{4,5})", "$1", ["1[013-9]|77", "1(?:[013-8]|9(?:0[1-9]|[1-9]))|77"]],
         [, "(\\d{4})(\\d{4})", "$1 $2", ["[369]|8(?:0[1-9]|[1-9])"]],
         [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]],
@@ -7455,7 +7756,7 @@ var factoryOutput = (() => {
       SN: [, [, , "(?:[378]\\d|93)\\d{7}", , , , , , , [9]], [, , "3(?:0(?:1[0-2]|80)|282|3(?:8[1-9]|9[3-9])|611)\\d{5}", , , , "301012345"], [
         ,
         ,
-        "7(?:(?:[06-8]\\d|21|90)\\d|5(?:01|[19]0|25|[38]3|[4-7]\\d))\\d{5}",
+        "7(?:(?:[06-8]\\d|21|90)\\d|5(?:0[01]|[19]0|2[25]|[38]3|[4-7]\\d))\\d{5}",
         ,
         ,
         ,
@@ -7605,39 +7906,52 @@ var factoryOutput = (() => {
         ,
         [10, 13]
       ], [, , "1900\\d{6}", , , , "1900123456", , , [10]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "6[08]\\d{7}", , , , "601234567", , , [9]], "TH", 66, "00[1-9]", "0", , , "0", , , , [[, "(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[13-9]"], "0$1"], [, "(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      TJ: [
+      TJ: [, [, , "[0-57-9]\\d{8}", , , , , , , [9], [3, 5, 6, 7]], [
         ,
-        [, , "[0-57-9]\\d{8}", , , , , , , [9], [3, 5, 6, 7]],
-        [
-          ,
-          ,
-          "(?:3(?:1[3-5]|2[245]|3[12]|4[24-7]|5[25]|72)|4(?:46|74|87))\\d{6}",
-          ,
-          ,
-          ,
-          "372123456",
-          ,
-          ,
-          ,
-          [3, 5, 6, 7]
-        ],
-        [, , "(?:33[03-9]|4(?:1[18]|4[02-479])|81[1-9])\\d{6}|(?:0[0-57-9]|1[017]|2[02]|[34]0|5[05]|7[01578]|8[078]|9\\d)\\d{7}", , , , "917123456"],
+        ,
+        "(?:3(?:1[3-5]|2[245]|3[12]|4[24-7]|5[25]|72)|4(?:46|74|87))\\d{6}",
+        ,
+        ,
+        ,
+        "372123456",
+        ,
+        ,
+        ,
+        [3, 5, 6, 7]
+      ], [, , "(?:33[03-9]|4(?:1[18]|4[02-479])|81[1-9])\\d{6}|(?:[09]\\d|1[017]|2[02]|[34]0|5[05]|7[01578]|8[078])\\d{7}", , , , "917123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "TJ", 992, "810", , , , , , "8~10", , [[, "(\\d{6})(\\d)(\\d{2})", "$1 $2 $3", ["331", "3317"]], [, "(\\d{3})(\\d{2})(\\d{4})", "$1 $2 $3", ["44[02-479]|[34]7"]], [, "(\\d{4})(\\d)(\\d{4})", "$1 $2 $3", ["3(?:[1245]|3[12])"]], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[0-57-9]"]]], , [
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        ,
+        [-1]
+      ], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      TK: [, [, , "[2-47]\\d{3,6}", , , , , , , [4, 5, 6, 7]], [, , "(?:2[2-4]|[34]\\d)\\d{2,5}", , , , "3101"], [, , "7[2-4]\\d{2,5}", , , , "7290"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "TK", 690, "00", , , , , , , , , , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      TL: [
+        ,
+        [, , "7\\d{7}|(?:[2-47]\\d|[89]0)\\d{5}", , , , , , , [7, 8]],
+        [, , "(?:2[1-5]|3[1-9]|4[1-4])\\d{5}", , , , "2112345", , , [7]],
+        [, , "7[2-8]\\d{6}", , , , "77212345", , , [8]],
+        [, , "80\\d{5}", , , , "8012345", , , [7]],
+        [, , "90\\d{5}", , , , "9012345", , , [7]],
         [, , , , , , , , , [-1]],
+        [, , "70\\d{5}", , , , "7012345", , , [7]],
         [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        [, , , , , , , , , [-1]],
-        "TJ",
-        992,
-        "810",
+        "TL",
+        670,
+        "00",
         ,
         ,
         ,
         ,
         ,
-        "8~10",
         ,
-        [[, "(\\d{6})(\\d)(\\d{2})", "$1 $2 $3", ["331", "3317"]], [, "(\\d{3})(\\d{2})(\\d{4})", "$1 $2 $3", ["44[02-479]|[34]7"]], [, "(\\d{4})(\\d)(\\d{4})", "$1 $2 $3", ["3(?:[1245]|3[12])"]], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[0-57-9]"]]],
+        ,
+        [[, "(\\d{3})(\\d{4})", "$1 $2", ["[2-489]|70"]], [, "(\\d{4})(\\d{4})", "$1 $2", ["7"]]],
         ,
         [, , , , , , , , , [-1]],
         ,
@@ -7648,19 +7962,6 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      TK: [, [, , "[2-47]\\d{3,6}", , , , , , , [4, 5, 6, 7]], [, , "(?:2[2-4]|[34]\\d)\\d{2,5}", , , , "3101"], [, , "7[2-4]\\d{2,5}", , , , "7290"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], "TK", 690, "00", , , , , , , , , , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      TL: [, [, , "7\\d{7}|(?:[2-47]\\d|[89]0)\\d{5}", , , , , , , [7, 8]], [, , "(?:2[1-5]|3[1-9]|4[1-4])\\d{5}", , , , "2112345", , , [7]], [
-        ,
-        ,
-        "7[2-8]\\d{6}",
-        ,
-        ,
-        ,
-        "77212345",
-        ,
-        ,
-        [8]
-      ], [, , "80\\d{5}", , , , "8012345", , , [7]], [, , "90\\d{5}", , , , "9012345", , , [7]], [, , , , , , , , , [-1]], [, , "70\\d{5}", , , , "7012345", , , [7]], [, , , , , , , , , [-1]], "TL", 670, "00", , , , , , , , [[, "(\\d{3})(\\d{4})", "$1 $2", ["[2-489]|70"]], [, "(\\d{4})(\\d{4})", "$1 $2", ["7"]]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       TM: [, [, , "(?:[1-6]\\d|71)\\d{6}", , , , , , , [8]], [, , "(?:1(?:2\\d|3[1-9])|2(?:22|4[0-35-8])|3(?:22|4[03-9])|4(?:22|3[128]|4\\d|6[15])|5(?:22|5[7-9]|6[014-689]))\\d{5}", , , , "12345678"], [
         ,
         ,
@@ -7893,7 +8194,7 @@ var factoryOutput = (() => {
         ,
         [, , , , , , , , , [-1]]
       ],
-      UY: [, [, , "0004\\d{2,9}|[1249]\\d{7}|(?:[49]\\d|80)\\d{5}", , , , , , , [6, 7, 8, 9, 10, 11, 12, 13]], [, , "(?:1(?:770|9(?:20|87))|(?:2\\d|4[2-7])\\d\\d)\\d{4}", , , , "21231234", , , [8], [7]], [, , "9[1-9]\\d{6}", , , , "94231234", , , [8]], [
+      UY: [, [, , "0004\\d{2,9}|[1249]\\d{7}|(?:[49]\\d|80)\\d{5}", , , , , , , [6, 7, 8, 9, 10, 11, 12, 13]], [, , "(?:1(?:770|9(?:20|[89]7))|(?:2\\d|4[2-7])\\d\\d)\\d{4}", , , , "21231234", , , [8], [7]], [, , "9[1-9]\\d{6}", , , , "94231234", , , [8]], [
         ,
         ,
         "0004\\d{2,9}|(?:405|80[05])\\d{4}",
@@ -8183,7 +8484,7 @@ var factoryOutput = (() => {
         [, , , , , , , , , [-1]]
       ],
       YT: [, [, , "(?:80|9\\d)\\d{7}|(?:26|63)9\\d{6}", , , , , , , [9]], [, , "269(?:0[0-467]|15|5[0-4]|6\\d|[78]0)\\d{4}", , , , "269601234"], [, , "639(?:0[0-79]|1[019]|[267]\\d|3[09]|40|5[05-9]|9[04-79])\\d{4}", , , , "639012345"], [, , "80\\d{7}", , , , "801234567"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "9(?:(?:39|47)8[01]|769\\d)\\d{4}", , , , "939801234"], "YT", 262, "00", "0", , , "0", , , , , , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
-      ZA: [, [, , "[1-79]\\d{8}|8\\d{4,9}", , , , , , , [5, 6, 7, 8, 9, 10]], [, , "(?:2(?:0330|4302)|52087)0\\d{3}|(?:1[0-8]|2[1-378]|3[1-69]|4\\d|5[1346-8])\\d{7}", , , , "101234567", , , [9]], [, , "(?:1(?:3492[0-25]|4495[0235]|549(?:20|5[01]))|4[34]492[01])\\d{3}|8[1-4]\\d{3,7}|(?:2[27]|47|54)4950\\d{3}|(?:1(?:049[2-4]|9[12]\\d\\d)|(?:6\\d|7[0-46-9])\\d{3}|8(?:5\\d{3}|7(?:08[67]|158|28[5-9]|310)))\\d{4}|(?:1[6-8]|28|3[2-69]|4[025689]|5[36-8])4920\\d{3}|(?:12|[2-5]1)492\\d{4}", , , , "711234567", , , [5, 6, 7, 8, 9]], [
+      ZA: [, [, , "[1-79]\\d{8}|8\\d{4,9}", , , , , , , [5, 6, 7, 8, 9, 10]], [, , "(?:2(?:0330|4302)|52087)0\\d{3}|(?:1[0-8]|2[1-378]|3[1-69]|4\\d|5[1346-8])\\d{7}", , , , "101234567", , , [9]], [, , "(?:1(?:3492[0-25]|4495[0235]|549(?:20|5[01]))|4[34]492[01])\\d{3}|8[1-4]\\d{3,7}|(?:2[27]|47|54)4950\\d{3}|(?:1(?:049[2-4]|9[12]\\d\\d)|(?:6\\d\\d|7(?:[0-46-9]\\d|5[0-4]))\\d\\d|8(?:5\\d{3}|7(?:08[67]|158|28[5-9]|310)))\\d{4}|(?:1[6-8]|28|3[2-69]|4[025689]|5[36-8])4920\\d{3}|(?:12|[2-5]1)492\\d{4}", , , , "711234567", , , [5, 6, 7, 8, 9]], [
         ,
         ,
         "80\\d{7}",
@@ -8194,18 +8495,20 @@ var factoryOutput = (() => {
         ,
         ,
         [9]
-      ], [, , "(?:86[2-9]|9[0-2]\\d)\\d{6}", , , , "862345678", , , [9]], [, , "860\\d{6}", , , , "860123456", , , [9]], [, , , , , , , , , [-1]], [, , "87(?:08[0-589]|15[0-79]|28[0-4]|31[1-9])\\d{4}|87(?:[02][0-79]|1[0-46-9]|3[02-9]|[4-9]\\d)\\d{5}", , , , "871234567", , , [9]], "ZA", 27, "00", "0", , , "0", , , , [[, "(\\d{2})(\\d{3,4})", "$1 $2", ["8[1-4]"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["8[1-4]"], "0$1"], [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["860"], "0$1"], [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-9]"], "0$1"], [
+      ], [, , "(?:86[2-9]|9[0-2]\\d)\\d{6}", , , , "862345678", , , [9]], [, , "860\\d{6}", , , , "860123456", , , [9]], [, , , , , , , , , [-1]], [, , "87(?:08[0-589]|15[0-79]|28[0-4]|31[1-9])\\d{4}|87(?:[02][0-79]|1[0-46-9]|3[02-9]|[4-9]\\d)\\d{5}", , , , "871234567", , , [9]], "ZA", 27, "00", "0", , , "0", , , , [
+        [, "(\\d{2})(\\d{3,4})", "$1 $2", ["8[1-4]"], "0$1"],
+        [, "(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["8[1-4]"], "0$1"],
+        [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["860"], "0$1"],
+        [, "(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-9]"], "0$1"],
+        [, "(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"], "0$1"]
+      ], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "861\\d{6,7}", , , , "861123456", , , [9, 10]], , , [, , , , , , , , , [-1]]],
+      ZM: [, [, , "800\\d{6}|(?:21|63|[79]\\d)\\d{7}", , , , , , , [9], [6]], [, , "21[1-8]\\d{6}", , , , "211234567", , , , [6]], [, , "(?:7[5-79]|9[5-8])\\d{7}", , , , "955123456"], [, , "800\\d{6}", , , , "800123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "63\\d{7}", , , , "630123456"], "ZM", 260, "00", "0", , , "0", , , , [[, "(\\d{3})(\\d{3})", "$1 $2", ["[1-9]"]], [
         ,
-        "(\\d{3})(\\d{3})(\\d{4})",
+        "(\\d{3})(\\d{3})(\\d{3})",
         "$1 $2 $3",
-        ["8"],
+        ["[28]"],
         "0$1"
-      ]], , [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , "861\\d{6,7}", , , , "861123456", , , [9, 10]], , , [, , , , , , , , , [-1]]],
-      ZM: [, [, , "800\\d{6}|(?:21|63|[79]\\d)\\d{7}", , , , , , , [9], [6]], [, , "21[1-8]\\d{6}", , , , "211234567", , , , [6]], [, , "(?:7[5-79]|9[5-8])\\d{7}", , , , "955123456"], [, , "800\\d{6}", , , , "800123456"], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], [, , "63\\d{7}", , , , "630123456"], "ZM", 260, "00", "0", , , "0", , , , [
-        [, "(\\d{3})(\\d{3})", "$1 $2", ["[1-9]"]],
-        [, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[28]"], "0$1"],
-        [, "(\\d{2})(\\d{7})", "$1 $2", ["[79]"], "0$1"]
-      ], [[, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[28]"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["[79]"], "0$1"]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
+      ], [, "(\\d{2})(\\d{7})", "$1 $2", ["[79]"], "0$1"]], [[, "(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[28]"], "0$1"], [, "(\\d{2})(\\d{7})", "$1 $2", ["[79]"], "0$1"]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]], [, , , , , , , , , [-1]], , , [, , , , , , , , , [-1]]],
       ZW: [, [, , "2(?:[0-57-9]\\d{6,8}|6[0-24-9]\\d{6,7})|[38]\\d{9}|[35-8]\\d{8}|[3-6]\\d{7}|[1-689]\\d{6}|[1-3569]\\d{5}|[1356]\\d{4}", , , , , , , [5, 6, 7, 8, 9, 10], [3, 4]], [
         ,
         ,
@@ -8921,7 +9224,7 @@ var factoryOutput = (() => {
         b = "";
         for (let e = 0; e < c.length; e++) d.ja = ob(d, c.charAt(e)), b = d.ja;
         return b;
-      } catch (c) {
+      } catch {
         return a;
       }
     });
@@ -8930,7 +9233,7 @@ var factoryOutput = (() => {
         const e = J.g(), f = X(e, a, b);
         var d = W(e, f, -1);
         return 0 == d || 4 == d ? e.format(f, "undefined" === typeof c ? 0 : c) : a;
-      } catch (e) {
+      } catch {
         return a;
       }
     });
@@ -8953,14 +9256,14 @@ var factoryOutput = (() => {
           h = null;
         }
         return l.format(h, d ? 0 : b ? 2 : 1);
-      } catch (l) {
+      } catch {
         return "";
       }
     });
     m("intlTelInputUtilsTemp.getExtension", (a, b) => {
       try {
         return r(X(J.g(), a, b), 3);
-      } catch (c) {
+      } catch {
         return "";
       }
     });
@@ -8974,11 +9277,12 @@ var factoryOutput = (() => {
           e = ab(f, d);
         }
         return e;
-      } catch (g) {
+      } catch {
         return -99;
       }
     });
     m("intlTelInputUtilsTemp.getValidationError", (a, b) => {
+      if (!b) return 1;
       try {
         const c = J.g(), d = X(c, a, b);
         return W(c, d, -1);
@@ -8998,7 +9302,7 @@ var factoryOutput = (() => {
           g = -1 != ab(h, f);
         }
         return g;
-      } catch (l) {
+      } catch {
         return false;
       }
     });
@@ -9014,14 +9318,14 @@ var factoryOutput = (() => {
           return f;
         }
         return 0 === W(d, e, -1);
-      } catch (d) {
+      } catch {
         return false;
       }
     });
     m("intlTelInputUtilsTemp.getCoreNumber", (a, b) => {
       try {
         return r(X(J.g(), a, b), 2).toString();
-      } catch (c) {
+      } catch {
         return "";
       }
     });

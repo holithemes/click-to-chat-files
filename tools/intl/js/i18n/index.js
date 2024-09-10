@@ -1,4 +1,3 @@
-//* THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
 export { default as ar, countryTranslations as arCountryTranslations, interfaceTranslations as arInterfaceTranslations } from "./ar";
 export { default as bg, countryTranslations as bgCountryTranslations, interfaceTranslations as bgInterfaceTranslations } from "./bg";
 export { default as bn, countryTranslations as bnCountryTranslations, interfaceTranslations as bnInterfaceTranslations } from "./bn";
@@ -21,6 +20,7 @@ export { default as ja, countryTranslations as jaCountryTranslations, interfaceT
 export { default as ko, countryTranslations as koCountryTranslations, interfaceTranslations as koInterfaceTranslations } from "./ko";
 export { default as mr, countryTranslations as mrCountryTranslations, interfaceTranslations as mrInterfaceTranslations } from "./mr";
 export { default as nl, countryTranslations as nlCountryTranslations, interfaceTranslations as nlInterfaceTranslations } from "./nl";
+export { default as pl, countryTranslations as plCountryTranslations, interfaceTranslations as plInterfaceTranslations } from "./pl";
 export { default as pt, countryTranslations as ptCountryTranslations, interfaceTranslations as ptInterfaceTranslations } from "./pt";
 export { default as ro, countryTranslations as roCountryTranslations, interfaceTranslations as roInterfaceTranslations } from "./ro";
 export { default as ru, countryTranslations as ruCountryTranslations, interfaceTranslations as ruInterfaceTranslations } from "./ru";
