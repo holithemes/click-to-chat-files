@@ -292,7 +292,7 @@
             var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
             z_index = parseInt(z_index) + 5;
 
-            // .iti add z-index
+            // fallback if greeting-pro-1 internal css not loaded.. due to cache.. or any other reason..
             var style = document.createElement('style');
             style.innerHTML = '.iti { z-index: ' + z_index + ' }';
             style.innerHTML += '.ctc_number_padding { padding: 9px; }';
