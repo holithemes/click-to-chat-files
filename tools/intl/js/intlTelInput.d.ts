@@ -10,542 +10,282 @@ declare module "intl-tel-input/data" {
     const allCountries: Country[];
     export default allCountries;
 }
-declare module "i18n/en/countries" {
-    const _default: {
-        ad: string;
-        ae: string;
-        af: string;
-        ag: string;
-        ai: string;
-        al: string;
-        am: string;
-        ao: string;
-        aq: string;
-        ar: string;
-        as: string;
-        at: string;
-        au: string;
-        aw: string;
-        ax: string;
-        az: string;
-        ba: string;
-        bb: string;
-        bd: string;
-        be: string;
-        bf: string;
-        bg: string;
-        bh: string;
-        bi: string;
-        bj: string;
-        bl: string;
-        bm: string;
-        bn: string;
-        bo: string;
-        bq: string;
-        br: string;
-        bs: string;
-        bt: string;
-        bv: string;
-        bw: string;
-        by: string;
-        bz: string;
-        ca: string;
-        cc: string;
-        cd: string;
-        cf: string;
-        cg: string;
-        ch: string;
-        ci: string;
-        ck: string;
-        cl: string;
-        cm: string;
-        cn: string;
-        co: string;
-        cr: string;
-        cu: string;
-        cv: string;
-        cw: string;
-        cx: string;
-        cy: string;
-        cz: string;
-        de: string;
-        dj: string;
-        dk: string;
-        dm: string;
-        do: string;
-        dz: string;
-        ec: string;
-        ee: string;
-        eg: string;
-        eh: string;
-        er: string;
-        es: string;
-        et: string;
-        fi: string;
-        fj: string;
-        fk: string;
-        fm: string;
-        fo: string;
-        fr: string;
-        ga: string;
-        gb: string;
-        gd: string;
-        ge: string;
-        gf: string;
-        gg: string;
-        gh: string;
-        gi: string;
-        gl: string;
-        gm: string;
-        gn: string;
-        gp: string;
-        gq: string;
-        gr: string;
-        gs: string;
-        gt: string;
-        gu: string;
-        gw: string;
-        gy: string;
-        hk: string;
-        hm: string;
-        hn: string;
-        hr: string;
-        ht: string;
-        hu: string;
-        id: string;
-        ie: string;
-        il: string;
-        im: string;
-        in: string;
-        io: string;
-        iq: string;
-        ir: string;
-        is: string;
-        it: string;
-        je: string;
-        jm: string;
-        jo: string;
-        jp: string;
-        ke: string;
-        kg: string;
-        kh: string;
-        ki: string;
-        km: string;
-        kn: string;
-        kp: string;
-        kr: string;
-        kw: string;
-        ky: string;
-        kz: string;
-        la: string;
-        lb: string;
-        lc: string;
-        li: string;
-        lk: string;
-        lr: string;
-        ls: string;
-        lt: string;
-        lu: string;
-        lv: string;
-        ly: string;
-        ma: string;
-        mc: string;
-        md: string;
-        me: string;
-        mf: string;
-        mg: string;
-        mh: string;
-        mk: string;
-        ml: string;
-        mm: string;
-        mn: string;
-        mo: string;
-        mp: string;
-        mq: string;
-        mr: string;
-        ms: string;
-        mt: string;
-        mu: string;
-        mv: string;
-        mw: string;
-        mx: string;
-        my: string;
-        mz: string;
-        na: string;
-        nc: string;
-        ne: string;
-        nf: string;
-        ng: string;
-        ni: string;
-        nl: string;
-        no: string;
-        np: string;
-        nr: string;
-        nu: string;
-        nz: string;
-        om: string;
-        pa: string;
-        pe: string;
-        pf: string;
-        pg: string;
-        ph: string;
-        pk: string;
-        pl: string;
-        pm: string;
-        pn: string;
-        pr: string;
-        ps: string;
-        pt: string;
-        pw: string;
-        py: string;
-        qa: string;
-        re: string;
-        ro: string;
-        rs: string;
-        ru: string;
-        rw: string;
-        sa: string;
-        sb: string;
-        sc: string;
-        sd: string;
-        se: string;
-        sg: string;
-        sh: string;
-        si: string;
-        sj: string;
-        sk: string;
-        sl: string;
-        sm: string;
-        sn: string;
-        so: string;
-        sr: string;
-        ss: string;
-        st: string;
-        sv: string;
-        sx: string;
-        sy: string;
-        sz: string;
-        tc: string;
-        td: string;
-        tf: string;
-        tg: string;
-        th: string;
-        tj: string;
-        tk: string;
-        tl: string;
-        tm: string;
-        tn: string;
-        to: string;
-        tr: string;
-        tt: string;
-        tv: string;
-        tw: string;
-        tz: string;
-        ua: string;
-        ug: string;
-        um: string;
-        us: string;
-        uy: string;
-        uz: string;
-        va: string;
-        vc: string;
-        ve: string;
-        vg: string;
-        vi: string;
-        vn: string;
-        vu: string;
-        wf: string;
-        ws: string;
-        ye: string;
-        yt: string;
-        za: string;
-        zm: string;
-        zw: string;
+declare module "intl-tel-input/i18n/types" {
+    export type I18n = {
+        af?: string;
+        al?: string;
+        dz?: string;
+        as?: string;
+        ad?: string;
+        ao?: string;
+        ai?: string;
+        ag?: string;
+        ar?: string;
+        am?: string;
+        aw?: string;
+        ac?: string;
+        au?: string;
+        at?: string;
+        az?: string;
+        bs?: string;
+        bh?: string;
+        bd?: string;
+        bb?: string;
+        by?: string;
+        be?: string;
+        bz?: string;
+        bj?: string;
+        bm?: string;
+        bt?: string;
+        bo?: string;
+        ba?: string;
+        bw?: string;
+        br?: string;
+        io?: string;
+        vg?: string;
+        bn?: string;
+        bg?: string;
+        bf?: string;
+        bi?: string;
+        kh?: string;
+        cm?: string;
+        ca?: string;
+        cv?: string;
+        bq?: string;
+        ky?: string;
+        cf?: string;
+        td?: string;
+        cl?: string;
+        cn?: string;
+        cx?: string;
+        cc?: string;
+        co?: string;
+        km?: string;
+        cg?: string;
+        cd?: string;
+        ck?: string;
+        cr?: string;
+        hr?: string;
+        cu?: string;
+        cw?: string;
+        cy?: string;
+        cz?: string;
+        ci?: string;
+        dk?: string;
+        dj?: string;
+        dm?: string;
+        do?: string;
+        ec?: string;
+        eg?: string;
+        sv?: string;
+        gq?: string;
+        er?: string;
+        ee?: string;
+        sz?: string;
+        et?: string;
+        fk?: string;
+        fo?: string;
+        fj?: string;
+        fi?: string;
+        fr?: string;
+        gf?: string;
+        pf?: string;
+        ga?: string;
+        gm?: string;
+        ge?: string;
+        de?: string;
+        gh?: string;
+        gi?: string;
+        gr?: string;
+        gl?: string;
+        gd?: string;
+        gp?: string;
+        gu?: string;
+        gt?: string;
+        gg?: string;
+        gn?: string;
+        gw?: string;
+        gy?: string;
+        ht?: string;
+        hn?: string;
+        hk?: string;
+        hu?: string;
+        is?: string;
+        in?: string;
+        id?: string;
+        ir?: string;
+        iq?: string;
+        ie?: string;
+        im?: string;
+        il?: string;
+        it?: string;
+        jm?: string;
+        jp?: string;
+        je?: string;
+        jo?: string;
+        kz?: string;
+        ke?: string;
+        ki?: string;
+        xk?: string;
+        kw?: string;
+        kg?: string;
+        la?: string;
+        lv?: string;
+        lb?: string;
+        ls?: string;
+        lr?: string;
+        ly?: string;
+        li?: string;
+        lt?: string;
+        lu?: string;
+        mo?: string;
+        mg?: string;
+        mw?: string;
+        my?: string;
+        mv?: string;
+        ml?: string;
+        mt?: string;
+        mh?: string;
+        mq?: string;
+        mr?: string;
+        mu?: string;
+        yt?: string;
+        mx?: string;
+        fm?: string;
+        md?: string;
+        mc?: string;
+        mn?: string;
+        me?: string;
+        ms?: string;
+        ma?: string;
+        mz?: string;
+        mm?: string;
+        na?: string;
+        nr?: string;
+        np?: string;
+        nl?: string;
+        nc?: string;
+        nz?: string;
+        ni?: string;
+        ne?: string;
+        ng?: string;
+        nu?: string;
+        nf?: string;
+        kp?: string;
+        mk?: string;
+        mp?: string;
+        no?: string;
+        om?: string;
+        pk?: string;
+        pw?: string;
+        ps?: string;
+        pa?: string;
+        pg?: string;
+        py?: string;
+        pe?: string;
+        ph?: string;
+        pl?: string;
+        pt?: string;
+        pr?: string;
+        qa?: string;
+        ro?: string;
+        ru?: string;
+        rw?: string;
+        re?: string;
+        ws?: string;
+        sm?: string;
+        sa?: string;
+        sn?: string;
+        rs?: string;
+        sc?: string;
+        sl?: string;
+        sg?: string;
+        sx?: string;
+        sk?: string;
+        si?: string;
+        sb?: string;
+        so?: string;
+        za?: string;
+        kr?: string;
+        ss?: string;
+        es?: string;
+        lk?: string;
+        bl?: string;
+        sh?: string;
+        kn?: string;
+        lc?: string;
+        mf?: string;
+        pm?: string;
+        vc?: string;
+        sd?: string;
+        sr?: string;
+        sj?: string;
+        se?: string;
+        ch?: string;
+        sy?: string;
+        st?: string;
+        tw?: string;
+        tj?: string;
+        tz?: string;
+        th?: string;
+        tl?: string;
+        tg?: string;
+        tk?: string;
+        to?: string;
+        tt?: string;
+        tn?: string;
+        tr?: string;
+        tm?: string;
+        tc?: string;
+        tv?: string;
+        vi?: string;
+        ug?: string;
+        ua?: string;
+        ae?: string;
+        gb?: string;
+        us?: string;
+        uy?: string;
+        uz?: string;
+        vu?: string;
+        va?: string;
+        ve?: string;
+        vn?: string;
+        wf?: string;
+        eh?: string;
+        ye?: string;
+        zm?: string;
+        zw?: string;
+        ax?: string;
+        selectedCountryAriaLabel?: string;
+        searchPlaceholder?: string;
+        countryListAriaLabel?: string;
+        oneSearchResult?: string;
+        multipleSearchResults?: string;
+        noCountrySelected?: string;
+        zeroSearchResults?: string;
     };
-    export default _default;
 }
-declare module "i18n/en/interface" {
-    const _default_1: {
-        selectedCountryAriaLabel: string;
-        noCountrySelected: string;
-        countryListAriaLabel: string;
-        searchPlaceholder: string;
-        zeroSearchResults: string;
-        oneSearchResult: string;
-        multipleSearchResults: string;
-        ac: string;
-        xk: string;
-    };
-    export default _default_1;
+declare module "intl-tel-input/i18n/en/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
 }
-declare module "i18n/en/index" {
-    import countryTranslations from "i18n/en/countries";
-    import interfaceTranslations from "i18n/en/interface";
+declare module "intl-tel-input/i18n/en/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/en" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/en/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/en/interface";
     export { countryTranslations, interfaceTranslations };
-    const _default_2: {
-        selectedCountryAriaLabel: string;
-        noCountrySelected: string;
-        countryListAriaLabel: string;
-        searchPlaceholder: string;
-        zeroSearchResults: string;
-        oneSearchResult: string;
-        multipleSearchResults: string;
-        ac: string;
-        xk: string;
-        ad: string;
-        ae: string;
-        af: string;
-        ag: string;
-        ai: string;
-        al: string;
-        am: string;
-        ao: string;
-        aq: string;
-        ar: string;
-        as: string;
-        at: string;
-        au: string;
-        aw: string;
-        ax: string;
-        az: string;
-        ba: string;
-        bb: string;
-        bd: string;
-        be: string;
-        bf: string;
-        bg: string;
-        bh: string;
-        bi: string;
-        bj: string;
-        bl: string;
-        bm: string;
-        bn: string;
-        bo: string;
-        bq: string;
-        br: string;
-        bs: string;
-        bt: string;
-        bv: string;
-        bw: string;
-        by: string;
-        bz: string;
-        ca: string;
-        cc: string;
-        cd: string;
-        cf: string;
-        cg: string;
-        ch: string;
-        ci: string;
-        ck: string;
-        cl: string;
-        cm: string;
-        cn: string;
-        co: string;
-        cr: string;
-        cu: string;
-        cv: string;
-        cw: string;
-        cx: string;
-        cy: string;
-        cz: string;
-        de: string;
-        dj: string;
-        dk: string;
-        dm: string;
-        do: string;
-        dz: string;
-        ec: string;
-        ee: string;
-        eg: string;
-        eh: string;
-        er: string;
-        es: string;
-        et: string;
-        fi: string;
-        fj: string;
-        fk: string;
-        fm: string;
-        fo: string;
-        fr: string;
-        ga: string;
-        gb: string;
-        gd: string;
-        ge: string;
-        gf: string;
-        gg: string;
-        gh: string;
-        gi: string;
-        gl: string;
-        gm: string;
-        gn: string;
-        gp: string;
-        gq: string;
-        gr: string;
-        gs: string;
-        gt: string;
-        gu: string;
-        gw: string;
-        gy: string;
-        hk: string;
-        hm: string;
-        hn: string;
-        hr: string;
-        ht: string;
-        hu: string;
-        id: string;
-        ie: string;
-        il: string;
-        im: string;
-        in: string;
-        io: string;
-        iq: string;
-        ir: string;
-        is: string;
-        it: string;
-        je: string;
-        jm: string;
-        jo: string;
-        jp: string;
-        ke: string;
-        kg: string;
-        kh: string;
-        ki: string;
-        km: string;
-        kn: string;
-        kp: string;
-        kr: string;
-        kw: string;
-        ky: string;
-        kz: string;
-        la: string;
-        lb: string;
-        lc: string;
-        li: string;
-        lk: string;
-        lr: string;
-        ls: string;
-        lt: string;
-        lu: string;
-        lv: string;
-        ly: string;
-        ma: string;
-        mc: string;
-        md: string;
-        me: string;
-        mf: string;
-        mg: string;
-        mh: string;
-        mk: string;
-        ml: string;
-        mm: string;
-        mn: string;
-        mo: string;
-        mp: string;
-        mq: string;
-        mr: string;
-        ms: string;
-        mt: string;
-        mu: string;
-        mv: string;
-        mw: string;
-        mx: string;
-        my: string;
-        mz: string;
-        na: string;
-        nc: string;
-        ne: string;
-        nf: string;
-        ng: string;
-        ni: string;
-        nl: string;
-        no: string;
-        np: string;
-        nr: string;
-        nu: string;
-        nz: string;
-        om: string;
-        pa: string;
-        pe: string;
-        pf: string;
-        pg: string;
-        ph: string;
-        pk: string;
-        pl: string;
-        pm: string;
-        pn: string;
-        pr: string;
-        ps: string;
-        pt: string;
-        pw: string;
-        py: string;
-        qa: string;
-        re: string;
-        ro: string;
-        rs: string;
-        ru: string;
-        rw: string;
-        sa: string;
-        sb: string;
-        sc: string;
-        sd: string;
-        se: string;
-        sg: string;
-        sh: string;
-        si: string;
-        sj: string;
-        sk: string;
-        sl: string;
-        sm: string;
-        sn: string;
-        so: string;
-        sr: string;
-        ss: string;
-        st: string;
-        sv: string;
-        sx: string;
-        sy: string;
-        sz: string;
-        tc: string;
-        td: string;
-        tf: string;
-        tg: string;
-        th: string;
-        tj: string;
-        tk: string;
-        tl: string;
-        tm: string;
-        tn: string;
-        to: string;
-        tr: string;
-        tt: string;
-        tv: string;
-        tw: string;
-        tz: string;
-        ua: string;
-        ug: string;
-        um: string;
-        us: string;
-        uy: string;
-        uz: string;
-        va: string;
-        vc: string;
-        ve: string;
-        vg: string;
-        vi: string;
-        vn: string;
-        vu: string;
-        wf: string;
-        ws: string;
-        ye: string;
-        yt: string;
-        za: string;
-        zm: string;
-        zw: string;
-    };
-    export default _default_2;
+    const allTranslations: I18n;
+    export default allTranslations;
 }
 declare module "intl-tel-input" {
     import { Country } from "intl-tel-input/data";
+    import { I18n } from "intl-tel-input/i18n/types";
     interface IntlTelInputInterface {
         (input: HTMLInputElement, options?: SomeOptions): Iti;
         autoCountry?: string;
@@ -603,259 +343,7 @@ declare module "intl-tel-input" {
             phone: string;
             country?: string;
         }) | null;
-        i18n: {
-            af?: string;
-            al?: string;
-            dz?: string;
-            as?: string;
-            ad?: string;
-            ao?: string;
-            ai?: string;
-            ag?: string;
-            ar?: string;
-            am?: string;
-            aw?: string;
-            ac?: string;
-            au?: string;
-            at?: string;
-            az?: string;
-            bs?: string;
-            bh?: string;
-            bd?: string;
-            bb?: string;
-            by?: string;
-            be?: string;
-            bz?: string;
-            bj?: string;
-            bm?: string;
-            bt?: string;
-            bo?: string;
-            ba?: string;
-            bw?: string;
-            br?: string;
-            io?: string;
-            vg?: string;
-            bn?: string;
-            bg?: string;
-            bf?: string;
-            bi?: string;
-            kh?: string;
-            cm?: string;
-            ca?: string;
-            cv?: string;
-            bq?: string;
-            ky?: string;
-            cf?: string;
-            td?: string;
-            cl?: string;
-            cn?: string;
-            cx?: string;
-            cc?: string;
-            co?: string;
-            km?: string;
-            cg?: string;
-            cd?: string;
-            ck?: string;
-            cr?: string;
-            hr?: string;
-            cu?: string;
-            cw?: string;
-            cy?: string;
-            cz?: string;
-            ci?: string;
-            dk?: string;
-            dj?: string;
-            dm?: string;
-            do?: string;
-            ec?: string;
-            eg?: string;
-            sv?: string;
-            gq?: string;
-            er?: string;
-            ee?: string;
-            sz?: string;
-            et?: string;
-            fk?: string;
-            fo?: string;
-            fj?: string;
-            fi?: string;
-            fr?: string;
-            gf?: string;
-            pf?: string;
-            ga?: string;
-            gm?: string;
-            ge?: string;
-            de?: string;
-            gh?: string;
-            gi?: string;
-            gr?: string;
-            gl?: string;
-            gd?: string;
-            gp?: string;
-            gu?: string;
-            gt?: string;
-            gg?: string;
-            gn?: string;
-            gw?: string;
-            gy?: string;
-            ht?: string;
-            hn?: string;
-            hk?: string;
-            hu?: string;
-            is?: string;
-            in?: string;
-            id?: string;
-            ir?: string;
-            iq?: string;
-            ie?: string;
-            im?: string;
-            il?: string;
-            it?: string;
-            jm?: string;
-            jp?: string;
-            je?: string;
-            jo?: string;
-            kz?: string;
-            ke?: string;
-            ki?: string;
-            xk?: string;
-            kw?: string;
-            kg?: string;
-            la?: string;
-            lv?: string;
-            lb?: string;
-            ls?: string;
-            lr?: string;
-            ly?: string;
-            li?: string;
-            lt?: string;
-            lu?: string;
-            mo?: string;
-            mg?: string;
-            mw?: string;
-            my?: string;
-            mv?: string;
-            ml?: string;
-            mt?: string;
-            mh?: string;
-            mq?: string;
-            mr?: string;
-            mu?: string;
-            yt?: string;
-            mx?: string;
-            fm?: string;
-            md?: string;
-            mc?: string;
-            mn?: string;
-            me?: string;
-            ms?: string;
-            ma?: string;
-            mz?: string;
-            mm?: string;
-            na?: string;
-            nr?: string;
-            np?: string;
-            nl?: string;
-            nc?: string;
-            nz?: string;
-            ni?: string;
-            ne?: string;
-            ng?: string;
-            nu?: string;
-            nf?: string;
-            kp?: string;
-            mk?: string;
-            mp?: string;
-            no?: string;
-            om?: string;
-            pk?: string;
-            pw?: string;
-            ps?: string;
-            pa?: string;
-            pg?: string;
-            py?: string;
-            pe?: string;
-            ph?: string;
-            pl?: string;
-            pt?: string;
-            pr?: string;
-            qa?: string;
-            ro?: string;
-            ru?: string;
-            rw?: string;
-            re?: string;
-            ws?: string;
-            sm?: string;
-            sa?: string;
-            sn?: string;
-            rs?: string;
-            sc?: string;
-            sl?: string;
-            sg?: string;
-            sx?: string;
-            sk?: string;
-            si?: string;
-            sb?: string;
-            so?: string;
-            za?: string;
-            kr?: string;
-            ss?: string;
-            es?: string;
-            lk?: string;
-            bl?: string;
-            sh?: string;
-            kn?: string;
-            lc?: string;
-            mf?: string;
-            pm?: string;
-            vc?: string;
-            sd?: string;
-            sr?: string;
-            sj?: string;
-            se?: string;
-            ch?: string;
-            sy?: string;
-            st?: string;
-            tw?: string;
-            tj?: string;
-            tz?: string;
-            th?: string;
-            tl?: string;
-            tg?: string;
-            tk?: string;
-            to?: string;
-            tt?: string;
-            tn?: string;
-            tr?: string;
-            tm?: string;
-            tc?: string;
-            tv?: string;
-            vi?: string;
-            ug?: string;
-            ua?: string;
-            ae?: string;
-            gb?: string;
-            us?: string;
-            uy?: string;
-            uz?: string;
-            vu?: string;
-            va?: string;
-            ve?: string;
-            vn?: string;
-            wf?: string;
-            eh?: string;
-            ye?: string;
-            zm?: string;
-            zw?: string;
-            ax?: string;
-            selectedCountryAriaLabel?: string;
-            searchPlaceholder?: string;
-            countryListAriaLabel?: string;
-            oneSearchResult?: string;
-            multipleSearchResults?: string;
-            noCountrySelected?: string;
-            zeroSearchResults?: string;
-        };
+        i18n: I18n;
         initialCountry: string;
         nationalMode: boolean;
         onlyCountries: string[];
@@ -876,6 +364,7 @@ declare module "intl-tel-input" {
         private options;
         private hadInitialPlaceholder;
         private isRTL;
+        private showSelectedCountryOnLeft;
         private isAndroid;
         private selectedCountryData;
         private countries;
@@ -931,6 +420,7 @@ declare module "intl-tel-input" {
         private _initDropdownListeners;
         private _initRequests;
         private _loadAutoCountry;
+        private _openDropdownWithPlus;
         private _initTelInputListeners;
         private _cap;
         private _trigger;
@@ -947,6 +437,7 @@ declare module "intl-tel-input" {
         private _highlightListItem;
         private _getCountryData;
         private _setCountry;
+        private _updateInputPadding;
         private _updateMaxLength;
         private _setSelectedCountryTitleAttribute;
         private _getHiddenSelectedCountryWidth;
@@ -969,10 +460,13 @@ declare module "intl-tel-input" {
         getSelectedCountryData(): SelectedCountryData;
         getValidationError(): number;
         isValidNumber(): boolean | null;
+        private _utilsIsPossibleNumber;
         isValidNumberPrecise(): boolean | null;
+        private _utilsIsValidNumber;
         setCountry(iso2: string): void;
         setNumber(number: string): void;
         setPlaceholderNumberType(type: NumberType): void;
+        setDisabled(disabled: boolean): void;
     }
     const intlTelInput: IntlTelInputInterface;
     export default intlTelInput;
@@ -984,4 +478,615 @@ declare module "intl-tel-input/utils-compiled" {
 declare module "intl-tel-input/intlTelInputWithUtils" {
     import intlTelInput from "intl-tel-input";
     export default intlTelInput;
+}
+declare module "intl-tel-input/i18n/ar/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ar/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ar" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ar/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ar/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/bg/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/bg/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/bg" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/bg/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/bg/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/bn/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/bn/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/bn" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/bn/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/bn/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/bs/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/bs/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/bs" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/bs/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/bs/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ca/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ca/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ca" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ca/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ca/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/cs/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/cs/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/cs" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/cs/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/cs/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/de/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/de/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/de" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/de/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/de/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/el/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/el/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/el" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/el/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/el/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/es/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/es/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/es" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/es/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/es/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/fa/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/fa/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/fa" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/fa/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/fa/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/fi/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/fi/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/fi" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/fi/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/fi/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/fr/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/fr/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/fr" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/fr/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/fr/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/hi/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/hi/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/hi" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/hi/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/hi/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/hr/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/hr/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/hr" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/hr/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/hr/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/hu/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/hu/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/hu" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/hu/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/hu/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/id/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/id/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/id" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/id/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/id/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/it/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/it/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/it" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/it/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/it/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ja/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ja/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ja" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ja/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ja/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ko/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ko/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ko" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ko/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ko/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/mr/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/mr/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/mr" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/mr/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/mr/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/nl/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/nl/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/nl" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/nl/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/nl/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/pl/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/pl/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/pl" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/pl/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/pl/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/pt/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/pt/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/pt" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/pt/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/pt/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ro/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ro/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ro" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ro/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ro/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ru/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ru/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ru" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ru/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ru/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/sk/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/sk/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/sk" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/sk/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/sk/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/sv/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/sv/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/sv" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/sv/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/sv/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/te/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/te/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/te" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/te/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/te/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/th/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/th/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/th" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/th/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/th/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/tr/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/tr/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/tr" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/tr/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/tr/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/ur/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/ur/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/ur" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/ur/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/ur/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n/zh/countries" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const countryTranslations: I18n;
+    export default countryTranslations;
+}
+declare module "intl-tel-input/i18n/zh/interface" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    const interfaceTranslations: I18n;
+    export default interfaceTranslations;
+}
+declare module "intl-tel-input/i18n/zh" {
+    import { I18n } from "intl-tel-input/i18n/types";
+    import countryTranslations from "intl-tel-input/i18n/zh/countries";
+    import interfaceTranslations from "intl-tel-input/i18n/zh/interface";
+    export { countryTranslations, interfaceTranslations };
+    const allTranslations: I18n;
+    export default allTranslations;
+}
+declare module "intl-tel-input/i18n" {
+    export { default as ar, countryTranslations as arCountryTranslations, interfaceTranslations as arInterfaceTranslations } from "intl-tel-input/i18n/ar";
+    export { default as bg, countryTranslations as bgCountryTranslations, interfaceTranslations as bgInterfaceTranslations } from "intl-tel-input/i18n/bg";
+    export { default as bn, countryTranslations as bnCountryTranslations, interfaceTranslations as bnInterfaceTranslations } from "intl-tel-input/i18n/bn";
+    export { default as bs, countryTranslations as bsCountryTranslations, interfaceTranslations as bsInterfaceTranslations } from "intl-tel-input/i18n/bs";
+    export { default as ca, countryTranslations as caCountryTranslations, interfaceTranslations as caInterfaceTranslations } from "intl-tel-input/i18n/ca";
+    export { default as cs, countryTranslations as csCountryTranslations, interfaceTranslations as csInterfaceTranslations } from "intl-tel-input/i18n/cs";
+    export { default as de, countryTranslations as deCountryTranslations, interfaceTranslations as deInterfaceTranslations } from "intl-tel-input/i18n/de";
+    export { default as el, countryTranslations as elCountryTranslations, interfaceTranslations as elInterfaceTranslations } from "intl-tel-input/i18n/el";
+    export { default as en, countryTranslations as enCountryTranslations, interfaceTranslations as enInterfaceTranslations } from "intl-tel-input/i18n/en";
+    export { default as es, countryTranslations as esCountryTranslations, interfaceTranslations as esInterfaceTranslations } from "intl-tel-input/i18n/es";
+    export { default as fa, countryTranslations as faCountryTranslations, interfaceTranslations as faInterfaceTranslations } from "intl-tel-input/i18n/fa";
+    export { default as fi, countryTranslations as fiCountryTranslations, interfaceTranslations as fiInterfaceTranslations } from "intl-tel-input/i18n/fi";
+    export { default as fr, countryTranslations as frCountryTranslations, interfaceTranslations as frInterfaceTranslations } from "intl-tel-input/i18n/fr";
+    export { default as hi, countryTranslations as hiCountryTranslations, interfaceTranslations as hiInterfaceTranslations } from "intl-tel-input/i18n/hi";
+    export { default as hr, countryTranslations as hrCountryTranslations, interfaceTranslations as hrInterfaceTranslations } from "intl-tel-input/i18n/hr";
+    export { default as hu, countryTranslations as huCountryTranslations, interfaceTranslations as huInterfaceTranslations } from "intl-tel-input/i18n/hu";
+    export { default as id, countryTranslations as idCountryTranslations, interfaceTranslations as idInterfaceTranslations } from "intl-tel-input/i18n/id";
+    export { default as it, countryTranslations as itCountryTranslations, interfaceTranslations as itInterfaceTranslations } from "intl-tel-input/i18n/it";
+    export { default as ja, countryTranslations as jaCountryTranslations, interfaceTranslations as jaInterfaceTranslations } from "intl-tel-input/i18n/ja";
+    export { default as ko, countryTranslations as koCountryTranslations, interfaceTranslations as koInterfaceTranslations } from "intl-tel-input/i18n/ko";
+    export { default as mr, countryTranslations as mrCountryTranslations, interfaceTranslations as mrInterfaceTranslations } from "intl-tel-input/i18n/mr";
+    export { default as nl, countryTranslations as nlCountryTranslations, interfaceTranslations as nlInterfaceTranslations } from "intl-tel-input/i18n/nl";
+    export { default as pl, countryTranslations as plCountryTranslations, interfaceTranslations as plInterfaceTranslations } from "intl-tel-input/i18n/pl";
+    export { default as pt, countryTranslations as ptCountryTranslations, interfaceTranslations as ptInterfaceTranslations } from "intl-tel-input/i18n/pt";
+    export { default as ro, countryTranslations as roCountryTranslations, interfaceTranslations as roInterfaceTranslations } from "intl-tel-input/i18n/ro";
+    export { default as ru, countryTranslations as ruCountryTranslations, interfaceTranslations as ruInterfaceTranslations } from "intl-tel-input/i18n/ru";
+    export { default as sk, countryTranslations as skCountryTranslations, interfaceTranslations as skInterfaceTranslations } from "intl-tel-input/i18n/sk";
+    export { default as sv, countryTranslations as svCountryTranslations, interfaceTranslations as svInterfaceTranslations } from "intl-tel-input/i18n/sv";
+    export { default as te, countryTranslations as teCountryTranslations, interfaceTranslations as teInterfaceTranslations } from "intl-tel-input/i18n/te";
+    export { default as th, countryTranslations as thCountryTranslations, interfaceTranslations as thInterfaceTranslations } from "intl-tel-input/i18n/th";
+    export { default as tr, countryTranslations as trCountryTranslations, interfaceTranslations as trInterfaceTranslations } from "intl-tel-input/i18n/tr";
+    export { default as ur, countryTranslations as urCountryTranslations, interfaceTranslations as urInterfaceTranslations } from "intl-tel-input/i18n/ur";
+    export { default as zh, countryTranslations as zhCountryTranslations, interfaceTranslations as zhInterfaceTranslations } from "intl-tel-input/i18n/zh";
 }
