@@ -65,6 +65,7 @@
                 console.log('fetch country code..');
 
                 var fetch_country = $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    console.log(resp);
                     country_code = (resp && resp.country) ? resp.country : "";
                     ctc_setItem('country_code', country_code);
                     ctc_setItem('country_code_date', country_code_date);
