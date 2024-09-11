@@ -72,7 +72,6 @@
                     initial_country = country_code;
                     console.log('fetch: done..');
                     console.log('initial_country: ' + initial_country);
-                    // calls fetch.always at intl_init
                 });
             }
         }
