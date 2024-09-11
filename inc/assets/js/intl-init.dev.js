@@ -62,7 +62,7 @@
                 initial_country = country_code;
                 console.log('initial_country: ' + initial_country);
             } else {
-                console.log('fetch country code..');
+                console.log('fetch country code');
 
                 var fetch_country = $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
                     console.log(resp);
