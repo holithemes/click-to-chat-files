@@ -184,18 +184,38 @@
 
             console.log('initial_country: ' + initial_country);
 
-            // if initial_country is auto. fetch country have to complete... then add always function..
+            var is_call_intl = 'no';
+
+            // if initial_country is auto. 
             if ('auto' == initial_country && typeof fetch_country == 'object' && fetch_country.always ) {
                 console.log('initial_country is auto..');
 
+                // if featch takes long time.
+                var fetch_time = 1;
+                var fetch_interval = setInterval(function () {
+                    console.log('fetch_time: ' + fetch_time);
+
+                    if (5 < fetch_time) {
+                        is_call_intl = 'yes';
+                        call_intl();
+                        clearInterval(fetch_interval);
+                    }
+                    
+                    fetch_time++;
+                }, 1000);
+
+
+                // after fetch the country..
                 fetch_country.always(function () {
                     console.log('fetch_country.always');
                     console.log('initial_country: ' + initial_country);
-                    call_intl();
+                    if ('yes' !== is_call_intl) {
+                        call_intl();
+                    }
                 });
 
             } else {
-                console.log('initial_country is not auto..');
+                console.log('initial_country is fetched or not auto..');
                 call_intl();
             }
 
