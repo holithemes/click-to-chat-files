@@ -321,7 +321,7 @@
             // fallback if greeting-pro-1 internal css not loaded.. due to cache.. or any other reason..
             var style = document.createElement('style');
             style.innerHTML = '.iti { z-index: ' + z_index + ' }';
-            style.innerHTML += '.ctc_number_padding { padding: 9px; }';
+            style.innerHTML += '.ctc_number_padding, .iti__search-input { padding: 9px; }';
             style.innerHTML += '[dir="rtl"] .iti__dropdown-content { left: 0; }';
             document.head.appendChild(style);
 
