@@ -196,6 +196,7 @@
                     console.log('fetch_time: ' + fetch_time);
 
                     if (5 < fetch_time) {
+                        console.log('fetch_time: ' + fetch_time);
                         is_call_intl = 'yes';
                         call_intl();
                         clearInterval(fetch_interval);
