@@ -197,8 +197,10 @@
 
                     if (5 < fetch_time) {
                         console.log('fetch_time: ' + fetch_time);
-                        is_call_intl = 'yes';
-                        call_intl();
+                        if ('yes' !== is_call_intl) {
+                            is_call_intl = 'yes';
+                            call_intl();
+                        }
                         clearInterval(fetch_interval);
                     }
                     
@@ -211,6 +213,7 @@
                     console.log('fetch_country.always');
                     console.log('initial_country: ' + initial_country);
                     if ('yes' !== is_call_intl) {
+                        is_call_intl = 'yes';
                         call_intl();
                     }
                 });
