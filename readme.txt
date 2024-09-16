@@ -43,5 +43,8 @@ This all required a lot of files to be hosted. instead of adding all these files
 
 == Changelog ==
 
+= 1.1 =
+* Updated Intltel Input library
+
 = 1.0 =
 * Initial release
