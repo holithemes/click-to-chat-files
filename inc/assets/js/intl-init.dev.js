@@ -247,7 +247,7 @@
                     // nationalMode: false,
                     autoPlaceholder: "polite",
                     // placeholderNumberType: "MOBILE",
-                    containerClass: 'intl_tel_input_container',
+                    containerClass: 'intl_tel_input_container ht_ctc_defaults',
                 }
 
                 // separate_dialcode
