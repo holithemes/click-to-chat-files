@@ -38,16 +38,6 @@ class HT_CTC_FILES_SL {
         $this->define( 'HT_CTC_FILES_SL_ITEM_ID', 19338 );
         $this->define( 'HT_CTC_FILES_SL_ITEM_NAME', 'Click to Chat Files' );
         
-        // // todo
-        // // https://staging.techponder.com/
-        // // testing license key: 2658f3b3616878c0ac25a631f0ed2a48
-        // $this->define( 'HT_CTC_FILES_SL_STORE_URL', 'https://staging.techponder.com/' );
-        // $this->define( 'HT_CTC_FILES_SL_ITEM_ID', 65 );
-        // $this->define( 'HT_CTC_FILES_SL_ITEM_NAME', 'Ctc Files' );
-
-        
-
-
         $this->define( 'HT_CTC_FILES_LICENSE_PAGE', 'click-to-chat' );
 
 	}
