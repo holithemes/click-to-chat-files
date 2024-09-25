@@ -272,17 +272,6 @@
                 // initialise
                 intl = intlTelInput(v, values);
 
-                // try {
-                //     // adding z-index to country dropdown.. .iti--container class works when dropdown is opened.. or add css.. directly..
-                //     // todo: ctc_number_padding { padding: 9px; }
-                //     v.addEventListener('open:countrydropdown', function (e) {
-                //         console.log('open:countrydropdown');
-                //         var z_index = (ht_ctc_chat_var && ht_ctc_chat_var.z_index) ? ht_ctc_chat_var.z_index : 99999999;
-                //         z_index = parseInt(z_index) + 5;
-                //         $('.iti--container')[0].style.zIndex = z_index;
-                //     });
-                // } catch (e) {}
-
                 after_intltel_inialised();
 
             }
