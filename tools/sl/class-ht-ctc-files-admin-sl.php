@@ -62,7 +62,9 @@ class HT_CTC_Files_Admin_SL {
             <div class="row">
                 <ul class="collapsible popout">
                     <li class="<?= $li_class ?>">
-                        <div class="collapsible-header"><?php _e( 'Click to Chat Files: License', 'click-to-chat-for-whatsapp' ); ?></div>	
+                        <div class="collapsible-header"><?php _e( 'Click to Chat Files: License', 'click-to-chat-for-whatsapp' ); ?>
+                        <span class="right_icon dashicons dashicons-arrow-down-alt2"></span>
+                    </div>	
                         <div class="collapsible-body">	
                             <form action="" method="post">
                                 <p class="description">Click to Chat Files plugin</p>
