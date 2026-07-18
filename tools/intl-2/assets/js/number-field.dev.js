@@ -107,6 +107,34 @@ function initField( field, uiTranslations ) {
 
 	const country = initialCountry();
 
+	/**
+	 * Options.
+	 *
+	 * v29 renamed/changed a lot vs v24 - and several DEFAULTS FLIPPED, so
+	 * anything we rely on is set EXPLICITLY here rather than left to defaults:
+	 *
+	 *  v24                        v29                     note
+	 *  -------------------------  ----------------------  -----------------------
+	 *  separateDialCode: false    separateDialCode: TRUE   default flipped - must
+	 *                                                      always be set from the
+	 *                                                      admin setting.
+	 *  strictMode: false          strictMode: TRUE         default flipped - v29
+	 *                                                      blocks invalid keys and
+	 *                                                      caps length. Kept false
+	 *                                                      to match v24 behavior.
+	 *  nationalMode: true         numberDisplayFormat      v24 showed the national
+	 *                             : 'INTERNATIONAL'        format; 'NATIONAL' is the
+	 *                                                      equivalent. (v29 forces
+	 *                                                      INTERNATIONAL anyway when
+	 *                                                      separateDialCode is on.)
+	 *  dropdownContainer          dropdownParent
+	 *  i18n                       uiTranslations          + countryNameLocale
+	 *  geoIpLookup                initialCountryLookup
+	 *  hiddenInput (fn)           hiddenInputs (fn)       we manage our own instead
+	 *  autoPlaceholder            placeholderNumberPolicy default POLITE - same
+	 *  allowDropdown              countrySelectorMode     default AUTO - same
+	 *  utilsScript                loadUtils               n/a: WithUtils bundle
+	 */
 	const options = {
 		dropdownParent: document.body,
 		/**
@@ -123,11 +151,14 @@ function initField( field, uiTranslations ) {
 		initialCountry: ( 'auto' === country ) ? '' : country,
 		initialCountryLookup: ( 'auto' === country ) ? countryLookup : null,
 		hiddenInputs: null,
+		// admin setting - explicit both ways (v29 defaults this to true).
+		separateDialCode: !! vars.intl_separate_dialcode,
+		// v24 parity: don't block/limit what the user types.
+		strictMode: false,
+		// v24 parity (nationalMode: true). Ignored by v29 when separateDialCode
+		// is on - it forces INTERNATIONAL in that case.
+		numberDisplayFormat: 'NATIONAL',
 	};
-
-	if ( vars.intl_separate_dialcode ) {
-		options.separateDialCode = true;
-	}
 
 	if ( uiTranslations ) {
 		options.uiTranslations = uiTranslations;
