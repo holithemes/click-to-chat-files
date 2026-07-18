@@ -226,13 +226,24 @@ function setStorageItems( items ) {
 
 /**
  * z-index fallback so the widget/dropdown layers above the page content
- * (the scoped stylesheet may be cached/blocked). Scoped to our class.
+ * (the scoped stylesheet may be cached/blocked).
+ *
+ * The rule is compound-scoped (.iti.<our class>) so it can only ever affect
+ * our own widget, and the <style> element carries a prefixed id so it is
+ * identifiable and never injected twice.
  */
+const STYLE_ID = 'ctc_intl_tel_input_inline_styles';
+
 function addStyles() {
+	if ( document.getElementById( STYLE_ID ) ) {
+		return;
+	}
+
 	let zIndex = ( window.ht_ctc_chat_var && window.ht_ctc_chat_var.z_index ) ? window.ht_ctc_chat_var.z_index : 99999999;
 	zIndex = parseInt( zIndex, 10 ) + 5;
 
 	const style = document.createElement( 'style' );
+	style.id = STYLE_ID;
 	// z-index only. Deliberately does NOT touch the library's internals: v29
 	// computes its own padding (the search input reserves room for the search
 	// icon), so overriding padding here - as the v24-era init did - breaks it.
