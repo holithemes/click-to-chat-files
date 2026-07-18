@@ -16,7 +16,7 @@
  * Run `npm run verify` afterwards to confirm consistency.
  *
  * Note: this plugin's version is also the jsDelivr TAG consumers pin to, so a
- * bump means a new tag must be pushed — see tools/README-asset-generations.md.
+ * bump means a new release branch must be pushed — see tools/README-asset-generations.md.
  */
 
 import fs from 'fs';

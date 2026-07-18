@@ -82,15 +82,25 @@ path just 404s and the number field quietly stays a plain input:
 
 ## Releasing
 
+Releases are published as a **release branch** — `release/1.3`, `release/1.4`,
+… — which is what jsDelivr serves and what Click to Chat PRO pins to.
+
 1. `npm run version:bump <version>` — then write the changelog notes.
 2. `npm run todo:scan -- --release` — no release-blocking todos left.
 3. `npm run verify` — must pass.
-4. Tag the release on GitHub (`1.3`, `1.4`, …) and **push the tag** — jsDelivr
-   serves tags, and tags are immutable, so consumers pinned to a tag can never
-   break.
-5. `npm run check:cdn -- 1.3` — confirms the tag is actually live on the CDN.
-   **Do this before the Click to Chat PRO release that points at it**: if the
-   tag is missing, every CDN-mode site silently loses the number field.
-6. Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to a
-   tag *and* a generation — bumping what CDN users get is a PRO release
-   decision, independent of this repo.
+4. Merge to `dev`, then create and push the release branch:
+   `git branch release/1.3 dev && git push origin release/1.3`
+5. `npm run check:cdn` — confirms the branch is actually live on the CDN
+   (defaults to `release/<current version>`). **Do this before the Click to
+   Chat PRO release that points at it**: if the ref is missing, every CDN-mode
+   site silently loses the number field.
+6. Click to Chat PRO's CDN fallback (files plugin not installed) pins this ref
+   *and* a generation — changing what CDN users get is a PRO release decision,
+   independent of this repo.
+
+> **A release branch is mutable — treat it as frozen.** Unlike a git tag, a
+> branch can be force-pushed or added to, and every CDN-mode site would pick
+> the change up (jsDelivr caches a branch for up to ~7 days, so it also lands
+> unpredictably). Once `release/X.Y` is pushed, never commit to it: ship the
+> next release as a new branch. Fix-in-place only for a genuine emergency, and
+> expect a slow, uneven rollout.
