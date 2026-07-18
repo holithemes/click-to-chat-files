@@ -44,7 +44,7 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 		 *  - assets/css/      scoped stylesheet: every selector and the :root
 		 *    vars (flag sprite paths) apply only inside .ht_ctc_defaults, so
 		 *    another intl-tel-input copy on the page can't clash either way.
-		 *  - assets/js/       intl-input.js: self-contained ES module - imports
+		 *  - assets/js/       number-field.js: self-contained ES module (the plugin-side number field flow) - imports
 		 *    the library RELATIVELY (no window globals at all, conflict-safe by
 		 *    construction), manages the hidden form field, locale, country lookup.
 		 *
@@ -77,7 +77,7 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 
 			// dev (unminified) init script when debug_mode is on (HT Commons owns this option).
 			$os      = get_option( 'ht_ctc_othersettings' );
-			$init_js = ( isset( $os['debug_mode'] ) ) ? 'intl-input.dev.js' : 'intl-input.js';
+			$init_js = ( isset( $os['debug_mode'] ) ) ? 'number-field.dev.js' : 'number-field.js';
 
 			return array(
 				'generation' => 2,

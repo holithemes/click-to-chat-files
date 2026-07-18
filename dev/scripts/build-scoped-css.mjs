@@ -14,7 +14,7 @@
  * CSS variables (which carry the flag-sprite paths) - whichever loads last
  * breaks the other widget's design/flags. The scoped build only applies inside
  * elements carrying the `ht_ctc_defaults` class:
- *  - the main wrapper gets it via the `containerClass` init option (intl-init js)
+ *  - the main wrapper gets it via the `containerClass` init option (number-field js)
  *  - the body-appended dropdown gets it added by the init script after init
  *
  * Transform rules (top-level selectors only — the v29 source uses native CSS

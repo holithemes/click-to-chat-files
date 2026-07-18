@@ -43,7 +43,7 @@ if ( existsSync( committedVersionFile ) ) {
 	if ( committed.split( '.' )[ 0 ] !== version.split( '.' )[ 0 ] ) {
 		console.error(
 			`Committed library is ${ committed }, npm has ${ version } - a different MAJOR.\n` +
-			'Review tools/intl-2/assets/js/intl-init.dev.js against the new API first,\n' +
+			'Review tools/intl-2/assets/js/number-field.dev.js against the new API first,\n' +
 			'then delete tools/intl-2/intl-tel-input/VERSION and re-run to proceed.'
 		);
 		process.exit( 1 );
