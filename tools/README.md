@@ -1,0 +1,55 @@
+# tools/ — intl number field asset generations
+
+The greetings form number field (Click to Chat PRO) loads the intl-tel-input
+library + our field logic from this plugin (installed locally, or from this
+GitHub repo via jsDelivr when the plugin isn't installed).
+
+Assets are organized in **integration generations**. A generation is OUR
+loading/design contract — not the library's version number.
+
+| Generation | Location | Library | Consumers | Loading design |
+|---|---|---|---|---|
+| **1** (legacy, FROZEN) | `tools/intl/` + `inc/assets/js/intl-init.js` | intl-tel-input 24.5.0 | PRO ≤ 2.22 (hardcoded paths), old jsDelivr tags (`r1`, …), PRO ≥ 2.23 when this plugin is ≤ 1.2 (no manifest) | `window.intlTelInput` global + polling init (jQuery), stock css. Known limitation: can conflict with another intl-tel-input copy on the page (js global + `.iti` css + `:root` flag vars). |
+| **2** | `tools/intl-2/` | see `tools/intl-2/intl-tel-input/VERSION` (29.1.2) | PRO ≥ 2.23 with this plugin ≥ 1.3, via the `ht_ctc_fh_intl_assets` manifest (`inc/intl/class-ht-ctc-files-intl.php`) | Conflict-safe by construction: `assets/js/number-field.js` is a self-contained ES module that imports the library RELATIVELY (no window globals ever), css is the scoped build (`assets/css/` — everything under `.ctc_intl_tel_input_container`). PRO injects the module at the configured moment (nodelay/delay). |
+
+## Rules
+
+1. **Generation 1 is frozen.** Never edit `tools/intl/` or
+   `inc/assets/js/intl-init(.dev).js` — old PRO versions and old jsDelivr
+   tags hardcode those paths and files.
+2. **Generation 2+ is manifest-only.** Nothing may hardcode `tools/intl-2/`
+   paths outside this repo — consumers read the `ht_ctc_fh_intl_assets`
+   filter. That's what allows moving/renaming/updating files here freely.
+3. **A new loading DESIGN = a new generation** (`tools/intl-3/`, bump
+   `generation` in the manifest). A plain library update within the same
+   design is NOT a new generation — see below.
+
+## Generation 2 layout
+
+```
+tools/intl-2/
+├── intl-tel-input/     vendored library dist, byte-verbatim (diffable vs npm)
+│   └── VERSION         synced release (read by the sync guard)
+└── assets/             OURS (never touched by intl:sync)
+    ├── css/            intlTelInput-scoped(.min).css — built, do not edit
+    └── js/             number-field(.dev).js — the field flow (ES module)
+```
+
+## Updating the library (generation 2)
+
+```
+# 1. bump the exact pin in package.json (deliberate — no ranges)
+# 2.
+npm install
+npm run intl:sync    # dist -> tools/intl-2/intl-tel-input/ (major changes are guarded)
+npm run build        # scoped css + minified number-field.js
+# 3. review number-field.dev.js if the library changed behavior; commit
+```
+
+## Releasing
+
+- Tag the release on GitHub (`1.3`, `1.4`, …) — jsDelivr serves tags, and
+  tags are immutable, so consumers pinned to a tag can never break.
+- Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to
+  a tag and a generation — bumping what CDN users get is a PRO release
+  decision, independent of this repo.
