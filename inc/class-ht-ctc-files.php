@@ -31,11 +31,11 @@ class HT_CTC_FILES {
     }
 
     public function __clone() {
-		wc_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'click-to-chat-for-whatsapp' ), '1.0' );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Cheatin&#8217; huh?', 'click-to-chat-for-whatsapp' ), '1.0' );
     }
-    
+
     public function __wakeup() {
-		wc_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'click-to-chat-for-whatsapp' ), '1.0' );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Cheatin&#8217; huh?', 'click-to-chat-for-whatsapp' ), '1.0' );
     }
 
     /**
@@ -97,6 +97,9 @@ class HT_CTC_FILES {
             add_filter( 'plugin_action_links_' . HT_CTC_FILES_PLUGIN_BASENAME, array( 'HT_CTC_FILES_Register', 'plugin_action_links' ) );
         }
 
+        // intl-tel-input asset manifest (ht_ctc_fh_intl_assets filter).
+        // Self-contained module - the source of truth for the intl asset layout.
+        include_once HT_CTC_FILES_PLUGIN_DIR . 'inc/intl/class-ht-ctc-files-intl.php';
 
     }
 

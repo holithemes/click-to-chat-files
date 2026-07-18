@@ -3,7 +3,7 @@ Requires at least: 4.6
 Tested up to: 6.6.2
 Requires PHP: 5.6
 Contributors: holithemes
-Stable tag: 1.2
+Stable tag: 1.3
 Tags: whatsapp, whatsapp business, click to chat, whatsapp chat, WooCommerce WhatsApp
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,10 @@ This all required a lot of files to be hosted. instead of adding all these files
 == Upgrade Notice ==
 
 == Changelog ==
+
+= 1.3 =
+* Added intl asset manifest (ht_ctc_fh_intl_assets filter) - this plugin now declares its own file layout, so Click to Chat PRO no longer hardcodes paths; future library updates need only a change here
+* Fixed __clone/__wakeup guard calling a WooCommerce-only function
 
 = 1.2 =
 * Added ht_ctc_defaults class name to the number field for better styling
