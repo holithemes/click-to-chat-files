@@ -11,7 +11,8 @@
 		"build": "npm run build:css && npm run build:init",
 		"verify": "node dev/scripts/verify.mjs",
 		"check:cdn": "node dev/scripts/check-cdn.mjs",
-		"todo:scan": "node dev/scripts/todo-scan.mjs"
+		"todo:scan": "node dev/scripts/todo-scan.mjs",
+		"version:bump": "node dev/scripts/version-bump.mjs"
 	},
 	"devDependencies": {
 		"intl-tel-input": "29.1.2",

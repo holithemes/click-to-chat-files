@@ -52,12 +52,17 @@ npm run verify       # confirm nothing drifted
 
 ## Commands
 
+Same command names as the main and PRO plugins, so the release ritual is
+identical in all three repos.
+
 | Command | What it does |
 |---|---|
 | `npm run build` | Scoped stylesheet + minified `number-field.js`. |
 | `npm run intl:sync` | Copies the pinned npm package into `tools/intl-2/intl-tel-input/`. Manual by design; refuses a different MAJOR. |
 | `npm run verify` | Pre-release gate — see below. Exits non-zero on failure. |
 | `npm run check:cdn [tag]` | Confirms a **pushed** tag actually serves the assets over jsDelivr. Defaults to the current plugin version. |
+| `npm run todo:scan` | Inventory of `todo:` / `fixme:` comments. `-- --release` exits non-zero on `todo(release):` / `todo(<version>):`. Scans only our own source — the vendored library is excluded via `dev/scripts/production-excludes.mjs`. |
+| `npm run version:bump 1.4` | Updates the version in the plugin header, `HT_CTC_FILES_VERSION`, readme stable tag and `package.json`, and inserts a changelog stub. |
 
 ### What `verify` checks
 
@@ -77,8 +82,10 @@ path just 404s and the number field quietly stays a plain input:
 
 ## Releasing
 
-1. `npm run verify` — must pass.
-2. Tag the release on GitHub (`1.3`, `1.4`, …) and **push the tag** — jsDelivr
+1. `npm run version:bump <version>` — then write the changelog notes.
+2. `npm run todo:scan -- --release` — no release-blocking todos left.
+3. `npm run verify` — must pass.
+4. Tag the release on GitHub (`1.3`, `1.4`, …) and **push the tag** — jsDelivr
    serves tags, and tags are immutable, so consumers pinned to a tag can never
    break.
 3. `npm run check:cdn -- 1.3` — confirms the tag is actually live on the CDN.
