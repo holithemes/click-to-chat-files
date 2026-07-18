@@ -42,9 +42,14 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 		 * what production loads today, just resolved through the manifest
 		 * instead of hardcoded paths in PRO.
 		 *
-		 * UPGRADE PATH: when a newer library version ships (in its own new
-		 * dir + init script), bump 'generation' and the URLs here - that is
-		 * the only place to touch.
+		 * UPGRADE PATH: generation 2 is staged and dormant under tools/intl-2/
+		 * (intl-tel-input/ = vendored library dist, verbatim; assets/ = our
+		 * scoped css + ES-module init that imports the library relatively -
+		 * no window globals, conflict-safe by design). When Click to Chat PRO
+		 * ships its generation-2 flow, flip this manifest to:
+		 *   generation 2, css: tools/intl-2/assets/css/intlTelInput-scoped.min.css,
+		 *   init_js: tools/intl-2/assets/js/intl-init.js (load as script type="module").
+		 * Library updates inside intl-2: npm run intl:sync + build (see package.json).
 		 *
 		 * @param array $assets Incoming manifest (empty unless another handler set it).
 		 * @return array {
