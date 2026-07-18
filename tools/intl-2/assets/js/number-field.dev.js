@@ -25,7 +25,14 @@
  *  intl_initial_country, intl_separate_dialcode, intl_language.
  */
 
-import intlTelInput from '../../intl-tel-input/js/intlTelInputWithUtils.mjs';
+/**
+ * Core library only (~15 KB gzip), minified by dev/scripts/build-lib.mjs -
+ * upstream ships no minified ES module, and the WithUtils bundle would be
+ * ~6x larger on the critical path. The phone-number utils are loaded
+ * separately and lazily via loadUtils below, so they never block the field
+ * from rendering.
+ */
+import intlTelInput from './intl-tel-input.min.mjs';
 
 const CLASS_NAME = 'ctc_intl_number';
 const SCOPE_CLASS = 'ctc_intl_tel_input_container';
@@ -126,6 +133,14 @@ function initField( field, uiTranslations ) {
 		initialCountry: ( 'auto' === country ) ? '' : country,
 		initialCountryLookup: ( 'auto' === country ) ? countryLookup : null,
 		hiddenInputs: null,
+		/**
+		 * Phone-number utils (formatting, example placeholders, validation and
+		 * the E.164 value we sync) - loaded lazily so the field renders without
+		 * waiting for them. The library builds its markup before starting this
+		 * load, then enhances the field once it resolves.
+		 * Already minified upstream, so it is imported straight from vendored.
+		 */
+		loadUtils: () => import( /* webpackIgnore: true */ '../../intl-tel-input/js/utils.js' ),
 		// admin setting: show the dial code as a separate, non-editable chip.
 		// Set both ways on purpose - the library default is true.
 		separateDialCode: !! vars.intl_separate_dialcode,
@@ -173,6 +188,17 @@ function initField( field, uiTranslations ) {
 	field.addEventListener( 'input', sync );
 	field.addEventListener( 'countrychange', sync );
 	sync();
+
+	/**
+	 * Until the lazily-loaded utils arrive, getNumber() cannot produce the
+	 * formatted E.164 value - so anything typed in that window would leave the
+	 * raw input in the hidden field. iti.promise resolves once the utils (and
+	 * the auto-country lookup, if used) are ready: re-sync then so the value
+	 * is corrected even if the user typed immediately.
+	 */
+	if ( iti.promise && 'function' === typeof iti.promise.then ) {
+		iti.promise.then( sync ).catch( ( e ) => log( 'init promise rejected', e ) );
+	}
 
 	return iti;
 }

@@ -106,6 +106,7 @@ function checkBuildFreshness() {
 		'tools/intl-2/assets/css/intlTelInput-scoped.css',
 		'tools/intl-2/assets/css/intlTelInput-scoped.min.css',
 		'tools/intl-2/assets/js/number-field.js',
+		'tools/intl-2/assets/js/intl-tel-input.min.mjs',
 	];
 
 	const missing = outputs.filter( ( p ) => ! existsSync( join( root, p ) ) );

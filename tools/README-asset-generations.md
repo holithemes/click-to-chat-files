@@ -33,6 +33,7 @@ tools/intl-2/
 └── assets/             OURS (never touched by intl:sync)
     ├── css/            intlTelInput-scoped(.min).css — built, do not edit
     └── js/             number-field(.dev).js — the field flow (ES module)
+                        intl-tel-input.min.mjs — minified core library, built
 ```
 
 ## Updating the library (generation 2)
@@ -57,7 +58,8 @@ identical in all three repos.
 
 | Command | What it does |
 |---|---|
-| `npm run build` | Scoped stylesheet + minified `number-field.js`. |
+| `npm run build` | Everything below: minified JS + scoped stylesheet. |
+| `npm run build:js` | Minifies `number-field.dev.js`, and the vendored library ES module into `assets/js/intl-tel-input.min.mjs` (upstream ships no minified `.mjs`). Each output gets a banner naming its unminified source. |
 | `npm run intl:sync` | Copies the pinned npm package into `tools/intl-2/intl-tel-input/`. Manual by design; refuses a different MAJOR. |
 | `npm run verify` | Pre-release gate — see below. Exits non-zero on failure. |
 | `npm run check:cdn [tag]` | Confirms a **pushed** tag actually serves the assets over jsDelivr. Defaults to the current plugin version. |

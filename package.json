@@ -6,9 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"intl:sync": "node dev/scripts/sync-intl.mjs",
+		"build:js": "node dev/scripts/build-js.mjs",
 		"build:css": "node dev/scripts/build-scoped-css.mjs",
-		"build:init": "terser tools/intl-2/assets/js/number-field.dev.js --module --compress --mangle --comments false -o tools/intl-2/assets/js/number-field.js",
-		"build": "npm run build:css && npm run build:init",
+		"build": "npm run build:js && npm run build:css",
 		"verify": "node dev/scripts/verify.mjs",
 		"check:cdn": "node dev/scripts/check-cdn.mjs",
 		"todo:scan": "node dev/scripts/todo-scan.mjs",

@@ -34,6 +34,8 @@ export const EXCLUDE_PATTERNS = [
 	// Generated output (built by npm run build, reviewed via its source).
 	/^tools\/intl-2\/assets\/css\/intlTelInput-scoped(\.min)?\.css$/,
 	/^tools\/intl-2\/assets\/js\/number-field\.js$/,
+	// Minified copy of the vendored library (third-party code).
+	/^tools\/intl-2\/assets\/js\/intl-tel-input\.min\.mjs$/,
 ];
 
 /**
