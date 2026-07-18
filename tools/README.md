@@ -88,9 +88,9 @@ path just 404s and the number field quietly stays a plain input:
 4. Tag the release on GitHub (`1.3`, `1.4`, …) and **push the tag** — jsDelivr
    serves tags, and tags are immutable, so consumers pinned to a tag can never
    break.
-3. `npm run check:cdn -- 1.3` — confirms the tag is actually live on the CDN.
+5. `npm run check:cdn -- 1.3` — confirms the tag is actually live on the CDN.
    **Do this before the Click to Chat PRO release that points at it**: if the
    tag is missing, every CDN-mode site silently loses the number field.
-4. Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to a
+6. Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to a
    tag *and* a generation — bumping what CDN users get is a PRO release
    decision, independent of this repo.

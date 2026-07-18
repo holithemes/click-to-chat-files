@@ -1,4 +1,4 @@
-=== Click to Chat - HoliThemes ===
+=== Click to Chat Files ===
 Requires at least: 4.6
 Tested up to: 6.6.2
 Requires PHP: 5.6
