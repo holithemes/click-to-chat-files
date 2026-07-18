@@ -233,9 +233,10 @@ function addStyles() {
 	zIndex = parseInt( zIndex, 10 ) + 5;
 
 	const style = document.createElement( 'style' );
-	style.textContent =
-		'.iti.' + SCOPE_CLASS + ' { z-index: ' + zIndex + '; }' +
-		'.' + SCOPE_CLASS + ' .ctc_number_padding, .' + SCOPE_CLASS + ' .iti__search-input { padding: 9px; }';
+	// z-index only. Deliberately does NOT touch the library's internals: v29
+	// computes its own padding (the search input reserves room for the search
+	// icon), so overriding padding here - as the v24-era init did - breaks it.
+	style.textContent = '.iti.' + SCOPE_CLASS + ' { z-index: ' + zIndex + '; }';
 	document.head.appendChild( style );
 }
 
