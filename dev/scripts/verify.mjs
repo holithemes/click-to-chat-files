@@ -35,35 +35,64 @@ const read = ( p ) => readFileSync( join( root, p ), 'utf8' );
  * resolve is invisible until a user opens the widget - so assert them here.
  */
 function checkManifest() {
-	const file = 'inc/intl/class-ht-ctc-files-intl.php';
-	const php = read( file );
+	// Runs the REAL manifest method through php with WordPress stubbed out, so
+	// this validates whatever the code actually returns - not a regex guess at
+	// it. Checked in both modes, since debug mode serves the .dev variants.
+	const modes = [
+		{ label: 'production', debug: false },
+		{ label: 'debug', debug: true },
+	];
 
-	// plugins_url( 'some/path', $base ) - collect the literal paths.
-	const paths = [ ...php.matchAll( /plugins_url\(\s*'([^']+)'/g ) ].map( ( m ) => m[ 1 ] );
+	for ( const mode of modes ) {
+		const stub = `<?php
+			define( 'ABSPATH', __DIR__ );
+			define( 'HT_CTC_FILES_PLUGIN_FILE', __DIR__ . '/click-to-chat-files.php' );
+			define( 'HT_CTC_FILES_VERSION', '0' );
+			${ mode.debug ? "define( 'HT_CTC_DEBUG_MODE', true );" : '' }
+			function plugins_url( $path = '', $plugin = '' ) { return '::/' . $path; }
+			function add_filter() {}
+			function get_option() { return array(); }
+			require __DIR__ . '/inc/intl/class-ht-ctc-files-intl.php';
+			$m = ( new HT_CTC_FILES_Intl() )->manifest( array() );
+			echo json_encode( $m );
+		`;
 
-	// the init script is built as 'dir/' . $var - resolve both variants.
-	const initDir = paths.find( ( p ) => p.endsWith( '/' ) );
-	const scriptNames = [ ...php.matchAll( /'(number-field(?:\.dev)?\.js)'/g ) ].map( ( m ) => m[ 1 ] );
-
-	const toCheck = paths.filter( ( p ) => ! p.endsWith( '/' ) );
-	if ( initDir ) {
-		scriptNames.forEach( ( n ) => toCheck.push( initDir + n ) );
-	}
-
-	if ( ! toCheck.length ) {
-		fail( 'manifest: no asset paths found - has the manifest format changed?' );
-		return;
-	}
-
-	let bad = 0;
-	toCheck.forEach( ( p ) => {
-		if ( ! existsSync( join( root, p ) ) ) {
-			fail( `manifest: declared asset missing on disk -> ${ p }` );
-			bad++;
+		let manifest;
+		try {
+			const out = execFileSync( 'php', [ '-r', stub.replace( /^\s*<\?php/, '' ) ], {
+				cwd: root,
+				encoding: 'utf8',
+			} );
+			manifest = JSON.parse( out );
+		} catch ( e ) {
+			fail( `manifest (${ mode.label }): could not evaluate - ${ String( e.message ).split( '\n' )[ 0 ] }` );
+			continue;
 		}
-	} );
-	if ( ! bad ) {
-		ok( `manifest: all ${ toCheck.length } declared assets exist` );
+
+		// every non-empty url key must resolve to a real file; locale_url is a
+		// directory, so probe a known locale inside it.
+		const urls = Object.entries( manifest )
+			.filter( ( [ k, v ] ) => 'string' === typeof v && v.startsWith( '::/' ) && 'version' !== k );
+
+		if ( ! urls.length ) {
+			fail( `manifest (${ mode.label }): no asset urls returned` );
+			continue;
+		}
+
+		let bad = 0;
+		for ( const [ key, url ] of urls ) {
+			let rel = url.replace( '::/', '' );
+			if ( rel.endsWith( '/' ) ) {
+				rel += 'en.js'; // locale dir - probe a locale that must exist
+			}
+			if ( ! existsSync( join( root, rel ) ) ) {
+				fail( `manifest (${ mode.label }): ${ key } -> missing file: ${ rel }` );
+				bad++;
+			}
+		}
+		if ( ! bad ) {
+			ok( `manifest (${ mode.label }): all ${ urls.length } declared assets exist (generation ${ manifest.generation })` );
+		}
 	}
 }
 
