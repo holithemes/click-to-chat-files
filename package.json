@@ -1,0 +1,18 @@
+{
+	"name": "click-to-chat-files",
+	"version": "1.3.0",
+	"description": "Files / third-party tools addon for Click to Chat. Shipped assets under tools/ are vendored (committed) - jsDelivr serves them from git tags. npm is only the provenance for deliberate, manual syncs into tools/intl-2/.",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"intl:sync": "node dev/scripts/sync-intl.mjs",
+		"build:css": "node dev/scripts/build-scoped-css.mjs",
+		"build:init": "terser tools/intl-2/assets/js/intl-init.dev.js --module --compress --mangle --comments false -o tools/intl-2/assets/js/intl-init.js",
+		"build": "npm run build:css && npm run build:init"
+	},
+	"devDependencies": {
+		"intl-tel-input": "29.1.2",
+		"postcss": "8.5.15",
+		"terser": "5.43.1"
+	}
+}
