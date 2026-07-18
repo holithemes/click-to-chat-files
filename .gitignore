@@ -94,3 +94,6 @@ coverage/
 
 # PHPUnit cache
 .phpunit.cache/
+
+# dev reports - generated output, never committed
+dev/reports/
