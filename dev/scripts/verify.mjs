@@ -223,7 +223,7 @@ function checkVendoredLibrary() {
 // ------------------------------------------------------------- 5. frozen gen 1
 /**
  * Older Click to Chat PRO versions and older jsDelivr tags hardcode these
- * paths. They must never disappear - see tools/README.md.
+ * paths. They must never disappear - see tools/README-asset-generations.md.
  */
 function checkFrozenGeneration1() {
 	const frozen = [

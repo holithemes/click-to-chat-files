@@ -61,5 +61,5 @@ Switch to a bundler if any of these become true:
 
 ## Scripts
 
-See [`tools/README.md`](../tools/README.md) for the asset generations, the full
+See [`tools/README-asset-generations.md`](../tools/README-asset-generations.md) for the asset generations, the full
 command table, what `verify` checks, and the release procedure.

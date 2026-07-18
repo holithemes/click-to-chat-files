@@ -27,7 +27,7 @@ export const EXCLUDE_PATTERNS = [
 	/^tools\/intl-2\/intl-tel-input\//,
 
 	// Frozen generation-1 assets - vendored library + the legacy init script.
-	// Never edited; see tools/README.md.
+	// Never edited; see tools/README-asset-generations.md.
 	/^tools\/intl\//,
 	/^inc\/assets\/js\/intl-init(\.dev)?\.js$/,
 

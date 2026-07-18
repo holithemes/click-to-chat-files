@@ -48,7 +48,7 @@ npm run verify       # confirm nothing drifted
 ```
 
 > Toolchain — what each npm package is for, and why there is no bundler:
-> [`dev/README.md`](../dev/README.md).
+> [`dev/README-toolchain.md`](../dev/README-toolchain.md).
 
 ## Commands
 
