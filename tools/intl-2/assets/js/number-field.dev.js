@@ -16,14 +16,10 @@
  * file as a module (script type="module" / dynamic import) at the configured
  * moment (nodelay / delay_1 / delay_2) - this file does the rest.
  *
- * Notes vs the legacy intl-init.js (tools/intl era):
- *  - vanilla JS, no jQuery, no polling.
- *  - manages its own hidden input: v29 only syncs its hidden inputs on a
- *    native form submit and does not expose them, but the greetings form
- *    reads .ht_ctc_g_form_field values on the WhatsApp CTA click. So the
- *    full number (E.164 via getNumber()) is synced here on input/countrychange.
- *  - v29 option names: dropdownParent, uiTranslations, countryNameLocale,
- *    initialCountryLookup (replaces the manual ipinfo pre-fetch).
+ * Hidden form field: the library only syncs its own hidden inputs on a native
+ * form submit and does not expose them, but the greetings form reads
+ * .ht_ctc_g_form_field values on the WhatsApp CTA click - so this file creates
+ * and syncs its own hidden input (full number, E.164) on input/countrychange.
  *
  * Localized data consumed from ht_ctc_variables (set by Click to Chat PRO):
  *  intl_initial_country, intl_separate_dialcode, intl_language.
@@ -110,30 +106,9 @@ function initField( field, uiTranslations ) {
 	/**
 	 * Options.
 	 *
-	 * v29 renamed/changed a lot vs v24 - and several DEFAULTS FLIPPED, so
-	 * anything we rely on is set EXPLICITLY here rather than left to defaults:
-	 *
-	 *  v24                        v29                     note
-	 *  -------------------------  ----------------------  -----------------------
-	 *  separateDialCode: false    separateDialCode: TRUE   default flipped - must
-	 *                                                      always be set from the
-	 *                                                      admin setting.
-	 *  strictMode: false          strictMode: TRUE         default flipped - v29
-	 *                                                      blocks invalid keys and
-	 *                                                      caps length. Kept false
-	 *                                                      to match v24 behavior.
-	 *  nationalMode: true         numberDisplayFormat      v24 showed the national
-	 *                             : 'INTERNATIONAL'        format; 'NATIONAL' is the
-	 *                                                      equivalent. (v29 forces
-	 *                                                      INTERNATIONAL anyway when
-	 *                                                      separateDialCode is on.)
-	 *  dropdownContainer          dropdownParent
-	 *  i18n                       uiTranslations          + countryNameLocale
-	 *  geoIpLookup                initialCountryLookup
-	 *  hiddenInput (fn)           hiddenInputs (fn)       we manage our own instead
-	 *  autoPlaceholder            placeholderNumberPolicy default POLITE - same
-	 *  allowDropdown              countrySelectorMode     default AUTO - same
-	 *  utilsScript                loadUtils               n/a: WithUtils bundle
+	 * Anything the field's behavior depends on is set EXPLICITLY - never left
+	 * to a library default, so a default change in a future library update
+	 * can't silently alter the field.
 	 */
 	const options = {
 		dropdownParent: document.body,
@@ -151,12 +126,15 @@ function initField( field, uiTranslations ) {
 		initialCountry: ( 'auto' === country ) ? '' : country,
 		initialCountryLookup: ( 'auto' === country ) ? countryLookup : null,
 		hiddenInputs: null,
-		// admin setting - explicit both ways (v29 defaults this to true).
+		// admin setting: show the dial code as a separate, non-editable chip.
+		// Set both ways on purpose - the library default is true.
 		separateDialCode: !! vars.intl_separate_dialcode,
-		// v24 parity: don't block/limit what the user types.
+		// don't block keystrokes or cap the length - accept what the user types
+		// (validation/formatting still happens on the value we sync).
 		strictMode: false,
-		// v24 parity (nationalMode: true). Ignored by v29 when separateDialCode
-		// is on - it forces INTERNATIONAL in that case.
+		// show the national format in the input (e.g. 081234 56789) - the
+		// country is already conveyed by the flag / dial code. The library
+		// overrides this to INTERNATIONAL when separateDialCode is on.
 		numberDisplayFormat: 'NATIONAL',
 	};
 
@@ -207,8 +185,8 @@ function initialCountry() {
 }
 
 /**
- * Async lookup for initialCountry 'auto' (v29 initialCountryLookup).
- * Cached in localStorage (ht_ctc_storage) for the day, like the legacy init.
+ * Async lookup used when initialCountry is 'auto' (initialCountryLookup).
+ * Cached in localStorage (ht_ctc_storage) for the day.
  */
 function countryLookup() {
 	const storage = getStorage();
@@ -275,9 +253,9 @@ function addStyles() {
 
 	const style = document.createElement( 'style' );
 	style.id = STYLE_ID;
-	// z-index only. Deliberately does NOT touch the library's internals: v29
-	// computes its own padding (the search input reserves room for the search
-	// icon), so overriding padding here - as the v24-era init did - breaks it.
+	// z-index only. Deliberately does NOT touch the library's internals - it
+	// computes its own padding (e.g. the search input reserves room for the
+	// search icon), so overriding padding here breaks that layout.
 	style.textContent = '.iti.' + SCOPE_CLASS + ' { z-index: ' + zIndex + '; }';
 	document.head.appendChild( style );
 }
