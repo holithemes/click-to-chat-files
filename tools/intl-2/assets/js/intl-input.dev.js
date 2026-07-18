@@ -1,5 +1,5 @@
 /**
- * intl-2 init: initialises intl-tel-input on the Click to Chat greetings
+ * intl-input (intl-2, generation 2): initialises intl-tel-input on the Click to Chat greetings
  * form number field(s) (.ctc_intl_number).
  *
  * ES MODULE - the whole conflict-safe design in one file:

@@ -38,29 +38,36 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 		/**
 		 * Intl-tel-input asset manifest (consumed by Click to Chat PRO).
 		 *
-		 * Declares the current assets (tools/intl, 24.x) - identical files to
-		 * what production loads today, just resolved through the manifest
-		 * instead of hardcoded paths in PRO.
+		 * Declares generation 2 - tools/intl-2/:
+		 *  - intl-tel-input/  vendored library dist (verbatim; VERSION file
+		 *    records the synced release - currently 29.1.2).
+		 *  - assets/css/      scoped stylesheet: every selector and the :root
+		 *    vars (flag sprite paths) apply only inside .ht_ctc_defaults, so
+		 *    another intl-tel-input copy on the page can't clash either way.
+		 *  - assets/js/       intl-input.js: self-contained ES module - imports
+		 *    the library RELATIVELY (no window globals at all, conflict-safe by
+		 *    construction), manages the hidden form field, locale, country lookup.
 		 *
-		 * UPGRADE PATH: generation 2 is staged and dormant under tools/intl-2/
-		 * (intl-tel-input/ = vendored library dist, verbatim; assets/ = our
-		 * scoped css + ES-module init that imports the library relatively -
-		 * no window globals, conflict-safe by design). When Click to Chat PRO
-		 * ships its generation-2 flow, flip this manifest to:
-		 *   generation 2, css: tools/intl-2/assets/css/intlTelInput-scoped.min.css,
-		 *   init_js: tools/intl-2/assets/js/intl-init.js (load as script type="module").
-		 * Library updates inside intl-2: npm run intl:sync + build (see package.json).
+		 * The consumer must load init_js as a module (script type="module").
+		 * 'js' / 'locale_url' / 'utils_js' are '' on generation 2 - the module
+		 * resolves the library and locale files itself via relative imports.
+		 *
+		 * Library updates inside intl-2: npm run intl:sync + npm run build
+		 * (exact-pinned in package.json; major changes are guarded).
+		 *
+		 * generation = INTEGRATION generation (not the library major):
+		 *  1 = legacy era (tools/intl, inc/assets/js/intl-init.js - frozen).
+		 *  2 = tools/intl-2. Old PRO versions (pre-manifest) never read this
+		 *      filter and keep loading the frozen generation-1 paths.
 		 *
 		 * @param array $assets Incoming manifest (empty unless another handler set it).
 		 * @return array {
-		 *     @type int    $generation Library major generation. Integer -
-		 *                              scales when future majors arrive.
+		 *     @type int    $generation Integration generation (see above).
 		 *     @type string $css        Stylesheet URL.
-		 *     @type string $js         Library URL.
-		 *     @type string $init_js    Init script URL (initialises the fields).
-		 *     @type string $locale_url Base dir for locale files; consumer
-		 *                              appends the generation-specific suffix.
-		 *     @type string $utils_js   utils.js URL ('' if a future bundle includes utils).
+		 *     @type string $js         Library URL ('' when init_js resolves it itself).
+		 *     @type string $init_js    Init/flow script URL.
+		 *     @type string $locale_url Base dir for locale files ('' when self-resolved).
+		 *     @type string $utils_js   utils.js URL ('' when the bundle includes utils).
 		 *     @type string $version    This plugin's version (cache busting).
 		 * }
 		 */
@@ -70,15 +77,15 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 
 			// dev (unminified) init script when debug_mode is on (HT Commons owns this option).
 			$os      = get_option( 'ht_ctc_othersettings' );
-			$init_js = ( isset( $os['debug_mode'] ) ) ? 'intl-init.dev.js' : 'intl-init.js';
+			$init_js = ( isset( $os['debug_mode'] ) ) ? 'intl-input.dev.js' : 'intl-input.js';
 
 			return array(
-				'generation' => 24,
-				'css'        => plugins_url( 'tools/intl/css/intlTelInput.min.css', $base ),
-				'js'         => plugins_url( 'tools/intl/js/intlTelInput.min.js', $base ),
-				'init_js'    => plugins_url( 'inc/assets/js/' . $init_js, $base ),
-				'locale_url' => plugins_url( 'tools/intl/js/i18n/', $base ),
-				'utils_js'   => plugins_url( 'tools/intl/js/utils.js', $base ),
+				'generation' => 2,
+				'css'        => plugins_url( 'tools/intl-2/assets/css/intlTelInput-scoped.min.css', $base ),
+				'js'         => '',
+				'init_js'    => plugins_url( 'tools/intl-2/assets/js/' . $init_js, $base ),
+				'locale_url' => '',
+				'utils_js'   => '',
 				'version'    => HT_CTC_FILES_VERSION,
 			);
 		}

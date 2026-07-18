@@ -7,7 +7,7 @@
 	"scripts": {
 		"intl:sync": "node dev/scripts/sync-intl.mjs",
 		"build:css": "node dev/scripts/build-scoped-css.mjs",
-		"build:init": "terser tools/intl-2/assets/js/intl-init.dev.js --module --compress --mangle --comments false -o tools/intl-2/assets/js/intl-init.js",
+		"build:init": "terser tools/intl-2/assets/js/intl-input.dev.js --module --compress --mangle --comments false -o tools/intl-2/assets/js/intl-input.js",
 		"build": "npm run build:css && npm run build:init"
 	},
 	"devDependencies": {
