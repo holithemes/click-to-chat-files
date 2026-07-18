@@ -13,15 +13,13 @@
  * stylesheets fight over the shared `.iti` class namespace and the `:root`
  * CSS variables (which carry the flag-sprite paths) - whichever loads last
  * breaks the other widget's design/flags. The scoped build only applies inside
- * elements carrying the `ht_ctc_defaults` class:
- *  - the main wrapper gets it via the `containerClass` init option (number-field js)
- *  - the body-appended dropdown gets it added by the init script after init
+ * elements carrying the `ctc_intl_tel_input_container` class (dedicated scope class - the wrapper gets it via the `containerClass` init option in number-field js; ht_ctc_defaults is NOT used here, it serves a different purpose):
  *
  * Transform rules (top-level selectors only — the v29 source uses native CSS
  * nesting, and nested selectors inherit the scope from their parent rule):
- *  - `:root`              -> `.ht_ctc_defaults` (vars inherit to all our elements)
- *  - `.iti...` roots      -> compound: `.iti.ht_ctc_defaults...`
- *  - `(el).iti__child...` -> descendant: `.ht_ctc_defaults (el).iti__child...`
+ *  - `:root`              -> scope class (vars inherit to all our elements)
+ *  - `.iti...` roots      -> compound: `.iti.<scope>...`
+ *  - `(el).iti__child...` -> descendant: `.<scope> (el).iti__child...`
  *  - `[dir=rtl] X`        -> `[dir=rtl] ` + transformed X
  *  - `@media` / `@supports` -> recurse into their rules
  *  - `@keyframes`         -> untouched (iti-* names don't collide on class scope)
@@ -36,7 +34,7 @@ import postcss from 'postcss';
 
 const root = join( dirname( fileURLToPath( import.meta.url ) ), '..', '..' );
 
-const SCOPE = '.ht_ctc_defaults';
+const SCOPE = '.ctc_intl_tel_input_container';
 
 const srcPath = join( root, 'tools/intl-2/intl-tel-input/css/intlTelInput.css' );
 const outPath = join( root, 'tools/intl-2/assets/css/intlTelInput-scoped.css' );

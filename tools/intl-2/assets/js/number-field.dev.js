@@ -10,7 +10,7 @@
  *    mistake and can't be clobbered - no noConflict dance needed.
  *  - WithUtils bundle - utils built in, no separate utils.js coordination.
  *  - styles come from ../css/intlTelInput-scoped.css (all selectors and the
- *    :root vars scoped under .ht_ctc_defaults - see dev/scripts/build-scoped-css.mjs).
+ *    :root vars scoped under .ctc_intl_tel_input_container - see dev/scripts/build-scoped-css.mjs).
  *
  * Loader contract (Click to Chat PRO, generation 2 flow): PRO loads THIS one
  * file as a module (script type="module" / dynamic import) at the configured
@@ -32,7 +32,7 @@
 import intlTelInput from '../../intl-tel-input/js/intlTelInputWithUtils.mjs';
 
 const CLASS_NAME = 'ctc_intl_number';
-const SCOPE_CLASS = 'ht_ctc_defaults';
+const SCOPE_CLASS = 'ctc_intl_tel_input_container';
 
 // filled at init() - ht_ctc_variables may be printed after this module loads.
 let vars = {};
@@ -109,7 +109,7 @@ function initField( field, uiTranslations ) {
 
 	const options = {
 		dropdownParent: document.body,
-		containerClass: 'intl_tel_input_container ' + SCOPE_CLASS,
+		containerClass: SCOPE_CLASS,
 		initialCountry: ( 'auto' === country ) ? '' : country,
 		initialCountryLookup: ( 'auto' === country ) ? countryLookup : null,
 		hiddenInputs: null,
