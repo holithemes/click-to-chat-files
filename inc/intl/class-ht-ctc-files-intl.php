@@ -75,9 +75,11 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 
 			$base = HT_CTC_FILES_PLUGIN_FILE;
 
-			// dev (unminified) init script when debug_mode is on (HT Commons owns this option).
-			$os      = get_option( 'ht_ctc_othersettings' );
-			$init_js = ( isset( $os['debug_mode'] ) ) ? 'number-field.dev.js' : 'number-field.js';
+			// dev (unminified) script in debug mode - HT Commons defines the
+			// constant; the option is the older toggle (either enables it).
+			$os       = get_option( 'ht_ctc_othersettings' );
+			$is_debug = ( defined( 'HT_CTC_DEBUG_MODE' ) || isset( $os['debug_mode'] ) );
+			$init_js  = $is_debug ? 'number-field.dev.js' : 'number-field.js';
 
 			return array(
 				'generation' => 2,
