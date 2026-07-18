@@ -1,7 +1,22 @@
+/**
+ * LEGACY - FROZEN. Click to Chat Files 1.2-and-earlier era.
+ *
+ * This file (and inc/assets/js/intl-init.js, tools/intl/) is kept byte-frozen
+ * for backward compatibility: older Click to Chat PRO versions and older
+ * jsDelivr tags hardcode these paths. Do NOT edit or extend this file.
+ *
+ * All NEW intl number field work (library updates, conflict-safe loading,
+ * init/loader scripts) lives under tools/intl-2/ and is consumed via the
+ * ht_ctc_fh_intl_assets manifest (inc/intl/class-ht-ctc-files-intl.php).
+ *
+ * Initialises intlTelInput on the greetings form number field
+ * (.ctc_intl_number). Polls the window.intlTelInput global (library is
+ * appended by PRO's number.js, or enqueued directly on nodelay).
+ */
 (function ($) {
     // ready
     $(function () {
-        
+
         var className = 'ctc_intl_number';
         
         var limit_check_intl_loaded = 24;
