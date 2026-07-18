@@ -109,7 +109,17 @@ function initField( field, uiTranslations ) {
 
 	const options = {
 		dropdownParent: document.body,
-		containerClass: SCOPE_CLASS,
+		/**
+		 * Two classes, two purposes:
+		 *  - SCOPE_CLASS: our css scoping hook (the scoped stylesheet applies
+		 *    only inside it).
+		 *  - ht_ctc_defaults: opts this subtree OUT of the greetings box css
+		 *    reset in the free plugin (`.ht_ctc_chat_greetings_box
+		 *    *:not(...):not(.ht_ctc_defaults *) { padding:0; margin:0 }`).
+		 *    Without it that reset strips the library's internal padding and
+		 *    the flag/dial code lose their spacing.
+		 */
+		containerClass: SCOPE_CLASS + ' ht_ctc_defaults',
 		initialCountry: ( 'auto' === country ) ? '' : country,
 		initialCountryLookup: ( 'auto' === country ) ? countryLookup : null,
 		hiddenInputs: null,
