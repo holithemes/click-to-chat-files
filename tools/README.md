@@ -43,13 +43,47 @@ tools/intl-2/
 npm install
 npm run intl:sync    # dist -> tools/intl-2/intl-tel-input/ (major changes are guarded)
 npm run build        # scoped css + minified number-field.js
+npm run verify       # confirm nothing drifted
 # 3. review number-field.dev.js if the library changed behavior; commit
 ```
 
+> Toolchain — what each npm package is for, and why there is no bundler:
+> [`dev/README.md`](../dev/README.md).
+
+## Commands
+
+| Command | What it does |
+|---|---|
+| `npm run build` | Scoped stylesheet + minified `number-field.js`. |
+| `npm run intl:sync` | Copies the pinned npm package into `tools/intl-2/intl-tel-input/`. Manual by design; refuses a different MAJOR. |
+| `npm run verify` | Pre-release gate — see below. Exits non-zero on failure. |
+| `npm run check:cdn [tag]` | Confirms a **pushed** tag actually serves the assets over jsDelivr. Defaults to the current plugin version. |
+
+### What `verify` checks
+
+Each check exists because that failure mode is **silent at runtime** — a wrong
+path just 404s and the number field quietly stays a plain input:
+
+1. **manifest** — evaluates the real `manifest()` method (php, WordPress
+   stubbed) in production *and* debug mode, and asserts every URL it returns
+   resolves to a file on disk. Catches renames/typos.
+2. **version** — plugin header, `HT_CTC_FILES_VERSION`, readme stable tag and
+   `package.json` agree, and the readme has a changelog entry for it.
+3. **vendor** — `VERSION` matches the exact pin, and (when `node_modules` is
+   installed) the vendored files are byte-identical to the npm package.
+4. **frozen** — the generation-1 paths older consumers hardcode still exist.
+5. **build** — re-runs the build and compares; fails if a committed asset is
+   stale. Restores the committed files either way, so it never dirties the tree.
+
 ## Releasing
 
-- Tag the release on GitHub (`1.3`, `1.4`, …) — jsDelivr serves tags, and
-  tags are immutable, so consumers pinned to a tag can never break.
-- Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to
-  a tag and a generation — bumping what CDN users get is a PRO release
-  decision, independent of this repo.
+1. `npm run verify` — must pass.
+2. Tag the release on GitHub (`1.3`, `1.4`, …) and **push the tag** — jsDelivr
+   serves tags, and tags are immutable, so consumers pinned to a tag can never
+   break.
+3. `npm run check:cdn -- 1.3` — confirms the tag is actually live on the CDN.
+   **Do this before the Click to Chat PRO release that points at it**: if the
+   tag is missing, every CDN-mode site silently loses the number field.
+4. Click to Chat PRO's CDN fallback (files plugin not installed) is pinned to a
+   tag *and* a generation — bumping what CDN users get is a PRO release
+   decision, independent of this repo.

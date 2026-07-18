@@ -29,38 +29,70 @@ if ( ! tag ) {
 
 const base = `https://cdn.jsdelivr.net/gh/holithemes/click-to-chat-files@${ tag }/`;
 
-// Generation 2 (tools/intl-2) + the frozen generation 1 paths older PRO
-// versions and older tags still request.
-const paths = [
-	'tools/intl-2/assets/css/intlTelInput-scoped.min.css',
-	'tools/intl-2/assets/js/number-field.js',
-	'tools/intl-2/intl-tel-input/js/intlTelInputWithUtils.mjs',
-	'tools/intl-2/intl-tel-input/img/flags.webp',
-	'tools/intl-2/intl-tel-input/js/locale/de.js',
-	'tools/intl/css/intlTelInput.min.css',
-	'tools/intl/js/intlTelInput.min.js',
-	'tools/intl/js/utils.js',
-	'inc/assets/js/intl-init.js',
+/**
+ * Generation 1 is what Click to Chat PRO requests in CDN mode today, so it is
+ * REQUIRED on any tag PRO points at. Generation 2 only exists on tags cut from
+ * 1.3 onwards - reported for information, and required once PRO's CDN fallback
+ * is moved to generation 2.
+ */
+const groups = [
+	{
+		name: 'generation 1 (required - PRO CDN mode uses these today)',
+		required: true,
+		paths: [
+			'tools/intl/css/intlTelInput.min.css',
+			'tools/intl/js/intlTelInput.min.js',
+			'tools/intl/js/utils.js',
+			'tools/intl/js/i18n/de/index.js',
+			'inc/assets/js/intl-init.js',
+		],
+	},
+	{
+		name: 'generation 2 (tools/intl-2 - present on tags >= 1.3)',
+		required: false,
+		paths: [
+			'tools/intl-2/assets/css/intlTelInput-scoped.min.css',
+			'tools/intl-2/assets/js/number-field.js',
+			'tools/intl-2/intl-tel-input/js/intlTelInputWithUtils.mjs',
+			'tools/intl-2/intl-tel-input/img/flags.webp',
+			'tools/intl-2/intl-tel-input/js/locale/de.js',
+		],
+	},
 ];
 
-console.log( `Checking jsDelivr tag: ${ tag }\n${ base }\n` );
+console.log( `Checking jsDelivr tag: ${ tag }\n${ base }` );
 
-let failed = 0;
-for ( const p of paths ) {
-	try {
-		const res = await fetch( base + p, { method: 'HEAD' } );
-		const okStatus = res.ok;
-		if ( ! okStatus ) {
-			failed++;
+let requiredMissing = 0;
+const summary = [];
+
+for ( const group of groups ) {
+	console.log( `\n${ group.name }` );
+	let miss = 0;
+	for ( const p of group.paths ) {
+		let status;
+		try {
+			const res = await fetch( base + p, { method: 'HEAD' } );
+			status = res.status;
+			if ( ! res.ok ) {
+				miss++;
+			}
+		} catch ( e ) {
+			status = 'ERR';
+			miss++;
 		}
-		console.log( `${ okStatus ? 'PASS' : 'FAIL' }  ${ res.status }  ${ p }` );
-	} catch ( e ) {
-		failed++;
-		console.log( `FAIL  ERR  ${ p } - ${ e.message }` );
+		const mark = ( 200 === status ) ? 'PASS' : ( group.required ? 'FAIL' : '----' );
+		console.log( `  ${ mark }  ${ status }  ${ p }` );
 	}
+	if ( group.required ) {
+		requiredMissing += miss;
+	}
+	summary.push( `${ group.paths.length - miss }/${ group.paths.length } ${ group.required ? 'required' : 'optional' }` );
 }
 
-console.log( failed
-	? `\n${ failed } asset(s) not reachable on tag "${ tag }". Push the tag before the PRO release.`
-	: `\nAll ${ paths.length } assets are served from tag "${ tag }".` );
-process.exit( failed ? 1 : 0 );
+console.log( `\n${ summary.join( ' · ' ) }` );
+if ( requiredMissing ) {
+	console.log( `\n${ requiredMissing } REQUIRED asset(s) missing on tag "${ tag }" - push the tag before the PRO release.` );
+} else {
+	console.log( `\nTag "${ tag }" serves everything PRO needs in CDN mode.` );
+}
+process.exit( requiredMissing ? 1 : 0 );
