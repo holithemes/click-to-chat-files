@@ -13,7 +13,7 @@
  * stylesheets fight over the shared `.iti` class namespace and the `:root`
  * CSS variables (which carry the flag-sprite paths) - whichever loads last
  * breaks the other widget's design/flags. The scoped build only applies inside
- * elements carrying the `ctc_intl_tel_input_container` class (dedicated scope class - the wrapper gets it via the `containerClass` init option in number-field js; ht_ctc_defaults is NOT used here, it serves a different purpose):
+ * elements carrying the `ctc_intl_container` class (dedicated scope class - the wrapper gets it via the `containerClass` init option in number-field js; ht_ctc_defaults is NOT used here, it serves a different purpose):
  *
  * Transform rules (top-level selectors only — the v29 source uses native CSS
  * nesting, and nested selectors inherit the scope from their parent rule):

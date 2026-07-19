@@ -10,7 +10,7 @@
  *    mistake and can't be clobbered - no noConflict dance needed.
  *  - WithUtils bundle - utils built in, no separate utils.js coordination.
  *  - styles come from ../css/intlTelInput-scoped.css (all selectors and the
- *    :root vars scoped under .ctc_intl_tel_input_container - see dev/scripts/build-scoped-css.mjs).
+ *    :root vars scoped under .ctc_intl_container - see dev/scripts/build-scoped-css.mjs).
  *
  * Loader contract (Click to Chat PRO, generation 2 flow): PRO loads THIS one
  * file as a module (script type="module" / dynamic import) at the configured
