@@ -35,7 +35,7 @@
 import intlTelInput from './intl-tel-input.min.mjs';
 
 const CLASS_NAME = 'ctc_intl_number';
-const SCOPE_CLASS = 'ctc_intl_tel_input_container';
+const SCOPE_CLASS = 'ctc_intl_container';
 
 // filled at init() - ht_ctc_variables may be printed after this module loads.
 let vars = {};

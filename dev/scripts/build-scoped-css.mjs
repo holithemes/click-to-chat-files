@@ -34,7 +34,7 @@ import postcss from 'postcss';
 
 const root = join( dirname( fileURLToPath( import.meta.url ) ), '..', '..' );
 
-const SCOPE = '.ctc_intl_tel_input_container';
+const SCOPE = '.ctc_intl_container';
 
 const srcPath = join( root, 'tools/intl-2/intl-tel-input/css/intlTelInput.css' );
 const outPath = join( root, 'tools/intl-2/assets/css/intlTelInput-scoped.css' );

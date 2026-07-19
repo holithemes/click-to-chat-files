@@ -42,7 +42,7 @@ if ( ! class_exists( 'HT_CTC_FILES_Intl' ) ) :
 		 *  - intl-tel-input/  vendored library dist (verbatim; VERSION file
 		 *    records the synced release - currently 29.1.2).
 		 *  - assets/css/      scoped stylesheet: every selector and the :root
-		 *    vars (flag sprite paths) apply only inside .ctc_intl_tel_input_container (set via the containerClass init option), so
+		 *    vars (flag sprite paths) apply only inside .ctc_intl_container (set via the containerClass init option), so
 		 *    another intl-tel-input copy on the page can't clash either way.
 		 *  - assets/js/       number-field.js: self-contained ES module (the plugin-side number field flow) - imports
 		 *    the library RELATIVELY (no window globals at all, conflict-safe by

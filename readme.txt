@@ -45,7 +45,7 @@ This all required a lot of files to be hosted. instead of adding all these files
 
 = 1.3 =
 * Added intl asset manifest (ht_ctc_fh_intl_assets filter) - this plugin now declares its own file layout, so Click to Chat PRO no longer hardcodes paths; future library updates need only a change here
-* New asset generation 2 (tools/intl-2, see tools/README.md): intl-tel-input 29.1.2, conflict-safe by design - number-field.js loads the library as an ES module (no window globals, so another intl-tel-input copy on the page can't clash) and the stylesheet is scoped under .ctc_intl_tel_input_container
+* New asset generation 2 (tools/intl-2, see tools/README.md): intl-tel-input 29.1.2, conflict-safe by design - number-field.js loads the library as an ES module (no window globals, so another intl-tel-input copy on the page can't clash) and the stylesheet is scoped under .ctc_intl_container
 * Generation 1 (tools/intl, intl-init.js) stays frozen - older Click to Chat PRO versions keep working unchanged
 * Fixed __clone/__wakeup guard calling a WooCommerce-only function
 

@@ -10,7 +10,7 @@ loading/design contract — not the library's version number.
 | Generation | Location | Library | Consumers | Loading design |
 |---|---|---|---|---|
 | **1** (legacy, FROZEN) | `tools/intl/` + `inc/assets/js/intl-init.js` | intl-tel-input 24.5.0 | PRO ≤ 2.22 (hardcoded paths), old jsDelivr tags (`r1`, …), PRO ≥ 2.23 when this plugin is ≤ 1.2 (no manifest) | `window.intlTelInput` global + polling init (jQuery), stock css. Known limitation: can conflict with another intl-tel-input copy on the page (js global + `.iti` css + `:root` flag vars). |
-| **2** | `tools/intl-2/` | see `tools/intl-2/intl-tel-input/VERSION` (29.1.2) | PRO ≥ 2.23 with this plugin ≥ 1.3, via the `ht_ctc_fh_intl_assets` manifest (`inc/intl/class-ht-ctc-files-intl.php`) | Conflict-safe by construction: `assets/js/number-field.js` is a self-contained ES module that imports the library RELATIVELY (no window globals ever), css is the scoped build (`assets/css/` — everything under `.ctc_intl_tel_input_container`). PRO injects the module at the configured moment (nodelay/delay). |
+| **2** | `tools/intl-2/` | see `tools/intl-2/intl-tel-input/VERSION` (29.1.2) | PRO ≥ 2.23 with this plugin ≥ 1.3, via the `ht_ctc_fh_intl_assets` manifest (`inc/intl/class-ht-ctc-files-intl.php`) | Conflict-safe by construction: `assets/js/number-field.js` is a self-contained ES module that imports the library RELATIVELY (no window globals ever), css is the scoped build (`assets/css/` — everything under `.ctc_intl_container`). PRO injects the module at the configured moment (nodelay/delay). |
 
 ## Rules
 
