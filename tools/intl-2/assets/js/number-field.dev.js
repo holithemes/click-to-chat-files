@@ -8,7 +8,8 @@
  *    module-scoped: window.intlTelInput is never read or written, so another
  *    intl-tel-input copy loaded by the theme/a plugin can't be picked up by
  *    mistake and can't be clobbered - no noConflict dance needed.
- *  - WithUtils bundle - utils built in, no separate utils.js coordination.
+ *  - core library only; the phone-number utils load lazily (loadUtils below),
+ *    so they never block the field from rendering.
  *  - styles come from ../css/intlTelInput-scoped.css (all selectors and the
  *    :root vars scoped under .ctc_intl_container - see dev/scripts/build-scoped-css.mjs).
  *
@@ -26,11 +27,9 @@
  */
 
 /**
- * Core library only (~15 KB gzip), minified by dev/scripts/build-lib.mjs -
+ * Core library only (~15 KB gzip), minified by dev/scripts/build-js.mjs -
  * upstream ships no minified ES module, and the WithUtils bundle would be
- * ~6x larger on the critical path. The phone-number utils are loaded
- * separately and lazily via loadUtils below, so they never block the field
- * from rendering.
+ * ~6x larger on the critical path.
  */
 import intlTelInput from './intl-tel-input.min.mjs';
 
