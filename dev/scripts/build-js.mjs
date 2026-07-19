@@ -34,16 +34,8 @@ const targets = [
 	{
 		src: 'tools/intl-2/intl-tel-input/js/intlTelInput.mjs',
 		out: 'tools/intl-2/assets/js/intl-tel-input.min.mjs',
-		// Third-party: keep upstream's attribution (their .mjs build, unlike
-		// their .min.js, carries no banner of its own) and name the source,
-		// which lives in another folder rather than next to this file.
-		banner: ( src ) => `/*
- * International Telephone Input v${ libVersion }
- * https://github.com/jackocnr/intl-tel-input
- * Licensed under the MIT license
- *
- * Minified from ${ src } by ${ REPO }
- */
+		banner: ( src ) => `// International Telephone Input v${ libVersion }
+// Minified from ${ src }
 `,
 	},
 	{
