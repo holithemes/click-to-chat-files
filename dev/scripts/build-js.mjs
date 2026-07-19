@@ -66,7 +66,9 @@ for ( const target of targets ) {
 	const code = readFileSync( srcPath, 'utf8' );
 	const result = await minify( code, {
 		module: true,
-		compress: true,
+		compress: {
+			drop_console: true,
+		},
 		mangle: true,
 		format: { comments: false },
 	} );

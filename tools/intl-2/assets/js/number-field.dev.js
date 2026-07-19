@@ -40,12 +40,6 @@ const SCOPE_CLASS = 'ctc_intl_tel_input_container';
 // filled at init() - ht_ctc_variables may be printed after this module loads.
 let vars = {};
 
-function log( msg, data ) {
-	if ( window.ht_ctc_debug || vars.debug ) {
-		console.log( '[ht-ctc intl-2] ' + msg, ( 'undefined' !== typeof data ) ? data : '' );
-	}
-}
-
 function init() {
 
 	vars = ( 'undefined' !== typeof window.ht_ctc_variables ) ? window.ht_ctc_variables : {};
@@ -86,7 +80,7 @@ function loadTranslations() {
 		translationsPromise = import( /* webpackIgnore: true */ localeUrl.href )
 			.then( ( module ) => module.default || null )
 			.catch( ( e ) => {
-				log( 'locale load failed', e );
+				console.log( '[ht-ctc intl-2] locale load failed', e );
 				return null;
 			} );
 	}
@@ -95,7 +89,7 @@ function loadTranslations() {
 
 function initField( field, uiTranslations ) {
 
-	log( 'init field', field );
+	console.log( '[ht-ctc intl-2] init field', field );
 
 	// placeholder comes from the library (example number per country)
 	field.removeAttribute( 'placeholder' );
@@ -197,7 +191,7 @@ function initField( field, uiTranslations ) {
 	 * is corrected even if the user typed immediately.
 	 */
 	if ( iti.promise && 'function' === typeof iti.promise.then ) {
-		iti.promise.then( sync ).catch( ( e ) => log( 'init promise rejected', e ) );
+		iti.promise.then( sync ).catch( ( e ) => console.log( '[ht-ctc intl-2] init promise rejected', e ) );
 	}
 
 	return iti;
@@ -219,7 +213,7 @@ function countryLookup() {
 	const today = new Date().toDateString();
 
 	if ( storage.country_code && storage.country_code_date === today ) {
-		log( 'country from cache: ' + storage.country_code );
+		console.log( '[ht-ctc intl-2] country from cache: ' + storage.country_code );
 		return Promise.resolve( storage.country_code.toLowerCase() );
 	}
 
@@ -228,11 +222,11 @@ function countryLookup() {
 		.then( ( resp ) => {
 			const code = ( resp && resp.country ) ? resp.country : '';
 			setStorageItems( { country_code: code, country_code_date: today } );
-			log( 'country fetched: ' + code );
+			console.log( '[ht-ctc intl-2] country fetched: ' + code );
 			return code.toLowerCase();
 		} )
 		.catch( ( e ) => {
-			log( 'country lookup failed', e );
+			console.log( '[ht-ctc intl-2] country lookup failed', e );
 			return '';
 		} );
 }
@@ -253,7 +247,7 @@ function setStorageItems( items ) {
 		} );
 		localStorage.setItem( 'ht_ctc_storage', JSON.stringify( storage ) );
 	} catch ( e ) {
-		log( 'storage write failed', e );
+		console.log( '[ht-ctc intl-2] storage write failed', e );
 	}
 }
 
