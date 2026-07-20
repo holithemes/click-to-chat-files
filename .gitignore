@@ -75,8 +75,8 @@ dev/reports/phpcs/phpcs-report.json
 /dev/reports/design/
 
 #bundle
-dev/bundle/click-to-chat-for-whatsapp/
-dev/bundle/click-to-chat-for-whatsapp.zip
+dev/bundle/click-to-chat-files/
+dev/bundle/click-to-chat-files.zip
 
 # Webpack dummy css-map script build outputs
 # /dev/build-ignore/

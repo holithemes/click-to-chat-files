@@ -12,7 +12,10 @@
 		"verify": "node dev/scripts/verify.mjs",
 		"check:cdn": "node dev/scripts/check-cdn.mjs",
 		"todo:scan": "node dev/scripts/todo-scan.mjs",
-		"version:bump": "node dev/scripts/version-bump.mjs"
+		"version:bump": "node dev/scripts/version-bump.mjs",
+		"bundle": "chmod +x ./dev/scripts/bundle.sh && ./dev/scripts/bundle.sh",
+		"bundle:w": "bash -lc \"chmod +x ./dev/scripts/bundle.sh && bash ./dev/scripts/bundle.sh\"",
+		"bundle:verify": "bash dev/scripts/bundle-verify.sh"
 	},
 	"devDependencies": {
 		"intl-tel-input": "29.1.2",
