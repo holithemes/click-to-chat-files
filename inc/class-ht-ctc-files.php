@@ -123,13 +123,40 @@ class HT_CTC_FILES {
      * @uses this->hooks() - using ht_ctc_ah_init_before hook - priority 0
      */
     public function ctc_init() {
-        
+
+        // admin2 (2026 UI) builds its settings fields over the REST API, which
+        // runs OUTSIDE is_admin() - so the License tab integration has to be
+        // registered here rather than in admin/admin.php.
+        $this->rest_required_files();
+
         if ( is_admin() ) {
             include_once HT_CTC_FILES_PLUGIN_DIR .'admin/admin.php';
         } else {
         }
 
 
+    }
+
+
+    /**
+     * Files needed for admin2 settings fields (loaded via REST, not is_admin).
+     *
+     * The 2019 UI renders the license field into the settings sidebar
+     * ('ht_ctc_ah_admin_sidebar_contact', see tools/sl/class-ht-ctc-files-admin-sl.php).
+     * That hook does not exist in the 2026 UI, so the field is added to the
+     * License tab instead.
+     */
+    private function rest_required_files() {
+
+        if ( ! defined( 'HT_CTC_ADMIN_UI' ) || '2026' !== HT_CTC_ADMIN_UI ) {
+            return;
+        }
+
+        include_once HT_CTC_FILES_PLUGIN_DIR . 'admin2/views/tabs/class-ht-ctc-files-settings-license.php';
+
+        // Priority 11: Click to Chat PRO registers the License tab at 10 and
+        // returns a fresh array, so this must append after it.
+        add_filter( 'ht_ctc_fh_settings_fields_license', array( 'HT_CTC_FILES_Settings_License', 'fields' ), 11 );
     }
 
 
