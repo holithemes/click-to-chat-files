@@ -16,7 +16,12 @@ class HT_CTC_Files_Admin_Hooks {
 
     public function hooks() {
 
+        // 2019 admin UI
         add_action( 'ht_ctc_ah_admin_scripts_start', array($this, 'admin_scripts') );
+
+        // 2026 admin UI (admin2) - fires a different enqueue action, and the
+        // license field lives in the License tab instead of the sidebar.
+        add_action( 'ht_ctc_ah_before_admin_enqueue_scripts', array($this, 'admin_scripts') );
 
     }
 

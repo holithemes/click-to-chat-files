@@ -1,9 +1,9 @@
-=== Click to Chat - HoliThemes ===
+=== Click to Chat Files ===
 Requires at least: 4.6
 Tested up to: 6.6.2
 Requires PHP: 5.6
 Contributors: holithemes
-Stable tag: 1.2
+Stable tag: 1.3
 Tags: whatsapp, whatsapp business, click to chat, whatsapp chat, WooCommerce WhatsApp
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,13 @@ This all required a lot of files to be hosted. instead of adding all these files
 == Upgrade Notice ==
 
 == Changelog ==
+
+= 1.3 =
+* Added intl asset manifest (ht_ctc_fh_intl_assets filter) - this plugin now declares its own file layout, so Click to Chat PRO no longer hardcodes paths; future library updates need only a change here
+* New asset generation 2 (tools/intl-2, see tools/README.md): intl-tel-input 29.1.2, conflict-safe by design - number-field.js loads the library as an ES module (no window globals, so another intl-tel-input copy on the page can't clash) and the stylesheet is scoped under .ctc_intl_container
+* Generation 1 (tools/intl, intl-init.js) stays frozen - older Click to Chat PRO versions keep working unchanged
+* License activation now works in the new (2026) admin interface - it appears in the License tab. Previously it only rendered in the classic admin sidebar, so the plugin could not be activated from the new UI
+* Fixed __clone/__wakeup guard calling a WooCommerce-only function
 
 = 1.2 =
 * Added ht_ctc_defaults class name to the number field for better styling
